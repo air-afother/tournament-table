@@ -1,5 +1,5 @@
 {
     "name": "BMSA! Charts", 
     "symbol": "BMSA",
-    "data_url": "https://air-afother.github.io/bms-table-test/score.json"
+    "data_url": "score.json"
 }
