@@ -1,5 +1,5 @@
 {
+    "data_url": "score.json",
     "name": "BMSA Charts", 
-    "symbol": "tr",
-    "data_url": "score.json"
+    "symbol": "tr"
 }
