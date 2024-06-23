@@ -1,0 +1,70 @@
+[
+    {
+        "title": "The Last Page [Endgame]",
+      "level": "Season 1 ",
+      "md5": "31d94f9c12d00a95b059e0a0629232a0"
+    },
+    {
+        "title": "GOODTEK",
+        "subtitle": "[鷺梁津駅1番出口から徒歩10分]",
+      "level": "Season 1 ",
+      "md5": "139a001df176d2ceb8e24ed2661501f4"
+    },
+    {
+        "title": "MARENOL[HARDEST]",
+      "level": "Season 1 ",
+      "md5": "6273dd7ff6f719b5267b67a2826b69bd"
+    },
+    {
+        "title": "ENERGY SYNERGY MATRIX",
+	"subtitle": "[Nemesis]",
+      "level": "Season 1 ",
+      "md5": "07d0643bd73d5aba7415b513003b38cf"
+    },
+    
+  {
+    "title": "How to make 音ゲ～曲! [SP ANOTHER]",
+    "artist": "F Rabbeat / BMS: Nakaiankow BGA by もうり / obj AZVW_2",
+    "url": "https://manbow.nothing.sh/event/event.cgi?action=More_def&num=89&event=142",
+    "url_diff": "",
+    "md5": "51db12e2efed6a9ebf867ad61ef90805",
+    "sha256": "f4eca01e593bc98d233335c95c88a271ddf5743f5d12af3562eabd229180116a",
+    "level": "Season 2 "
+  },
+  {
+    "title": "バーチャルセラピー [物量セラピー]",
+    "artist": "ふぃるまーち！（CV：ちょこ＆藍月なくる＆山田じぇみ子） MV: うまるつふり ＆ 自動車 原付 / A",
+    "url": "http://manbow.nothing.sh/event/event.cgi?action=More_def&num=167&event=123",
+    "url_diff": "http://gnqg.rosx.net/upload/upload.cgi?get=02362",
+    "md5": "6c0d37102eddd177de86a304b95c647a",
+    "sha256": "85068795dc0950fc82cdc61366c25c47fe7cb7206d660441d6799bb8f5fedf4e",
+    "level": "Season 2 "
+  },
+  {
+    "title": "お兄火 [ヤンデレの女の子に死ぬほど愛されて眠れないお兄ちゃん]",
+    "artist": "Ponchi♪ feat.はぁち obj.nozomi",
+    "url": "https://manbow.nothing.sh/event/event.cgi?action=More_def&num=208&event=140",
+    "url_diff": "https://1drv.ms/u/s!ApwaJAUHJdpyml22QXQM-mZuIs2Z?e=OQv90Z",
+    "md5": "531b646233a9bbb38aec58dbd2d91937",
+    "sha256": "791788deb68a3f32043ae750f6c789404b99584092bec356bcb295cf922379d4",
+    "level": "Season 2 "
+  },
+  {
+    "title": "ぱぴぽ？ -でぃすぺあ-",
+    "artist": "ねこみりん feat.まるもこ Movie:むらしん / Illust:なか / obj:七海",
+    "url": "https://manbow.nothing.sh/event/event.cgi?action=More_def&num=408&event=137",
+    "url_diff": "https://egosa0424.github.io/sabun/papipo_nanami_fix.zip",
+    "md5": "32384e2ce36d8da907072a4a70f42497",
+    "sha256": "ccaa068a9558c16f3e01b67ceea6dd31a46ea4a5cd7aaa40c3ac7dd9eb523c0b",
+    "level": "Season 2 "
+  },
+  {
+    "title": "プナイプナイせんそう [LITTLE DAEMON]",
+    "artist": "立秋 feat.ちょこ/obj:wak",
+    "url": "http://manbow.nothing.sh/event/event.cgi?action=More_def&num=104&event=123",
+    "url_diff": "http://gnqg.rosx.net/upload/upload.cgi?get=02682",
+    "md5": "9d70d0f80d97d0143f86dec260216f8b",
+    "sha256": "0005d24b3b94c2bd6af580fe6e46f4fa5ee38a49149875b008fcd31f74899c74",
+    "level": "Season 2 "
+  }
+]

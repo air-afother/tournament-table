@@ -1,0 +1,93 @@
+[
+    {
+        "title": "Doppelganger[HYPER]",
+      "level": "Season 1 ",
+      "md5": "dad53c2e0914f6867da3e4e2eacd69fa"
+    },
+    {
+        "title": "Dreadnought [HYPER]",
+      "level": "Season 1 ",
+      "md5": "391f578d80d59d4edd99a3966a7a6e92"
+    },
+     {
+         "title": "B.B.K.K.B.K.K. (ANOTHER)",
+      "level": "Season 1 ",
+      "md5": "6ba57c0187a93635a8caa93f7e2061fd"
+    },{
+        "title": "Re:End of a Dream",
+      "level": "Season 1 ",
+      "md5": "8b02205f82ec29a0cdb97af2d84ce7d9"
+    },
+    {
+    	"title": "お兄火[SP Another]",
+	"genre": "ONISAMA SWING",
+	"level": "Season 2 ",
+	"artist": "Ponchi♪ feat.はぁち",
+	"subartist": "obj:mathath",
+	"md5": "f973aaaad058cebc81169814c4506c98",
+	"sha256": "f08fbe493c757804a8e9aeb55fd0dcc346e7bfd4097c636b3b1debc547973344",
+	"content": 3,
+	"stagefile": "_title3.png",
+	"backbmp": "_bk.bmp",
+	"banner": "_banner.png",
+	"charthash": "355f29592ac815f6658cfe9815caf88f16850817fc1017cba022f96cfe8483e3",
+        "url" : "https://cncncloud.com/s/GpeROC6",
+        "url_diff" : ""
+},
+{
+ 	"level" : "Season 2 ",
+        "comment" : "",
+	"title": "ぱぴぽ？ [HYPER]",
+	"genre": "宇宙幼女",
+	"artist": "ねこみりん feat.まるもこ",
+	"subartist": "Movie:むらしん / Illust:なか",
+	"md5": "1278372710eaad0579a74d87e2eb9a29",
+	"sha256": "b1b184b5e98b4684e491b3f4b997faae903421a3959c99b593744ef87e2e91e0",
+	"content": 3,
+	"stagefile": "title.png",
+	"backbmp": "back.png",
+	"banner": "banner.png",
+	"charthash": "06231b52eda6845adf7f75eb980ad14f7ad95d73472513040f7e55c0b6fc2fab",
+        "url" : "http://bmsdrive.zris.work/BeMusicSeeker%20difficulty%20tables%20BMS%20PACK/BeMusicSeeker%20difficulty%20tables%20BMS%20PACK%20ver.220101%20patch/newsongs/%E3%81%B1%E3%81%B4%E3%81%BD%EF%BC%9F.rar",
+        "url_diff" : ""
+},
+{
+	"level" : "Season 2 ",
+        "comment" : "",
+	"title": "プナイプナイたいそう",
+	"subtitle": "[SP ANOTHER]",
+	"genre": "プナイプナイPOP",
+	"artist": "立秋 feat.ちょこ",
+	"md5": "522ce11990d09b94e515b653705be4fd",
+	"sha256": "532a76cb5a42dfccb2fdabc06624c432dc930f1aa26a067e496818ae9d79dc36",
+	"content": 2,
+	"charthash": "23aec8800b1a86543623564501a479f1364cdd9e7a0f3cef73f356d33844affe",
+        "url" : "http://bmsdrive.zris.work/BeMusicSeeker%20difficulty%20tables%20BMS%20PACK/BeMusicSeeker%20difficulty%20tables%20BMS%20PACK%20ver.201225/%E3%83%97%E3%83%8A%E3%82%A4%E3%83%97%E3%83%8A%E3%82%A4%E3%81%9F%E3%81%84%E3%81%9D%E3%81%86.rar",
+        "url_diff" : ""
+			},
+{
+	"level" : "Season 2 ",
+        "comment" : "",
+	"title": "バーチャルセラピー",
+	"subtitle": "[SP ANOTHER]",
+	"genre": "IDOL SONG / FUTURE POP",
+	"artist": "ふぃるまーち！（CV：ちょこ＆藍月なくる＆山田じぇみ子）",
+	"subartist": "MV: うまるつふり ＆ 自動車 原付",
+	"md5": "d2def8e5fda67bc390d7439f80cfbe3a",
+	"sha256": "ff21c0d85c4c9d9b80c578a91d1c01b80f2f2943f40828e7f60843a0481c8912",
+	"content": 3,
+	"banner": "fillmarch_banner.jpg",
+	"charthash": "8161ae239406a795ab8b0753ade7f4d1ac25c2dd939cddacb0655443471d7acc",
+        "url" : "http://bmsdrive.zris.work/BeMusicSeeker%20difficulty%20tables%20BMS%20PACK/BeMusicSeeker%20difficulty%20tables%20BMS%20PACK%20ver.201225/%E3%83%90%E3%83%BC%E3%83%81%E3%83%A3%E3%83%AB%E3%82%BB%E3%83%A9%E3%83%94%E3%83%BC.rar",
+        "url_diff" : ""
+	},
+  {
+    "level": "Season 2 ",
+    "title": "インドア系ならトラックメイカー［ANOTHER］ 199024club mix",
+    "artist": "Yunomi & nicamoq remixed by 王 宙航",
+    "md5": "70c0840620009182a8f1cfe89dfa01ae",
+    "comment": "",
+    "url": "http://manbow.nothing.sh/event/event.cgi?action=More_def&num=23&event=132",
+    "url_diff": ""
+  }
+]
