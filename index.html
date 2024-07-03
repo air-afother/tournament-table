@@ -11,6 +11,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	   
+	   
       <style>
 html {
   height: 100%;
@@ -32,12 +34,6 @@ table.center{
  width: 90%;
  margin: auto;
 }
-div.title{
-  padding-left: 5%;
-}
-div{
-  padding-left: 3%;
-}
 a{
 	color: #fff;
 	visited: #fff;
@@ -50,33 +46,164 @@ hr{
 	height: 1px;
 	background-color: #fff;
 }
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #0a0a10; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+/* Style the sidenav links and the dropdown button */
+.sidenav a, .dropdown-btn {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 15px;
+  padding: 6px 8px 6px 16px;
+  color: #818181;
+  display: block;
+  border: none;
+  background: none;
+  width:100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+  text-decoration: none;
+}
+
+/* On mouse-over */
+.sidenav a:hover, .dropdown-btn:hover {
+  color: #f1f1f1;
+}
+
+/* Main content */
+#main {
+  transition: margin-left .5s;
+  padding-left: 2%;
+}
+
+/* Add an active class to the active dropdown button */
+.active {
+  background-color: #0e53a2;
+  color: white;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown {
+  display: none;
+  background-color: #1d1d2e;
+  padding-left: 8px;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+footer {
+    position:absolute;
+    bottom: 2%;
+    float: left;
+    height: 35px;
+    background: none;
+    text-align: left;
+    padding-left: 2%;
+}
+
 </style>
    </head>
    <body>
-   <div class="title">
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">Rules and FAQ</a>
+  <button class="dropdown-btn">Season archive tables</button>
+  <div class="dropdown">
+  <a href="https://air-afother.github.io/tournament-table/sr-archive.html">Starlight bracket archive</a>
+  <a href="https://air-afother.github.io/tournament-table/sl-archive.html">Satellite bracket archive</a>
+  </div>
+  <button class="dropdown-btn">BMSA! S3: ???</button>
+	<div class="dropdown">
+		<a href="https://air-afother.github.io/tournament-table/s3srrank.html">Starlight Bracket</a>
+		<a href="https://air-afother.github.io/tournament-table/s3slrank.html">Satellite Bracket</a>
+	</div>
+  <button class="dropdown-btn">BMSA! S2: DENPA NEVER DIE</button>
+	<div class="dropdown">
+		<a href="https://air-afother.github.io/tournament-table/s2srrank.html">Starlight Bracket</a>
+		<a href="https://air-afother.github.io/tournament-table/s2slrank.html">Satellite Bracket</a>
+	</div>
+</div>
+
+<!-- Use any element to open the sidenav -->
+ <img src="images/burger.png" alt="burger" style="width:30px;height:30px;padding-left:2%;padding-top:1%;" onclick="openNav()"> 
+<div id="main" class="main">
+<div class="title">
       <h1>Bottoni Monthly Score Attack!</h1>
-      <h6></h6>
    </div>
 <hr>
-    <div class="season-3">
+<div class="current-season">
     <h2>BMSA! S3: ???</h1>
     <h4>08/07/2024 00:00 UTC+2 - 21/07/2024 23:59 UTC+2</h5>
     <h5>Starlight bracket: <a href="https://air-afother.github.io/tournament-table/s3srrank.html">Ranking and charts</a></h6>
     <h5>Satellite bracket: <a href="https://air-afother.github.io/tournament-table/s3slrank.html">Ranking and charts</a></h6>
-    </div>
-        <hr>
-    <div class="archive">
-	    <h2>Past editions tables:</h2>
-	    <h5><a href="https://air-afother.github.io/tournament-table/sr-archive.html">Starlight bracket archive</a></h5>
-	    <h5><a href="https://air-afother.github.io/tournament-table/sl-archive.html">Satellite bracket archive</a></h5>
-    </div>
-<hr>
-    <div class="season-2">
-    <h2>BMSA! S2: DENPA NEVER DIE</h1>
-    <h4>08/06/2024 - 23/06/2024</h5>
-    <h5>Starlight bracket: <a href="https://drive.google.com/file/d/1iGBuh1v-d7HwHi46WElGd2uvtfwXUB4A/view?usp=drive_link">Charts</a> <a href="https://air-afother.github.io/tournament-table/s2srrank.html">Ranking</a></h6>
-    <h5>Satellite bracket: <a href="https://drive.google.com/file/d/1mSg593VJ4rp9YR-bdlMyhJY6UX30exAQ/view?usp=drive_link">Charts</a> <a href="https://air-afother.github.io/tournament-table/s2slrank.html">Ranking</a></h6>
-    </div>
-        <hr>
-   </body>
+</div>
+ <footer>
+  <p id="flavor-text"></p>
+</footer> 
+<script>
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+}
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+/* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+} 
+ var textarray = [
+ "enjoy the cool air out on the",
+ "air oneself to take off",
+ "take the world by storm",
+ "a refreshing atmosphere",
+ "FEEL'in SEPIA AIR",
+ "0xE9504DF6 think purple",
+ "waiting contact with",
+ "virtual somehow",
+ "remove come into being",
+ "elusive emotions",
+ "sore competition",
+ "st9 Clear Detector Technology",
+ "fuck trance",
+ "Suggest more texts on discord!",
+ "wHERE IS S1??",
+ "eeffoc",
+ "I heard you like nanahira?",
+ "Battery Manageement System",
+ "Buttery Mellow Soup"
+ ];
+ 
+ function RndText() {
+ var rannum= Math.floor(Math.random()*textarray.length);
+ document.getElementById('flavor-text').innerHTML=textarray[rannum];
+ }
+ onload = function() { RndText(); }
+</script>
 </html>
