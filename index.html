@@ -28,8 +28,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: linear-gradient(to right bottom, #0a0a10, #0d1943, #00227a, #0028b2, #1225eb);
-}
+  background-color:#0a0a10;
 table.center{
  width: 90%;
  margin: auto;
@@ -53,13 +52,13 @@ hr{
   z-index: 1; /* Stay on top */
   top: 0; /* Stay at the top */
   left: 0;
-  background-color: #0a0a10; /* Black*/
+  background-color: #0f0f16; /* Black*/
   overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 60px; /* Place content 60px from the top */
+  padding-top: 10px; /* Place content 60px from the top */
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
 }
 /* Style the sidenav links and the dropdown button */
-.sidenav a, .dropdown-btn {
+.sidenav a, .sidenav img, .dropdown-btn {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
@@ -90,7 +89,7 @@ hr{
 
 /* Add an active class to the active dropdown button */
 .active {
-  background-color: #0e53a2;
+  background-color: #af8d19;
   color: white;
 }
 
@@ -107,10 +106,11 @@ hr{
   padding-right: 8px;
 }
 footer {
-    position:absolute;
-    bottom: 2%;
+    position:fixed;
+    bottom: 2em;
     float: left;
     height: 35px;
+    font-size:10px;
     background: none;
     text-align: left;
     padding-left: 2%;
@@ -120,8 +120,7 @@ footer {
    </head>
    <body>
 <div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="#">Rules and FAQ</a>
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="font-size:20px">&times;</a>
   <button class="dropdown-btn">Season archive tables</button>
   <div class="dropdown">
   <a href="https://air-afother.github.io/tournament-table/sr-archive.html">Starlight bracket archive</a>
@@ -140,21 +139,60 @@ footer {
 </div>
 
 <!-- Use any element to open the sidenav -->
- <img src="images/burger.png" alt="burger" style="width:30px;height:30px;padding-left:2%;padding-top:1%;" onclick="openNav()"> 
+  
 <div id="main" class="main">
-<div class="title">
-      <h1>Bottoni Monthly Score Attack!</h1>
-   </div>
-<hr>
-<div class="current-season">
+<div class="goofy-container" style="position:fixed;top:0;height:4.5em;left:0;right:0;background-color:#af8d19">
+<div class="title" style="padding-left:2%">
+      <img src="images/burger.png" alt="burger" style="width:2em;height:2em;display:inline-block;vertical-align: middle;" onclick="openNav()">
+ 	<h1 style="margin-left:2%;display:inline-block;vertical-align:middle;">Bottoni Monthly Score Attack!</h1>
+	<p id="flavor-text" style="display:inline-block;vertical-align:middle;float:right;padding-right:2%;"></p>
+</div>
+</div>
+<div class="current-season" style="padding-top:5em;">
     <h2>BMSA! S3: ???</h1>
     <h4>08/07/2024 00:00 UTC+2 - 21/07/2024 23:59 UTC+2</h5>
     <h5>Starlight bracket: <a href="https://air-afother.github.io/tournament-table/s3srrank.html">Ranking and charts</a></h6>
     <h5>Satellite bracket: <a href="https://air-afother.github.io/tournament-table/s3slrank.html">Ranking and charts</a></h6>
 </div>
- <footer>
-  <p id="flavor-text"></p>
-</footer> 
+<div class="regole" style="padding-bottom:5em;">
+<h2>Rules:</h2>
+	<h4> Bracket selection </h4>
+	<p>The satellite bracket is open to everyone, but it is recommended for those who have achieved either:<br></p><ul>
+		<li><b>GENOSIDE 2018 段位認定 発狂五段 (Insane 5th)</b> and above;</li>
+		<li><b>IIDX Kaiden;</b></li>
+	</ul>
+	<p>While the starlight bracket is open only to those who have either:</p>
+	<ul>
+		<li><b>IIDX Chuuden</b> or below;</li>
+		<li><b>GENOSIDE 2018 段位認定 発四狂段 (Insane 4th)</b> or below;</li>
+	</ul>
+	Eventual other brackets can be joined by everyone.<br></p>
+
+<h4> Score submission </h4>
+	<p>Scores must be submitted on the <b>BMS Europe</b> discord in the tournaments scoreposting thread in the scores channel. Feel free to ping me (@fresco69w) to death if you see that your score is not updated in a few hours (it is if your score has been reacted to).</p>
+
+<h4> Game client and options</h4>
+	<p>Any client can be used. MIRROR, RANDOM (random trainer included), R-RANDOM and S-RANDOM are allowed. </p>
+
+<h4> Ranking</h4>
+	<p>Ranking is decided based on a rating that comes from a formula which takes in account the amount of players participating and emphasizes the player ranking in the individual charts and the total score. You can find the details on the tournament calculation spreadsheet here.</p> 
+
+<h2>FAQ</h2>
+	<p>Q. <b>Why these charts??</b><br>
+	A. All the charts chosen follow a theme that changes every month.<br><br>
+
+	Q. <b>Where do I get the charts?</b><br>
+	A. You can find the dl on the ranking page for the current season. (Check to burger menu on the top left!)<br><br>
+
+	Q. <b>Is there a way to find the charts quicker?</b><br>
+	A. The homepage of this website is table! You can put it in your client to find the current tournament charts quickly. If for some reason you're looking for older tournaments charts, check the archive section on the hamburger menu on the top left.
+<br><br>
+	Q. <b>I feel like there is something wrong with the calculation who do I tell?</b><br>
+	A. Spam DM me on discord.<br><br>
+
+	Q. <b>Miss count when?</b><br>
+	A. Soon(?)</p>
+</div>
 <script>
 var dropdown = document.getElementsByClassName("dropdown-btn");
 var i;
@@ -180,16 +218,11 @@ function closeNav() {
 } 
  var textarray = [
  "enjoy the cool air out on the",
- "air oneself to take off",
  "take the world by storm",
  "a refreshing atmosphere",
  "FEEL'in SEPIA AIR",
  "0xE9504DF6 think purple",
  "waiting contact with",
- "virtual somehow",
- "remove come into being",
- "elusive emotions",
- "sore competition",
  "st9 Clear Detector Technology",
  "fuck trance",
  "Suggest more texts on discord!",
