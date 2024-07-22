@@ -1,93 +1,14 @@
 [
-{
+  {
     "artist": "SHIKI / black train",
-    "level": "S3 Upper Bracket ",
-    "lr2_bmsid": "742",
-    "md5": "cb32378ba605aa6439840a222f83688f",
-    "name_diff": "http://absolute.pv.land.to/Anotherbms.html",
-    "title": "Air -EXTREME-",
+    "comment": "",
+    "level": "See you in the next season!",
+    "lr2_bmsid": "1411",
+    "md5": "eb025ebb0c8a8ff5f39e1ebce1c2d08b",
+    "name_diff": "http://absolute.pv.land.to/",
+    "title": "Air -AFOTHER-",
     "url": "http://www.geocities.jp/bmsetc/",
-    "url_diff": "http://absolute.pv.land.to/Anotherbms.html"
-  },
-  {
-    "title": "Orfevre -Expert-",
-    "artist": "SHIKI",
-    "url": "http://manbow.nothing.sh/event/event.cgi?action=More_def&num=276&event=123",
-    "url_diff": "http://gnqg.rosx.net/upload/upload.cgi?get=02541",
-    "md5": "b31d63e8f79e8655fc461a9202a6f93c",
-    "sha256": "59aff0c27d04f9419fd2aecf049ddfc3fc6d7e4eafc4a2d1817abbffdf1e3ddf",
-    "level": "S3 Upper Bracket "
-  },
-  {
-    "artist": "SHIKI // BGA:あかくらげ & M.H / 29",
-    "level": "S3 Upper Bracket ",
-    "lr2_bmsid": "155859",
-    "md5": "3a1930e076a09704969aae374f5745e7",
-    "name_diff": "http://nekokan.dyndns.info/~lobsak/bms/repair_pack.zip",
-    "title": "Endless Dream [29Another]",
-    "url": "http://web.archive.org/web/20051117214439/http://kobe.cool.ne.jp/linker/",
-    "url_diff": "http://nekokan.dyndns.info/~lobsak/bms/repair_pack.zip"
-  },
-{
-    "artist": "SHIKI/fity / obj:A-zert",
-    "level": "S3 Upper Bracket ",
-    "lr2_bmsid": "541",
-    "md5": "04245f5649e814c54aa4e346abf1c28f",
-    "name_diff": "http://www.geocities.jp/azerty1s/",
-    "title": "Xecus - X -",
-    "url": "http://cid-ec29adccad727122.office.live.com/self.aspx/%E5%85%AC%E9%96%8B/SHIKI/%5BBMS%5D%5BBGA%20BATTLE%5D%5BSHIKI%20%5EM%20fity%5D%5BTrance%20core%5D%5BXecus%5D.7z",
-    "url_diff": "http://www.geocities.jp/azerty1s/"
-  },
-{
-    "level" : "S3 Lower Bracket ",
-        "title": "Crystal palace",
-        "subtitle": "[7HYPER+]",
-        "genre": "TRANCE CORE",
-        "artist": "SHIKI",
-        "subartist": "movie:Nyu",
-        "md5": "8583e58943c278990cbdc3170c4059e3",
-        "sha256": "26b19e903e3a41b9998c74460f8eb8f715f2df96251c4cc1aa1f8ddafe0ceb24",
-        "content": 3,
-        "stagefile": "stage_1280x720.png",
-        "charthash": "a40ac47bf80f1c672cf9fe6786d2e078261f3a9bd66ee9aa65b6cbcb65f89c5f",
-                                                                "url" : "http://bmsdrive.zris.work/BeMusicSeeker%20difficulty%20tables%20BMS%20PACK/BeMusicSeeker%20difficulty%20tables%20BMS%20PACK%20ver.210501%20patch/newsongs/Crystal%20palace.rar",
-                                                                "url_diff" : ""
-      },
-    {
-    "artist": "SHIKI",
-    "comment": "所属チーム「Black Jacks」\n\n作者HPからもDL可\nhttp://shiki2.sakura.ne.jp/",
-    "level": "S3 Lower Bracket ",
-    "lr2_bmsid": "39184",
-    "md5": "e077eb1e9eb29f0caff4e46869074766",
-    "name_diff": "SHIKI",
-    "title": "BABYLON [7ANOTHER]",
-    "url": "http://manbow.nothing.sh/event/event.cgi?action=More_def&num=179&event=60",
-    "url_diff": "http://manbow.nothing.sh/event/event.cgi?action=More_def&num=179&event=60"
-  },
-  {
-                                                                "level" : "S3 Lower Bracket ",
-        "title": "Metatron[7ANOTHER]",
-        "genre": "TRANCE CORE",
-        "artist": "SHIKI",
-        "md5": "a12e4d3cf4ce5f820b237bf3d0fa8580",
-        "sha256": "9bc9b0fcbd7b528febd577ad889622119f0e53e24204609d57857b37b82c9169",
-        "content": 3,
-        "stagefile": "metatron.png",
-        "charthash": "57c47dc53aa0a99bf8d2f9d203c80894f5fd75b946356aead8cf63f002de87e0",
-                                                                "url" : "http://bmsdrive.zris.work/BeMusicSeeker%20difficulty%20tables%20BMS%20PACK/BeMusicSeeker%20difficulty%20tables%20BMS%20PACK%20ver.201225/Metatron.rar",
-                                                                "url_diff" : ""
-      },
-    {
-                                                                "level" : "S3 Lower Bracket ",
-				"title": "Pure Ruby [Another]",
-				"genre": "TRANCE CORE",
-				"artist": "SHIKI",
-				"md5": "03c906bf1229a701a0471165242e1233",
-				"sha256": "6d1270197ee901082ccc0201599f1fe2e2b50db63c2b0ecc4a4b8acf953f3a52",
-				"content": 3,
-				"stagefile": "purerubytitle.bmp",
-				"charthash": "6365bf4bba7ac0d169445fa9bdf8b9bdf5e2c4fce895dcc88700860aacdc08df",
-                                                                "url" : "http://bmsdrive.zris.work/BeMusicSeeker%20difficulty%20tables%20BMS%20PACK/BeMusicSeeker%20difficulty%20tables%20BMS%20PACK%20ver.201225/Pure%20Ruby.rar",
-                                                                "url_diff" : ""
-			}
+    "url_diff": "http://absolute.pv.land.to/"
+  }
+
 ]
