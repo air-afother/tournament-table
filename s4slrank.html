@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<title>BMSA! S4 Upper Ranking</title>
+	<link rel="icon" type="image/x-icon" href="images/smerdy.jpg">
+      <meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	   
+	   
+      <style>
+html {
+  height: 100%;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  color: #fff;
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color:#0a0a10;
+table.center{
+ width: 90%;
+ margin: auto;
+}
+a{
+	color: #fff;
+	visited: #fff;
+	hovered: #fff;
+	active: #fff;
+}
+hr{
+	color: #fff;
+	width: 90%;
+	height: 1px;
+	background-color: #fff;
+}
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #0f0f16; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 10px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+/* Style the sidenav links and the dropdown button */
+.sidenav a, .sidenav img, .dropdown-btn {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 15px;
+  padding: 6px 8px 6px 16px;
+  color: #818181;
+  display: block;
+  border: none;
+  background: none;
+  width:100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+  text-decoration: none;
+}
+
+/* On mouse-over */
+.sidenav a:hover, .dropdown-btn:hover {
+  color: #f1f1f1;
+}
+
+/* Main content */
+#main {
+  transition: margin-left .5s;
+  padding-left: 2%;
+}
+
+/* Add an active class to the active dropdown button */
+.active {
+  background-color: #af8d19;
+  color: white;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown {
+  display: none;
+  background-color: #1d1d2e;
+  padding-left: 8px;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+footer {
+    position:fixed;
+    bottom: 2em;
+    float: left;
+    height: 35px;
+    font-size:10px;
+    background: none;
+    text-align: left;
+    padding-left: 2%;
+}
+
+</style>
+   </head>
+   <body>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="font-size:20px">&times;</a>
+  <a href="https://air-afother.github.io/tournament-table/">Homepage</a>
+  <button class="dropdown-btn">Season archive tables</button>
+  <div class="dropdown">
+  <a href="https://air-afother.github.io/tournament-table/sr-archive.html">Lower bracket archive</a>
+  <a href="https://air-afother.github.io/tournament-table/sl-archive.html">Upper bracket archive</a>
+  </div>
+  <button class="dropdown-btn">BMSA! S4: Beach Side BMS</button>
+	<div class="dropdown">
+		<a href="https://air-afother.github.io/tournament-table/s4srrank.html">Lower Bracket</a>
+		<a href="https://air-afother.github.io/tournament-table/s4slrank.html">Upper Bracket</a>
+	</div>
+  <button class="dropdown-btn">BMSA! S3: trance.system ONLINE</button>
+	<div class="dropdown">
+		<a href="https://air-afother.github.io/tournament-table/s3srrank.html">Lower Bracket</a>
+		<a href="https://air-afother.github.io/tournament-table/s3slrank.html">Upper Bracket</a>
+	</div>
+  <button class="dropdown-btn">BMSA! S2: DENPA NEVER DIE</button>
+	<div class="dropdown">
+		<a href="https://air-afother.github.io/tournament-table/s2srrank.html">Lower Bracket</a>
+		<a href="https://air-afother.github.io/tournament-table/s2slrank.html">Upper Bracket</a>
+	</div>
+</div>
+
+<!-- Use any element to open the sidenav -->
+  
+<div id="main" class="main">
+<div class="goofy-container" style="position:fixed;top:0;height:4.5em;left:0;right:0;background-color:#af8d19">
+<div class="title" style="padding-left:2%">
+      <img src="images/burger.png" alt="burger" style="width:2em;height:2em;display:inline-block;vertical-align: middle;" onclick="openNav()">
+ 	<h1 style="margin-left:2%;display:inline-block;vertical-align:middle;">Bottoni Monthly Score Attack!</h1>
+	<p id="flavor-text" style="display:inline-block;vertical-align:middle;float:right;padding-right:2%;"></p>
+</div>
+</div>
+<iframe src="https://script.google.com/macros/s/AKfycbwvU0p0ouWm7YHigHyVMMbAic5nx2EDVbIpdddQblia0KLlEyLZTtnO8CCYWYHuhzw48A/exec" 
+style="overflow:scroll;overflow-x:hidden;height:100%;width:100%;position:fixed;top:4.5em;bottom:0;left:0px;right:0px" height="100%" width="100%" frameBorder="0"></iframe>
+  <script>
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+}
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+/* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+} 
+ var textarray = [
+ "enjoy the cool air out on the",
+ "take the world by storm",
+ "a refreshing atmosphere",
+ "FEEL'in SEPIA AIR",
+ "0xE9504DF6 think purple",
+ "waiting contact with",
+ "st9 Clear Detector Technology",
+ "Suggest more texts on discord!",
+ "eeffoc",
+ "I heard you like nanahira?",
+ "Battery Manageement System",
+ "Alcohol abuse? I love alcohol I would never"
+ ];
+ function RndText() {
+ var rannum= Math.floor(Math.random()*textarray.length);
+ document.getElementById('flavor-text').innerHTML=textarray[rannum];
+ }
+ onload = function() { RndText(); }
+</script>
+</body>
+</html>
