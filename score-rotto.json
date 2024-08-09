@@ -6,7 +6,7 @@
     "url_diff": "http://kspinbms.web.fc2.com/insane.html",
     "md5": "57d5f0db1acb5f612d2ae91f0db60325",
     "sha256": "4ea006d3935a5f8ea9751206e2587877236efe4b7fb31dcba126f9df733f1da9",
-    "level": "Upper",
+    "level": "Upper"
   },
     {
     "title": "BEYOND [KITSUNE]",
@@ -15,7 +15,7 @@
     "url_diff": "https://darksabun.github.io/event/rof2022/table.html",
     "md5": "35aa9799ed7150c61c2ffa3c84f4a8d7",
     "sha256": "a8b1b5cb7cda2379349705ec3a8039d810f1fdcea5a38252c1206aaa443b0b72",
-    "level": "Upper",
+    "level": "Upper"
   },
     {
     "title": "ha＠ppy s＠mmer v＠c＠tion!! [Eb]",
@@ -24,7 +24,7 @@
     "url_diff": "http://eboots.ashigaru.jp/",
     "md5": "c12683308c6abb86e8637bf0c914e780",
     "sha256": "b8ec4aba755ee0a9419c229903d1470a0c349e3fbc9f521284ac70556f2208d3",
-    "level": "Upper",
+    "level": "Upper"
     },
   			{
                                                                 "level" : "Lower",
@@ -57,19 +57,19 @@
                                                                 "url" : "http://bmsdrive.zris.work/BeMusicSeeker%20difficulty%20tables%20BMS%20PACK/BeMusicSeeker%20difficulty%20tables%20BMS%20PACK%20ver.201225/Late%20Summer.rar",
                                                                 "url_diff" : ""
 			},
-  			{
-                                                                "level" : "11",
+{
+                                                                "level" : "Lower",
                                                                 "comment" : "",
-				"title": "Late Summer [milky way]",
-				"genre": "Progressive House",
-				"artist": "Ryo Nakamura",
-				"subartist": "Movie : Photonskyto obj : shimizushi",
-				"md5": "b59d9e1f2514e812cf2902808ffb4bcb",
-				"sha256": "4acf84d68335671634dd4d81dbd827a5063f086f3c1095d86d51587219ac44fb",
-				"content": 3,
-				"stagefile": "late_summer_title.jpg",
-				"charthash": "e0f382758a6affeb61cda6f32e84c8fd0a5174a59a0c27764c8082798625b11a",
-                                                                "url" : "http://bmsdrive.zris.work/BeMusicSeeker%20difficulty%20tables%20BMS%20PACK/BeMusicSeeker%20difficulty%20tables%20BMS%20PACK%20ver.201225/Late%20Summer.rar",
+				"title": "scorching:cyclone [SP ANOTHER]",
+				"genre": "HARD ROCK",
+				"artist": "かゆき",
+				"subartist": "Movie:Nao_AnD",
+				"md5": "29eac6d2820febba4097b8917817b7f0",
+				"sha256": "0bf10e24e447aea8931cda723219fe890227490f726d8469fcad7c6ba9143f69",
+				"content": 2,
+				"stagefile": "sc_sf.png",
+				"charthash": "2ac773ae79d1e1b0093d008c789524f4d9a3b0a2769405c7a25e19c5833c650d",
+                                                                "url" : "https://cncncloud.com/s/vpLGycJ",
                                                                 "url_diff" : ""
 			}
 ]
