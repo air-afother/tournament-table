@@ -26,6 +26,15 @@
     "sha256": "b8ec4aba755ee0a9419c229903d1470a0c349e3fbc9f521284ac70556f2208d3",
     "level": "Upper "
     },
+  {
+    "title": "八大地獄邪魂転生狂葬散火歌 [乃憂魔流]",
+    "artist": "さかみりと img:しぐれぷに子",
+    "url": "http://manbow.nothing.sh/event/event.cgi?action=More_def&num=35&event=116",
+    "url_diff": "",
+    "md5": "7c58f39a3c257c585e52fc9820c0070c",
+    "level": "Upper ",
+    "sha256": "5b17d60230dde920b19d3d1c35622f78c9cf25ca3ca90d9eb57bdb08a653d9bc"
+  },
   			{
                                                                 "level" : "Lower ",
                                                                 "comment" : "",
@@ -70,6 +79,19 @@
 				"stagefile": "sc_sf.png",
 				"charthash": "2ac773ae79d1e1b0093d008c789524f4d9a3b0a2769405c7a25e19c5833c650d",
                                                                 "url" : "https://cncncloud.com/s/vpLGycJ",
+                                                                "url_diff" : ""
+			},
+	{
+                                                                "level" : "Lower ",
+                                                                "comment" : "",
+				"title": "V!rtuaresort",
+				"genre": "Dwelling Airplane",
+				"artist": "seatrus",
+				"md5": "7388bab78ba7407e72ab46c6dbfeda62",
+				"sha256": "1931e7bf223b41f71379295af2073a89e6ae3710d3380fa873a57a44cf9d2a75",
+				"content": 3,
+				"charthash": "eba07754d000d6f3d2757bb0d970afadd0ca99d991e160514dc92fa6c6d3c5b7",
+                                                                "url" : "http://bmsdrive.zris.work/BeMusicSeeker%20difficulty%20tables%20BMS%20PACK/BeMusicSeeker%20difficulty%20tables%20BMS%20PACK%20ver.220501%20patch/newsongs/V!rtuaresort.rar",
                                                                 "url_diff" : ""
 			}
 ]
