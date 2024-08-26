@@ -1,27 +1,27 @@
 [
     {
         "title": "Doppelganger[HYPER]",
-      "level": "Season 1 ",
+      "level": "S1: Best Music Selection ",
       "md5": "dad53c2e0914f6867da3e4e2eacd69fa"
     },
     {
         "title": "Dreadnought [HYPER]",
-      "level": "Season 1 ",
+      "level": "S1: Best Music Selection ",
       "md5": "391f578d80d59d4edd99a3966a7a6e92"
     },
      {
          "title": "B.B.K.K.B.K.K. (ANOTHER)",
-      "level": "Season 1 ",
+      "level": "S1: Best Music Selection ",
       "md5": "6ba57c0187a93635a8caa93f7e2061fd"
     },{
         "title": "Re:End of a Dream",
-      "level": "Season 1 ",
+      "level": "S1: Best Music Selection ",
       "md5": "8b02205f82ec29a0cdb97af2d84ce7d9"
     },
     {
     	"title": "お兄火[SP Another]",
 	"genre": "ONISAMA SWING",
-	"level": "Season 2 ",
+	"level": "S2: DENPA NEVER DIE ",
 	"artist": "Ponchi♪ feat.はぁち",
 	"subartist": "obj:mathath",
 	"md5": "f973aaaad058cebc81169814c4506c98",
@@ -35,7 +35,7 @@
         "url_diff" : ""
 },
 {
- 	"level" : "Season 2 ",
+ 	"level" : "S2: DENPA NEVER DIE ",
         "comment" : "",
 	"title": "ぱぴぽ？ [HYPER]",
 	"genre": "宇宙幼女",
@@ -52,7 +52,7 @@
         "url_diff" : ""
 },
 {
-	"level" : "Season 2 ",
+	"level" : "S2: DENPA NEVER DIE ",
         "comment" : "",
 	"title": "プナイプナイたいそう",
 	"subtitle": "[SP ANOTHER]",
@@ -66,7 +66,7 @@
         "url_diff" : ""
 			},
 {
-	"level" : "Season 2 ",
+	"level" : "S2: DENPA NEVER DIE ",
         "comment" : "",
 	"title": "バーチャルセラピー",
 	"subtitle": "[SP ANOTHER]",
@@ -82,7 +82,7 @@
         "url_diff" : ""
 	},
   {
-    "level": "Season 2 ",
+    "level": "S2: DENPA NEVER DIE ",
     "title": "インドア系ならトラックメイカー［ANOTHER］ 199024club mix",
     "artist": "Yunomi & nicamoq remixed by 王 宙航",
     "md5": "70c0840620009182a8f1cfe89dfa01ae",
@@ -91,7 +91,7 @@
     "url_diff": ""
   },
 {
-    "level" : "Season 3 ",
+    "level" : "S3: trance.system ONLINE ",
         "title": "Crystal palace",
         "subtitle": "[7HYPER+]",
         "genre": "TRANCE CORE",
@@ -108,7 +108,7 @@
     {
     "artist": "SHIKI",
     "comment": "所属チーム「Black Jacks」\n\n作者HPからもDL可\nhttp://shiki2.sakura.ne.jp/",
-    "level": "Season 3 ",
+    "level": "S3: trance.system ONLINE ",
     "lr2_bmsid": "39184",
     "md5": "e077eb1e9eb29f0caff4e46869074766",
     "name_diff": "SHIKI",
@@ -117,7 +117,7 @@
     "url_diff": "http://manbow.nothing.sh/event/event.cgi?action=More_def&num=179&event=60"
   },
   {
-                                                                "level" : "Season 3 ",
+                                                                "level" : "S3: trance.system ONLINE ",
         "title": "Metatron[7ANOTHER]",
         "genre": "TRANCE CORE",
         "artist": "SHIKI",
@@ -130,7 +130,7 @@
                                                                 "url_diff" : ""
       },
     {
-                                                                "level" : "Season 3 ",
+                                                                "level" : "S3: trance.system ONLINE ",
         "title": "Pure Ruby [Another]",
         "genre": "TRANCE CORE",
         "artist": "SHIKI",
@@ -141,5 +141,64 @@
         "charthash": "6365bf4bba7ac0d169445fa9bdf8b9bdf5e2c4fce895dcc88700860aacdc08df",
                                                                 "url" : "http://bmsdrive.zris.work/BeMusicSeeker%20difficulty%20tables%20BMS%20PACK/BeMusicSeeker%20difficulty%20tables%20BMS%20PACK%20ver.201225/Pure%20Ruby.rar",
                                                                 "url_diff" : ""
-      }
+      },
+     {
+                                                                "level" : "S4: Beach Side BMS ",
+                                                                "comment" : "",
+				"title": "Breeze",
+				"subtitle": "[ANOTHER7]",
+				"genre": "House",
+				"artist": "Kankitsu",
+				"md5": "ef48d9846c6d9c68d4843fcfd0d4005a",
+				"sha256": "e977f544e3b09e9f285494d8ea2815c2550041bc6952ca9e381a620e98ab9037",
+				"content": 3,
+				"stagefile": "title.jpg",
+				"backbmp": "backbmp.bmp",
+				"charthash": "8d3e4085c52e3845afeeb693f2c1a83ade1e6acb8c9544fbf1d00a372add1283",
+                                                                "url" : "http://bmsdrive.zris.work/BeMusicSeeker%20difficulty%20tables%20BMS%20PACK/BeMusicSeeker%20difficulty%20tables%20BMS%20PACK%20ver.201225/Breeze.rar",
+                                                                "url_diff" : ""
+			},
+  			{
+                                                                "level" : "S4: Beach Side BMS ",
+                                                                "comment" : "",
+				"title": "Late Summer [milky way]",
+				"genre": "Progressive House",
+				"artist": "Ryo Nakamura",
+				"subartist": "Movie : Photonskyto obj : shimizushi",
+				"md5": "b59d9e1f2514e812cf2902808ffb4bcb",
+				"sha256": "4acf84d68335671634dd4d81dbd827a5063f086f3c1095d86d51587219ac44fb",
+				"content": 3,
+				"stagefile": "late_summer_title.jpg",
+				"charthash": "e0f382758a6affeb61cda6f32e84c8fd0a5174a59a0c27764c8082798625b11a",
+                                                                "url" : "http://bmsdrive.zris.work/BeMusicSeeker%20difficulty%20tables%20BMS%20PACK/BeMusicSeeker%20difficulty%20tables%20BMS%20PACK%20ver.201225/Late%20Summer.rar",
+                                                                "url_diff" : ""
+			},
+{
+                                                                "level" : "S4: Beach Side BMS ",
+                                                                "comment" : "",
+				"title": "scorching:cyclone [SP ANOTHER]",
+				"genre": "HARD ROCK",
+				"artist": "かゆき",
+				"subartist": "Movie:Nao_AnD",
+				"md5": "29eac6d2820febba4097b8917817b7f0",
+				"sha256": "0bf10e24e447aea8931cda723219fe890227490f726d8469fcad7c6ba9143f69",
+				"content": 2,
+				"stagefile": "sc_sf.png",
+				"charthash": "2ac773ae79d1e1b0093d008c789524f4d9a3b0a2769405c7a25e19c5833c650d",
+                                                                "url" : "https://cncncloud.com/s/vpLGycJ",
+                                                                "url_diff" : ""
+			},
+	{
+                                                                "level" : "S4: Beach Side BMS ",
+                                                                "comment" : "",
+				"title": "V!rtuaresort",
+				"genre": "Dwelling Airplane",
+				"artist": "seatrus",
+				"md5": "7388bab78ba7407e72ab46c6dbfeda62",
+				"sha256": "1931e7bf223b41f71379295af2073a89e6ae3710d3380fa873a57a44cf9d2a75",
+				"content": 3,
+				"charthash": "eba07754d000d6f3d2757bb0d970afadd0ca99d991e160514dc92fa6c6d3c5b7",
+                                                                "url" : "http://bmsdrive.zris.work/BeMusicSeeker%20difficulty%20tables%20BMS%20PACK/BeMusicSeeker%20difficulty%20tables%20BMS%20PACK%20ver.220501%20patch/newsongs/V!rtuaresort.rar",
+                                                                "url_diff" : ""
+			}
 ]
