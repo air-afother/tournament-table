@@ -1,24 +1,24 @@
 [
     {
         "title": "The Last Page [Endgame]",
-      "level": "Season 1 ",
+      "level": "S1: Best Music Selection ",
       "md5": "31d94f9c12d00a95b059e0a0629232a0"
     },
     {
         "title": "GOODTEK",
         "subtitle": "[鷺梁津駅1番出口から徒歩10分]",
-      "level": "Season 1 ",
+      "level": "S1: Best Music Selection ",
       "md5": "139a001df176d2ceb8e24ed2661501f4"
     },
     {
         "title": "MARENOL[HARDEST]",
-      "level": "Season 1 ",
+      "level": "S1: Best Music Selection ",
       "md5": "6273dd7ff6f719b5267b67a2826b69bd"
     },
     {
         "title": "ENERGY SYNERGY MATRIX",
 	"subtitle": "[Nemesis]",
-      "level": "Season 1 ",
+      "level": "S1: Best Music Selection ",
       "md5": "07d0643bd73d5aba7415b513003b38cf"
     },
     
@@ -29,7 +29,7 @@
     "url_diff": "",
     "md5": "51db12e2efed6a9ebf867ad61ef90805",
     "sha256": "f4eca01e593bc98d233335c95c88a271ddf5743f5d12af3562eabd229180116a",
-    "level": "Season 2 "
+    "level": "S2: DENPA NEVER DIE "
   },
   {
     "title": "バーチャルセラピー [物量セラピー]",
@@ -38,7 +38,7 @@
     "url_diff": "http://gnqg.rosx.net/upload/upload.cgi?get=02362",
     "md5": "6c0d37102eddd177de86a304b95c647a",
     "sha256": "85068795dc0950fc82cdc61366c25c47fe7cb7206d660441d6799bb8f5fedf4e",
-    "level": "Season 2 "
+    "level": "S2: DENPA NEVER DIE "
   },
   {
     "title": "お兄火 [ヤンデレの女の子に死ぬほど愛されて眠れないお兄ちゃん]",
@@ -47,7 +47,7 @@
     "url_diff": "https://1drv.ms/u/s!ApwaJAUHJdpyml22QXQM-mZuIs2Z?e=OQv90Z",
     "md5": "531b646233a9bbb38aec58dbd2d91937",
     "sha256": "791788deb68a3f32043ae750f6c789404b99584092bec356bcb295cf922379d4",
-    "level": "Season 2 "
+    "level": "S2: DENPA NEVER DIE "
   },
   {
     "title": "ぱぴぽ？ -でぃすぺあ-",
@@ -56,7 +56,7 @@
     "url_diff": "https://egosa0424.github.io/sabun/papipo_nanami_fix.zip",
     "md5": "32384e2ce36d8da907072a4a70f42497",
     "sha256": "ccaa068a9558c16f3e01b67ceea6dd31a46ea4a5cd7aaa40c3ac7dd9eb523c0b",
-    "level": "Season 2 "
+    "level": "S2: DENPA NEVER DIE "
   },
   {
     "title": "プナイプナイせんそう [LITTLE DAEMON]",
@@ -65,11 +65,11 @@
     "url_diff": "http://gnqg.rosx.net/upload/upload.cgi?get=02682",
     "md5": "9d70d0f80d97d0143f86dec260216f8b",
     "sha256": "0005d24b3b94c2bd6af580fe6e46f4fa5ee38a49149875b008fcd31f74899c74",
-    "level": "Season 2 "
+    "level": "S2: DENPA NEVER DIE "
   },
 {
     "artist": "SHIKI / black train",
-    "level": "Season 3 ",
+    "level": "S3: trance.system ONLINE ",
     "lr2_bmsid": "742",
     "md5": "cb32378ba605aa6439840a222f83688f",
     "name_diff": "http://absolute.pv.land.to/Anotherbms.html",
@@ -84,11 +84,11 @@
     "url_diff": "http://gnqg.rosx.net/upload/upload.cgi?get=02541",
     "md5": "b31d63e8f79e8655fc461a9202a6f93c",
     "sha256": "59aff0c27d04f9419fd2aecf049ddfc3fc6d7e4eafc4a2d1817abbffdf1e3ddf",
-    "level": "Season 3 "
+    "level": "S3: trance.system ONLINE "
   },
   {
     "artist": "SHIKI // BGA:あかくらげ & M.H / 29",
-    "level": "Season 3 ",
+    "level": "S3: trance.system ONLINE ",
     "lr2_bmsid": "155859",
     "md5": "3a1930e076a09704969aae374f5745e7",
     "name_diff": "http://nekokan.dyndns.info/~lobsak/bms/repair_pack.zip",
@@ -98,12 +98,48 @@
   },
 {
     "artist": "SHIKI/fity / obj:A-zert",
-    "level": "Season 3 ",
+    "level": "S3: trance.system ONLINE ",
     "lr2_bmsid": "541",
     "md5": "04245f5649e814c54aa4e346abf1c28f",
     "name_diff": "http://www.geocities.jp/azerty1s/",
     "title": "Xecus - X -",
     "url": "http://cid-ec29adccad727122.office.live.com/self.aspx/%E5%85%AC%E9%96%8B/SHIKI/%5BBMS%5D%5BBGA%20BATTLE%5D%5BSHIKI%20%5EM%20fity%5D%5BTrance%20core%5D%5BXecus%5D.7z",
     "url_diff": "http://www.geocities.jp/azerty1s/"
+  },
+  {
+    "title": "Citrus Sunset *･゜ﾟ･*:.｡..｡.:*･'(*ﾟ▽ﾟ*)'･*:.｡. .｡.:*･゜ﾟ･*",
+    "artist": "Vanilla Flavor BGA: AW / obj: Caramel Flavor",
+    "url": "http://manbow.nothing.sh/event/event.cgi?action=More_def&num=10&event=109",
+    "url_diff": "http://kspinbms.web.fc2.com/insane.html",
+    "md5": "57d5f0db1acb5f612d2ae91f0db60325",
+    "sha256": "4ea006d3935a5f8ea9751206e2587877236efe4b7fb31dcba126f9df733f1da9",
+    "level": "S4: Beach Side BMS "
+  },
+    {
+    "title": "BEYOND [KITSUNE]",
+    "artist": "Lime obj:raikhan_",
+    "url": "https://manbow.nothing.sh/event/event.cgi?action=More_def&event=133&num=492",
+    "url_diff": "https://darksabun.github.io/event/rof2022/table.html",
+    "md5": "35aa9799ed7150c61c2ffa3c84f4a8d7",
+    "sha256": "a8b1b5cb7cda2379349705ec3a8039d810f1fdcea5a38252c1206aaa443b0b72",
+    "level": "S4: Beach Side BMS "
+  },
+    {
+    "title": "ha＠ppy s＠mmer v＠c＠tion!! [Eb]",
+    "artist": "ああああ + 翡乃イスカ obj:いい靴",
+    "url": "https://bms.kyouko.moe/torrent/BMS_Library/ha@ppy%20s@mmer%20v@c@tion!!%20(by%20%E3%81%82%E3%81%82%E3%81%82%E3%81%82%20+%20%E7%BF%A1%E4%B9%83%E3%82%A4%E3%82%B9%E3%82%AB).rar",
+    "url_diff": "http://eboots.ashigaru.jp/",
+    "md5": "c12683308c6abb86e8637bf0c914e780",
+    "sha256": "b8ec4aba755ee0a9419c229903d1470a0c349e3fbc9f521284ac70556f2208d3",
+    "level": "S4: Beach Side BMS "
+    },
+  {
+    "title": "八大地獄邪魂転生狂葬散火歌 [乃憂魔流]",
+    "artist": "さかみりと img:しぐれぷに子",
+    "url": "http://manbow.nothing.sh/event/event.cgi?action=More_def&num=35&event=116",
+    "url_diff": "",
+    "md5": "7c58f39a3c257c585e52fc9820c0070c",
+    "level": "S4: Beach Side BMS ",
+    "sha256": "5b17d60230dde920b19d3d1c35622f78c9cf25ca3ca90d9eb57bdb08a653d9bc"
   }
 ]
