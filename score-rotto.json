@@ -1,13 +1,80 @@
 [
-  {
-    "artist": "SHIKI / black train",
+{
+    "artist": "HOLY SAMBA MASTER 佐藤 -SATOH-",
     "comment": "",
-    "level": "See you in the next season!",
-    "lr2_bmsid": "1411",
-    "md5": "eb025ebb0c8a8ff5f39e1ebce1c2d08b",
-    "name_diff": "http://absolute.pv.land.to/",
-    "title": "Air -AFOTHER-",
-    "url": "http://www.geocities.jp/bmsetc/",
-    "url_diff": "http://absolute.pv.land.to/"
+    "level": "Lower ",
+    "lr2_bmsid": "197352",
+    "md5": "4d87528933213d3427ee870c71791538",
+    "name_diff": "HOLY SAMBA MASTER 佐藤 -SATOH-",
+    "title": "ホーリーサンバランド [HYPER]",
+    "url": "http://manbow.nothing.sh/event/event.cgi?action=More_def&num=193&event=96",
+    "url_diff": "http://manbow.nothing.sh/event/event.cgi?action=More_def&num=193&event=96"
+  },
+  {
+      "artist":"HARD RENAISSAMBA MASTER 佐藤 -SATOH-",
+      "level":"Lower ",
+    "proposer":"3254m",
+    "title":"ハードルネッサンバ [HYPER7]",
+    "url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=409&event=104",
+    "url_diff":"",
+    "total":538.0,
+    "eval":0,
+    "comment":"",
+    "state":230120,
+    "tag":"階段",
+    "judge":3,
+    "name_diff":"",
+    "md5":"91363d3eba3116d8a9734082133cfcf0"
+  },
+  {
+    "level": "Lower ",
+    "title": "SAMBISTA [sio-another]",
+    "artist": "DOT96 / obj.siokaze",
+    "md5": "30b7ac9255e3c56df64e424aca0dab0b",
+    "comment": "",
+    "url": "http://manbow.nothing.sh/event/event.cgi?action=More_def&num=96&event=54",
+    "url_diff": "http://siokazebms.web.fc2.com/"
+  },
+{  
+    "artist":"ダークサンバマスター佐藤 -SATOH-",
+    "level":"Upper ",
+    "title":"ダークサンバランド [Dark Another]",
+    "url":"http://manbow.nothing.sh/event/event.cgi?action=More_def&num=417&event=88",
+    "url_diff":"",
+    "total":0.0,
+    "eval":-1,
+    "comment":"中速微縦連複合。ラス殺し。",
+    "state":0,
+    "tag":null,
+    "judge":3,
+    "name_diff":"",
+    "md5":"3bc38a1fa6c84ff806dd35e02da7b129"
+    },
+      {
+        "artist":"SAMBA MASTER 佐藤 -SATOH-",
+        "level":"Upper ",
+        "title":"サンバランド L( ＾ω＾ )┘+♪",
+        "url":"http://colosseo.nekokan.dyndns.info/c02_shuffle/detail.php?n=61",
+        "url_diff":"http://siokazebms.web.fc2.com/",
+        "eval":0,
+        "comment":"低速重発狂と12分連皿。休憩の無い物量系。",
+        "state":0,
+        "tag":null,
+        "name_diff":"siokaze",
+        "md5":"8a4c80491a2d3c0f954d961b2e17c647",
+        "total":500.0,
+        "judge":3
+    },
+    {
+    "title": "ホーリーサンバランド [FIRST BOSS]",
+    "artist": "HOLY SAMBA MASTER 佐藤 -SATOH- obj:BAECON",
+    "url": "http://manbow.nothing.sh/event/event.cgi?action=More_def&num=193&event=96",
+    "url_diff": "",
+    "md5": "47045de25d9d2f9d7a36fec1fa6b86af",
+    "sha256": "072cbb55477ad7e83d2ef7a53e6f6bebedf58739c3bb2e7de5fe0a16c78b40b2",
+    "level": "Upper ",
+    "proposer": "Fendou",
+    "comment": "SAMBA MASTER",
+    "submission": 1447
   }
 ]
