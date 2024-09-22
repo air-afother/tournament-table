@@ -35,6 +35,19 @@
     "url": "http://manbow.nothing.sh/event/event.cgi?action=More_def&num=96&event=54",
     "url_diff": "http://siokazebms.web.fc2.com/"
   },
+  {
+    "title": "☆ウィンドサンバランド☆ -ANOTHER-",
+    "artist": "SAMBA MASTER 佐藤 -SATOH- Remixed by Yosk!",
+    "url": "http://manbow.nothing.sh/event/event.cgi?action=More_def&num=13&event=123",
+    "url_diff": "",
+    "md5": "d92247e0b57d649619e7b4652d8098dc",
+    "sha256": "ee6ce6da99b20e2463037d056e97b93fb6c90698c18bd004b86e37db660c4467",
+    "level": "Lower ",
+    "proposer": "qtp13",
+    "comment": "✌ ('ω') ✌",
+    "submission": 283,
+    "proposerLr2id": 86559
+  },
 {  
     "artist":"ダークサンバマスター佐藤 -SATOH-",
     "level":"Upper ",
@@ -76,5 +89,17 @@
     "proposer": "Fendou",
     "comment": "SAMBA MASTER",
     "submission": 1447
-  }
+  },
+  {
+    "title": "ハードルネッサンバ [ANOTHER BOSS]",
+    "artist": "HARD RENAISSAMBA MASTER 佐藤 -SATOH- obj.JoeT",
+    "url": "http://manbow.nothing.sh/event/event.cgi?action=More_def&num=409&event=104",
+    "url_diff": "http://gnqg.rosx.net/upload/upload.cgi?get=02875",
+    "md5": "216063bc06f7c34b03e8932d54b67dce",
+    "sha256": "e2927761b6729709475fa9cf4e5f69a8ca3befcd8e7a50c65305542004a4f3b7",
+    "level": "Upper ",
+    "proposer": "椒図",
+    "comment": "双階段 乱打 复合皿",
+    "submission": 870
+  },
 ]
