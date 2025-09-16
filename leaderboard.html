@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="it"><head>
+<meta charset="utf-8"><title>Leaderboard</title>
+<style>
+body { font-family: Arial, sans-serif; background: #f5f7fa; margin:0; padding:20px; }
+h1 { text-align:center; margin-bottom:20px; }
+table { border-collapse: collapse; margin:0 auto; width:90%; max-width:1000px; background:#fff;
+        box-shadow:0 4px 8px rgba(0,0,0,0.1); border-radius:10px; overflow:hidden; }
+th,td { border:1px solid #ddd; padding:10px; text-align:center; }
+th { background:#4CAF50; color:white; cursor:pointer; }
+tr:nth-child(even){background:#f9f9f9;} tr:hover{background:#f1f1f1;}
+</style></head><body>
+<h1>Leaderboard</h1>
+<table id="leaderboard"><thead><tr><th onclick='sortTable(0)'>userID</th><th onclick='sortTable(1)'>Title1</th><th onclick='sortTable(2)'>Title2</th><th onclick='sortTable(3)'>Title3</th><th onclick='sortTable(4)'>Title4</th><th onclick='sortTable(5)'>Title5</th><th onclick='sortTable(6)'>total</th></tr></thead><tbody><tr><td>ergo</td><td>0</td><td>0</td><td>3976</td><td>3425</td><td>0</td><td>7401</td></tr>
+<tr><td>mizumi_a</td><td>0</td><td>0</td><td>3606</td><td>0</td><td>0</td><td>3606</td></tr>
+<tr><td>dotLight</td><td>0</td><td>0</td><td>0</td><td>208</td><td>2515</td><td>2723</td></tr>
+<tr><td>Eedu</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr></tbody></table>
+<script>
+function parseCellValue(v){ if(v===""||v===null) return -Infinity;
+  var n=parseInt(v); if(!isNaN(n)) return n; return v.toString().toLowerCase();}
+function sortTable(c){const t=document.getElementById("leaderboard");const b=t.tBodies[0];
+  const r=Array.from(b.querySelectorAll("tr"));
+  r.sort((a,b)=>{const av=a.children[c].innerText.trim(), bv=b.children[c].innerText.trim();
+  const ap=parseCellValue(av), bp=parseCellValue(bv); if(ap<bp) return -1; if(ap>bp) return 1; return 0;});
+  const f=r[0].children[c].innerText.trim(), s=r[1]?r[1].children[c].innerText.trim():null;
+  if(f!==""&&s!==null){const fv=parseCellValue(f), sv=parseCellValue(s); if(fv<sv) r.reverse();}
+  b.innerHTML=""; r.forEach(rr=>b.appendChild(rr));}
+</script></body></html>
