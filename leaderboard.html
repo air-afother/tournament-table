@@ -107,7 +107,6 @@ tr:hover { background: #2a2a3d; }
   <a href="index.html">Home</a>
   <a href="s5slrank.html">S5SL Rank</a>
   <a href="leaderboard.html">Leaderboard</a>
-  <!-- aggiungi altri link se necessario -->
 </div>
 
 <div id="main">
@@ -123,12 +122,6 @@ tr:hover { background: #2a2a3d; }
 </div>
 
 <script>
-function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
-}
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-}
 function parseCellValue(v){
     if(v === "" || v === null) return -Infinity;
     var n = parseInt(v);
@@ -157,6 +150,51 @@ function sortTable(colIndex) {
   tbody.innerHTML = "";
   rows.forEach(r => tbody.appendChild(r));
 }
+
+/* Side nav */
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+
+/* Funny flavor text */
+var textarray = [
+ "enjoy the cool air out on the",
+ "take the world by storm",
+ "a refreshing atmosphere",
+ "FEEL'in SEPIA AIR",
+ "0xE9504DF6 think purple",
+ "waiting contact with",
+ "st9 Clear Detector Technology",
+ "Suggest more texts on discord!",
+ "eeffoc",
+ "I heard you like nanahira?",
+ "Battery Manageement System",
+ "zkldi where is my sieglinde",
+ "Alcohol abuse? I love alcohol I would never",
+ "Blame the heat",
+ "there's a heat that's inspiring my second shower",
+ "fuckin' hot as hell on this train",
+ "I don't know how you can play bms in this heat",
+ "playing anything in this heat is idk",
+ "i will give a high five to the guy who created fans that shit lit",
+ "it's TOO HOT to gremare",
+ "+ hot",
+ "despite the heat it was finally decided to do it anyway",
+ "Today despite the heat I tried anyway",
+ "I haven't opened rhythm games since late June because of heat",
+ "me on the other hand thinking of skipping August because it's too hot",
+ "Mh yes indeed it doesn't seem the best in this heat ahahahdav",
+ "in this heat you can't make it"
+];
+
+function RndText() {
+  var rannum = Math.floor(Math.random()*textarray.length);
+  document.getElementById('flavor-text').innerHTML=textarray[rannum];
+}
+onload = function() { RndText(); }
 </script>
 </body>
 </html>
