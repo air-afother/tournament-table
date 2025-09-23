@@ -1,29 +1,162 @@
-<!doctype html>
-<html lang="it"><head>
-<meta charset="utf-8"><title>Leaderboard</title>
-<style>
-body { font-family: Arial, sans-serif; background: #f5f7fa; margin:0; padding:20px; }
-h1 { text-align:center; margin-bottom:20px; }
-table { border-collapse: collapse; margin:0 auto; width:90%; max-width:1000px; background:#fff;
-        box-shadow:0 4px 8px rgba(0,0,0,0.1); border-radius:10px; overflow:hidden; }
-th,td { border:1px solid #ddd; padding:10px; text-align:center; }
-th { background:#4CAF50; color:white; cursor:pointer; }
-tr:nth-child(even){background:#f9f9f9;} tr:hover{background:#f1f1f1;}
-</style></head><body>
-<h1>Leaderboard</h1>
-<table id="leaderboard"><thead><tr><th onclick='sortTable(0)'>userID</th><th onclick='sortTable(1)'>Title1</th><th onclick='sortTable(2)'>Title2</th><th onclick='sortTable(3)'>Title3</th><th onclick='sortTable(4)'>Title4</th><th onclick='sortTable(5)'>Title5</th><th onclick='sortTable(6)'>total</th></tr></thead><tbody><tr><td>ergo</td><td>0</td><td>0</td><td>3976</td><td>3425</td><td>0</td><td>7401</td></tr>
-<tr><td>mizumi_a</td><td>0</td><td>0</td><td>3606</td><td>0</td><td>0</td><td>3606</td></tr>
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <title>BMSA! Leaderboard</title>
+  <link rel="icon" type="image/x-icon" href="images/smerdy.jpg">
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
+  <style>
+html, body {
+  height: 100%;
+  margin: 0;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  color: #fff;
+  background-color: #0a0a10;
+}
+.goofy-container {
+  position:fixed;
+  top:0;
+  height:4.5em;
+  left:0;
+  right:0;
+  background-color:#af8d19;
+  z-index:2;
+}
+.goofy-container h1 {
+  margin-left:2%;
+  display:inline-block;
+  vertical-align:middle;
+}
+#main {
+  padding-top:6em;
+}
+/* Side navigation */
+.sidenav {
+  height:100%;
+  width:0;
+  position:fixed;
+  z-index:3;
+  top:0;
+  left:0;
+  background-color:#111;
+  overflow-x:hidden;
+  transition:0.5s;
+  padding-top:60px;
+}
+.sidenav a {
+  padding:8px 8px 8px 32px;
+  text-decoration:none;
+  font-size:25px;
+  color:#818181;
+  display:block;
+  transition:0.3s;
+}
+.sidenav a:hover {
+  color:#f1f1f1;
+}
+.sidenav .closebtn {
+  position:absolute;
+  top:0;
+  right:25px;
+  font-size:36px;
+  margin-left:50px;
+}
+/* Leaderboard table */
+table {
+  border-collapse: collapse;
+  margin: 2em auto;
+  width: 90%;
+  max-width: 1200px;
+  background:#1d1d2e;
+  border-radius: 10px;
+  overflow: hidden;
+}
+th, td {
+  border: 1px solid #333;
+  padding: 10px;
+  text-align: center;
+}
+th {
+  background: #af8d19;
+  color: white;
+  cursor: pointer;
+  user-select: none;
+}
+tr:nth-child(even) { background: #14141f; }
+tr:hover { background: #2a2a3d; }
+  </style>
+</head>
+<body>
+
+<div class="goofy-container">
+  <div class="title" style="padding-left:2%">
+    <img src="images/burger.png" alt="burger" style="width:2em;height:2em;display:inline-block;vertical-align: middle;" onclick="openNav()">
+    <h1 style="display:inline-block;vertical-align:middle;">Bottoni Monthly Score Attack!</h1>
+    <p id="flavor-text" style="display:inline-block;vertical-align:middle;float:right;padding-right:2%;"></p>
+  </div>
+</div>
+
+<!-- Side navigation -->
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="index.html">Home</a>
+  <a href="s5slrank.html">S5SL Rank</a>
+  <a href="leaderboard.html">Leaderboard</a>
+  <!-- aggiungi altri link se necessario -->
+</div>
+
+<div id="main">
+  <h2 style="text-align:center;">Leaderboard</h2>
+  <table id="leaderboard">
+    <thead><tr><th onclick='sortTable(0)'>userID</th><th onclick='sortTable(1)'>Title1</th><th onclick='sortTable(2)'>Title2</th><th onclick='sortTable(3)'>Title3</th><th onclick='sortTable(4)'>Title4</th><th onclick='sortTable(5)'>Title5</th><th onclick='sortTable(6)'>total</th></tr></thead>
+    <tbody><tr><td>ergo</td><td>0</td><td>0</td><td>3976</td><td>3425</td><td>0</td><td>7401</td></tr>
+<tr><td>mizumi_a</td><td>0</td><td>0</td><td>3987</td><td>0</td><td>0</td><td>3987</td></tr>
 <tr><td>dotLight</td><td>0</td><td>0</td><td>0</td><td>208</td><td>2515</td><td>2723</td></tr>
 <tr><td>Eedu</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
-<tr><td>boxexe</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr></tbody></table>
+<tr><td>boxexe</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr></tbody>
+  </table>
+</div>
+
 <script>
-function parseCellValue(v){ if(v===""||v===null) return -Infinity;
-  var n=parseInt(v); if(!isNaN(n)) return n; return v.toString().toLowerCase();}
-function sortTable(c){const t=document.getElementById("leaderboard");const b=t.tBodies[0];
-  const r=Array.from(b.querySelectorAll("tr"));
-  r.sort((a,b)=>{const av=a.children[c].innerText.trim(), bv=b.children[c].innerText.trim();
-  const ap=parseCellValue(av), bp=parseCellValue(bv); if(ap<bp) return -1; if(ap>bp) return 1; return 0;});
-  const f=r[0].children[c].innerText.trim(), s=r[1]?r[1].children[c].innerText.trim():null;
-  if(f!==""&&s!==null){const fv=parseCellValue(f), sv=parseCellValue(s); if(fv<sv) r.reverse();}
-  b.innerHTML=""; r.forEach(rr=>b.appendChild(rr));}
-</script></body></html>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+function parseCellValue(v){
+    if(v === "" || v === null) return -Infinity;
+    var n = parseInt(v);
+    if(!isNaN(n)) return n;
+    return v.toString().toLowerCase();
+}
+function sortTable(colIndex) {
+  const table = document.getElementById("leaderboard");
+  const tbody = table.tBodies[0];
+  const rows = Array.from(tbody.querySelectorAll("tr"));
+  rows.sort((a,b) => {
+    const av = a.children[colIndex].innerText.trim();
+    const bv = b.children[colIndex].innerText.trim();
+    const ap = parseCellValue(av);
+    const bp = parseCellValue(bv);
+    if(ap < bp) return -1;
+    if(ap > bp) return 1;
+    return 0;
+  });
+  const first = rows[0].children[colIndex].innerText.trim();
+  const second = rows[1] ? rows[1].children[colIndex].innerText.trim() : null;
+  if(first !== "" && second !== null){
+    const f = parseCellValue(first), s = parseCellValue(second);
+    if(f < s) { rows.reverse(); }
+  }
+  tbody.innerHTML = "";
+  rows.forEach(r => tbody.appendChild(r));
+}
+</script>
+</body>
+</html>
