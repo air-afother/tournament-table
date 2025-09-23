@@ -112,12 +112,12 @@ tr:hover { background: #2a2a3d; }
 <div id="main">
   <h2 style="text-align:center;">Leaderboard</h2>
   <table id="leaderboard">
-    <thead><tr><th onclick='sortTable(0)'>userID</th><th onclick='sortTable(1)'>Title1</th><th onclick='sortTable(2)'>Title2</th><th onclick='sortTable(3)'>Title3</th><th onclick='sortTable(4)'>Title4</th><th onclick='sortTable(5)'>Title5</th><th onclick='sortTable(6)'>total</th></tr></thead>
-    <tbody><tr><td>ergo</td><td>0</td><td>0</td><td>3976</td><td>3425</td><td>0</td><td>7401</td></tr>
-<tr><td>mizumi_a</td><td>0</td><td>0</td><td>3987</td><td>0</td><td>0</td><td>3987</td></tr>
-<tr><td>dotLight</td><td>0</td><td>0</td><td>0</td><td>208</td><td>2515</td><td>2723</td></tr>
-<tr><td>Eedu</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
-<tr><td>boxexe</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr></tbody>
+    <thead><tr><th onclick='sortTable(0)'>#</th><th onclick='sortTable(1)'>Player</th><th onclick='sortTable(2)'>Title1</th><th onclick='sortTable(3)'>Title2</th><th onclick='sortTable(4)'>Title3</th><th onclick='sortTable(5)'>Title4</th><th onclick='sortTable(6)'>Title5</th><th onclick='sortTable(7)'>total</th></tr></thead>
+    <tbody><tr style='background-color:#FFD700;color:black;font-weight:bold;'><td>1</td><td>ergo</td><td>0</td><td>0</td><td>3976</td><td>3425</td><td>0</td><td>7401</td></tr>
+<tr style='background-color:#C0C0C0;color:black;font-weight:bold;'><td>2</td><td>mizumi_a</td><td>0</td><td>0</td><td>3987</td><td>0</td><td>0</td><td>3987</td></tr>
+<tr style='background-color:#CD7F32;color:black;font-weight:bold;'><td>3</td><td>dotLight</td><td>0</td><td>0</td><td>0</td><td>208</td><td>2515</td><td>2723</td></tr>
+<tr><td>4</td><td>Eedu</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>5</td><td>boxexe</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr></tbody>
   </table>
 </div>
 
@@ -150,16 +150,8 @@ function sortTable(colIndex) {
   tbody.innerHTML = "";
   rows.forEach(r => tbody.appendChild(r));
 }
-
-/* Side nav */
-function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
-}
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-}
-
-/* Funny flavor text */
+function openNav() { document.getElementById("mySidenav").style.width = "250px"; }
+function closeNav() { document.getElementById("mySidenav").style.width = "0"; }
 var textarray = [
  "enjoy the cool air out on the",
  "take the world by storm",
@@ -175,24 +167,11 @@ var textarray = [
  "zkldi where is my sieglinde",
  "Alcohol abuse? I love alcohol I would never",
  "Blame the heat",
- "there's a heat that's inspiring my second shower",
- "fuckin' hot as hell on this train",
- "I don't know how you can play bms in this heat",
- "playing anything in this heat is idk",
- "i will give a high five to the guy who created fans that shit lit",
- "it's TOO HOT to gremare",
- "+ hot",
- "despite the heat it was finally decided to do it anyway",
- "Today despite the heat I tried anyway",
- "I haven't opened rhythm games since late June because of heat",
- "me on the other hand thinking of skipping August because it's too hot",
- "Mh yes indeed it doesn't seem the best in this heat ahahahdav",
- "in this heat you can't make it"
+ "it's TOO HOT to gremare"
 ];
-
 function RndText() {
-  var rannum = Math.floor(Math.random()*textarray.length);
-  document.getElementById('flavor-text').innerHTML=textarray[rannum];
+ var rannum = Math.floor(Math.random()*textarray.length);
+ document.getElementById('flavor-text').innerHTML=textarray[rannum];
 }
 onload = function() { RndText(); }
 </script>
