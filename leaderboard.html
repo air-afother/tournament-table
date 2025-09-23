@@ -1,179 +1,31 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
+  <meta charset="utf-8">
   <title>BMSA! Leaderboard</title>
   <link rel="icon" type="image/x-icon" href="images/smerdy.jpg">
-  <meta charset="utf-8">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
   <style>
-html, body {
-  height: 100%;
-  margin: 0;
-}
-body {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 300;
-  color: #fff;
-  background-color: #0a0a10;
-}
-.goofy-container {
-  position:fixed;
-  top:0;
-  height:4.5em;
-  left:0;
-  right:0;
-  background-color:#af8d19;
-  z-index:2;
-}
-.goofy-container h1 {
-  margin-left:2%;
-  display:inline-block;
-  vertical-align:middle;
-}
-#main {
-  padding-top:6em;
-}
-/* Side navigation */
-.sidenav {
-  height:100%;
-  width:0;
-  position:fixed;
-  z-index:3;
-  top:0;
-  left:0;
-  background-color:#111;
-  overflow-x:hidden;
-  transition:0.5s;
-  padding-top:60px;
-}
-.sidenav a {
-  padding:8px 8px 8px 32px;
-  text-decoration:none;
-  font-size:25px;
-  color:#818181;
-  display:block;
-  transition:0.3s;
-}
-.sidenav a:hover {
-  color:#f1f1f1;
-}
-.sidenav .closebtn {
-  position:absolute;
-  top:0;
-  right:25px;
-  font-size:36px;
-  margin-left:50px;
-}
-/* Leaderboard table */
-table {
-  border-collapse: collapse;
-  margin: 2em auto;
-  width: 90%;
-  max-width: 1200px;
-  background:#1d1d2e;
-  border-radius: 10px;
-  overflow: hidden;
-}
-th, td {
-  border: 1px solid #333;
-  padding: 10px;
-  text-align: center;
-}
-th {
-  background: #af8d19;
-  color: white;
-  cursor: pointer;
-  user-select: none;
-}
-tr:nth-child(even) { background: #14141f; }
-tr:hover { background: #2a2a3d; }
+    body { font-family: 'Montserrat', sans-serif; background:#0a0a10; color:#fff; margin:0; }
+    .flag { width:20px; height:auto; margin-right:6px; vertical-align:middle; }
+    .player-name { vertical-align: middle; }
+    table { border-collapse:collapse; margin:2em auto; width:90%; max-width:1200px; background:#1d1d2e; border-radius:10px; overflow:hidden; }
+    th, td { border:1px solid #333; padding:10px; text-align:center; }
+    th { background:#af8d19; color:white; cursor:pointer; }
+    tr:nth-child(even) { background:#14141f; }
+    tr:hover { background:#2a2a3d; }
   </style>
 </head>
 <body>
-
-<div class="goofy-container">
-  <div class="title" style="padding-left:2%">
-    <img src="images/burger.png" alt="burger" style="width:2em;height:2em;display:inline-block;vertical-align: middle;" onclick="openNav()">
-    <h1 style="display:inline-block;vertical-align:middle;">Bottoni Monthly Score Attack!</h1>
-    <p id="flavor-text" style="display:inline-block;vertical-align:middle;float:right;padding-right:2%;"></p>
-  </div>
-</div>
-
-<!-- Side navigation -->
-<div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="index.html">Home</a>
-  <a href="s5slrank.html">S5SL Rank</a>
-  <a href="leaderboard.html">Leaderboard</a>
-</div>
-
-<div id="main">
   <h2 style="text-align:center;">Leaderboard</h2>
   <table id="leaderboard">
     <thead><tr><th onclick='sortTable(0)'>#</th><th onclick='sortTable(1)'>Player</th><th onclick='sortTable(2)'>Title1</th><th onclick='sortTable(3)'>Title2</th><th onclick='sortTable(4)'>Title3</th><th onclick='sortTable(5)'>Title4</th><th onclick='sortTable(6)'>Title5</th><th onclick='sortTable(7)'>total</th></tr></thead>
-    <tbody><tr><td style='background-color:#b39700;font-weight:bold;'>1</td><td>ergo </td><td>0</td><td>0</td><td>3976</td><td>3425</td><td>0</td><td>7401</td></tr>
-<tr><td style='background-color:#807e7e;font-weight:bold;'>2</td><td>mizumi_a </td><td>0</td><td>0</td><td>3987</td><td>0</td><td>0</td><td>3987</td></tr>
-<tr><td style='background-color:#915a23;font-weight:bold;'>3</td><td>dotLight 🇮🇹</td><td>0</td><td>0</td><td>0</td><td>208</td><td>2515</td><td>2723</td></tr>
-<tr><td>4</td><td>Eedu 🇫🇮</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
-<tr><td>5</td><td>boxexe </td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr></tbody>
+    <tbody><tr><td style='background-color:#b39700;font-weight:bold;'>1</td><td><span class="player-name">ergo</span></td><td>0</td><td>0</td><td>3976</td><td>3425</td><td>0</td><td>7401</td></tr>
+<tr><td style='background-color:#807e7e;font-weight:bold;'>2</td><td><span class="player-name">mizumi_a</span></td><td>0</td><td>0</td><td>3987</td><td>0</td><td>0</td><td>3987</td></tr>
+<tr><td style='background-color:#915a23;font-weight:bold;'>3</td><td><img src="https://flagcdn.com/24x18/it.png" alt="it" class="flag"><span class="player-name">dotLight</span></td><td>0</td><td>0</td><td>0</td><td>208</td><td>2515</td><td>2723</td></tr>
+<tr><td>4</td><td><img src="https://flagcdn.com/24x18/fi.png" alt="fi" class="flag"><span class="player-name">Eedu</span></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>5</td><td><span class="player-name">boxexe</span></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr></tbody>
   </table>
-</div>
-
-<script>
-function parseCellValue(v){
-    if(v === "" || v === null) return -Infinity;
-    var n = parseInt(v);
-    if(!isNaN(n)) return n;
-    return v.toString().toLowerCase();
-}
-function sortTable(colIndex) {
-  const table = document.getElementById("leaderboard");
-  const tbody = table.tBodies[0];
-  const rows = Array.from(tbody.querySelectorAll("tr"));
-  rows.sort((a,b) => {
-    const av = a.children[colIndex].innerText.trim();
-    const bv = b.children[colIndex].innerText.trim();
-    const ap = parseCellValue(av);
-    const bp = parseCellValue(bv);
-    if(ap < bp) return -1;
-    if(ap > bp) return 1;
-    return 0;
-  });
-  const first = rows[0].children[colIndex].innerText.trim();
-  const second = rows[1] ? rows[1].children[colIndex].innerText.trim() : null;
-  if(first !== "" && second !== null){
-    const f = parseCellValue(first), s = parseCellValue(second);
-    if(f < s) { rows.reverse(); }
-  }
-  tbody.innerHTML = "";
-  rows.forEach(r => tbody.appendChild(r));
-}
-function openNav() { document.getElementById("mySidenav").style.width = "250px"; }
-function closeNav() { document.getElementById("mySidenav").style.width = "0"; }
-var textarray = [
- "enjoy the cool air out on the",
- "take the world by storm",
- "a refreshing atmosphere",
- "FEEL'in SEPIA AIR",
- "0xE9504DF6 think purple",
- "waiting contact with",
- "st9 Clear Detector Technology",
- "Suggest more texts on discord!",
- "eeffoc",
- "I heard you like nanahira?",
- "Battery Manageement System",
- "zkldi where is my sieglinde",
- "Alcohol abuse? I love alcohol I would never",
- "Blame the heat",
- "it's TOO HOT to gremare"
-];
-function RndText() {
- var rannum = Math.floor(Math.random()*textarray.length);
- document.getElementById('flavor-text').innerHTML=textarray[rannum];
-}
-onload = function() { RndText(); }
-</script>
 </body>
 </html>
