@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <title>BMSA! Leaderboard</title>
+  <link rel="icon" type="image/x-icon" href="images/smerdy.jpg">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
+  <style>
+    html,body{height:100%;margin:0;background:#0a0a10;color:#fff;font-family:'Montserrat',sans-serif;}
+    .flag{width:20px;height:auto;margin-right:8px;flex-shrink:0;}
+    .player-cell{text-align:center;}
+    .player-link{display:inline-flex;align-items:center;justify-content:flex-start;color:#fff;text-decoration:none;font-weight:500;min-width:120px;}
+    .player-link:hover{text-decoration:underline;color:#af8d19;}
+    .player-name{text-align:left;}
+    .song-link{color:#fff;text-decoration:none;}
+    .song-link:hover{color:#af8d19;text-decoration:underline;}
+    table{border-collapse:collapse;margin:2em auto;width:90%;max-width:1200px;background:#1d1d2e;border-radius:10px;overflow:hidden;}
+    th,td{border:1px solid #333;padding:10px;text-align:center;}
+    th{background:#af8d19;color:white;cursor:pointer;}
+    tr:nth-child(even){background:#14141f;} tr:hover{background:#2a2a3d;}
+    /* sidenav & header */
+    .sidenav{height:100%;width:0;position:fixed;z-index:4;top:0;left:0;background-color:#0f0f16;overflow-x:hidden;padding-top:10px;transition:0.5s;}
+    .sidenav a, .dropdown-btn{font-weight:500;font-size:15px;padding:6px 8px 6px 16px;color:#818181;display:block;border:none;background:none;width:100%;text-align:left;cursor:pointer;outline:none;text-decoration:none;}
+    .sidenav a:hover, .dropdown-btn:hover{color:#f1f1f1;}
+    #main{transition:margin-left .5s;padding-left:2%;}
+    .active{background-color:#af8d19;color:white;}
+    .dropdown{display:none;background-color:#1d1d2e;padding-left:8px;}
+    .goofy-container{position:fixed;top:0;height:4.5em;left:0;right:0;background-color:#af8d19;z-index:3;}
+    .goofy-container h1{margin-left:1em;display:inline-block;vertical-align:middle;}
+    @media (max-width:800px){ table{width:98%;} td,th{padding:8px;font-size:14px;} .flag{width:16px;} }
+  </style>
+</head>
+<body>
+  <!-- side navigation -->
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="font-size:20px">&times;</a>
+    <a href="https://air-afother.github.io/tournament-table/">Homepage</a>
+    <button class="dropdown-btn">Season archive tables</button>
+    <div class="dropdown">
+      <a href="https://air-afother.github.io/tournament-table/sr-archive.html">Lower bracket archive</a>
+      <a href="https://air-afother.github.io/tournament-table/sl-archive.html">Upper bracket archive</a>
+    </div>
+  </div>
+
+  <!-- top bar -->
+  <div class="goofy-container">
+    <div class="title" style="padding-left:2%">
+      <img src="images/burger.png" alt="burger" style="width:2em;height:2em;display:inline-block;vertical-align: middle;cursor:pointer;" onclick="openNav()">
+      <h1>Bottoni Monthly Score Attack!</h1>
+      <p id="flavor-text" style="display:inline-block;vertical-align:middle;float:right;padding-right:2%;"></p>
+    </div>
+  </div>
+
+  <div id="main" style="padding-top:5.2em;">
+    <h2 style="text-align:center;">Leaderboard</h2>
+    <table id="leaderboard">
+      <thead><tr><th onclick='sortTable(0)'>#</th><th onclick='sortTable(1)'>Player</th><th onclick='sortTable(2)'>sl6 symbolic gear</th><th onclick='sortTable(3)'>sl10 Satori ～3rd EyEs[DELAYBEGINNER]</th><th onclick='sortTable(4)'>st1 D3C3MB3R</th><th onclick='sortTable(5)'>ln16 In a dream (LN-Express)</th><th onclick='sortTable(6)'>total</th></tr></thead>
+      <tbody><tr><td style='background-color:#b39700;font-weight:bold; text-align:center;'>1</td><td class='player-cell'><a href="https://boku.tachi.ac/u/silver/games/bms/7K" target="_blank" class="player-link"><img src="https://flagcdn.com/es.svg" alt="es" class="flag"><span class="player-name">silver</span></a></td><td><a href="https://boku.tachi.ac/games/bms/7K/songs/59973/CHART" target="_blank" class="song-link">0</a></td><td><a href="https://boku.tachi.ac/games/bms/7K/songs/54799/CHART" target="_blank" class="song-link">5102</a></td><td><a href="https://boku.tachi.ac/games/bms/7K/songs/87807/CHART" target="_blank" class="song-link">4229</a></td><td><a href="https://boku.tachi.ac/games/bms/7K/songs/32112/CHART" target="_blank" class="song-link">0</a></td><td>9331</td></tr>
+<tr><td style='background-color:#807e7e;font-weight:bold; text-align:center;'>2</td><td class='player-cell'><a href="https://boku.tachi.ac/u/dotLight/games/bms/7K" target="_blank" class="player-link"><img src="https://flagcdn.com/it.svg" alt="it" class="flag"><span class="player-name">dotLight</span></a></td><td><a href="https://boku.tachi.ac/games/bms/7K/songs/59973/CHART" target="_blank" class="song-link">2663</a></td><td><a href="https://boku.tachi.ac/games/bms/7K/songs/54799/CHART" target="_blank" class="song-link">3633</a></td><td><a href="https://boku.tachi.ac/games/bms/7K/songs/87807/CHART" target="_blank" class="song-link">0</a></td><td><a href="https://boku.tachi.ac/games/bms/7K/songs/32112/CHART" target="_blank" class="song-link">0</a></td><td>6296</td></tr>
+<tr><td style='background-color:#915a23;font-weight:bold; text-align:center;'>3</td><td class='player-cell'><a href="https://boku.tachi.ac/u/cat/games/bms/7K" target="_blank" class="player-link"><img src="https://flagcdn.com/us.svg" alt="us" class="flag"><span class="player-name">cat</span></a></td><td><a href="https://boku.tachi.ac/games/bms/7K/songs/59973/CHART" target="_blank" class="song-link">0</a></td><td><a href="https://boku.tachi.ac/games/bms/7K/songs/54799/CHART" target="_blank" class="song-link">0</a></td><td><a href="https://boku.tachi.ac/games/bms/7K/songs/87807/CHART" target="_blank" class="song-link">0</a></td><td><a href="https://boku.tachi.ac/games/bms/7K/songs/32112/CHART" target="_blank" class="song-link">1850</a></td><td>1850</td></tr></tbody>
+    </table>
+  </div>
+
+  <script>
+    var dropdown = document.getElementsByClassName("dropdown-btn");
+    for (var i = 0; i < dropdown.length; i++) {
+      dropdown[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var dropdownContent = this.nextElementSibling;
+        if (dropdownContent.style.display === "block") {
+          dropdownContent.style.display = "none";
+        } else {
+          dropdownContent.style.display = "block";
+        }
+      });
+    }
+    function openNav() { document.getElementById("mySidenav").style.width = "250px"; }
+    function closeNav() { document.getElementById("mySidenav").style.width = "0"; }
+
+    var textarray = ["enjoy the cool air out on the","take the world by storm","a refreshing atmosphere","FEEL'in SEPIA AIR","Suggest more texts on discord!"];
+    function RndText() {
+      var rannum = Math.floor(Math.random()*textarray.length);
+      document.getElementById('flavor-text').innerHTML = textarray[rannum];
+    }
+    onload = function() { RndText(); }
+
+    function parseCellValue(v) {
+      if(v === "" || v === null) return -Infinity;
+      var n = parseInt(v);
+      if(!isNaN(n)) return n;
+      return v.toString().toLowerCase();
+    }
+    function sortTable(colIndex) {
+      const table = document.getElementById("leaderboard");
+      const tbody = table.tBodies[0];
+      const rows = Array.from(tbody.querySelectorAll("tr"));
+      rows.sort((a,b) => {
+        const av = a.children[colIndex].innerText.trim();
+        const bv = b.children[colIndex].innerText.trim();
+        const ap = parseCellValue(av);
+        const bp = parseCellValue(bv);
+        if(ap < bp) return -1;
+        if(ap > bp) return 1;
+        return 0;
+      });
+      // semplice toggle: se già ordinata asc, inverti
+      const first = rows[0] ? rows[0].children[colIndex].innerText.trim() : "";
+      const second = rows[1] ? rows[1].children[colIndex].innerText.trim() : null;
+      if(first !== "" && second !== null) {
+        const f = parseCellValue(first), s = parseCellValue(second);
+        if(f < s) rows.reverse();
+      }
+      tbody.innerHTML = "";
+      rows.forEach(r => tbody.appendChild(r));
+    }
+
+    // FIX: quando clicchi sui link dentro le celle non far propagare il click fino all'header (evita sort)
+    document.addEventListener("DOMContentLoaded", function() {
+      document.querySelectorAll(".player-link, .song-link").forEach(function(el) {
+        el.addEventListener("click", function(e) {
+          e.stopPropagation();
+        });
+      });
+    });
+  </script>
+</body>
+</html>
