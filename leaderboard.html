@@ -17,6 +17,8 @@
     .player-link{display:inline-flex;align-items:center;justify-content:flex-start;color:#fff;text-decoration:none;font-weight:500;min-width:120px;}
     .player-link:hover{text-decoration:underline;color:#af8d19;}
     .player-name{text-align:left;}
+    .song-link{color:#fff;text-decoration:none;}
+    .song-link:hover{color:#af8d19;text-decoration:underline;}
     /* sidenav & header */
     .sidenav{height:100%;width:0;position:fixed;z-index:4;top:0;left:0;background-color:#0f0f16;overflow-x:hidden;padding-top:10px;transition:0.5s;}
     .sidenav a, .dropdown-btn{font-weight:500;font-size:15px;padding:6px 8px 6px 16px;color:#818181;display:block;border:none;background:none;width:100%;text-align:left;cursor:pointer;outline:none;text-decoration:none;}
@@ -104,12 +106,6 @@
         if(ap > bp) return 1;
         return 0;
       });
-      const first = rows[0] ? rows[0].children[colIndex].innerText.trim() : "";
-      const second = rows[1] ? rows[1].children[colIndex].innerText.trim() : null;
-      if(first !== "" && second !== null) {
-        const f = parseCellValue(first), s = parseCellValue(second);
-        if(f < s) rows.reverse();
-      }
       tbody.innerHTML = "";
       rows.forEach(r => tbody.appendChild(r));
     }
