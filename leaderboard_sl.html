@@ -30,7 +30,6 @@
     .goofy-container {position:fixed;top:0;height:4.5em;left:0;right:0;background-color:#af8d19;z-index:3;}
     .goofy-container h1 {margin-left:1em;display:inline-block;vertical-align:middle;}
   </style>
-
 </head>
 <body>
   <!-- side navigation -->
@@ -96,37 +95,41 @@
     }
     onload = function() { RndText(); }
 
+    // === SORTING FIX ===
+    let sortDirections = {};
+
     function parseCellValue(v) {
       if(v === "" || v === null) return -Infinity;
       var n = parseInt(v);
       if(!isNaN(n)) return n;
       return v.toString().toLowerCase();
     }
+
     function sortTable(colIndex) {
       const table = document.getElementById("leaderboard");
       const tbody = table.tBodies[0];
       const rows = Array.from(tbody.querySelectorAll("tr"));
+
+      const currentDir = sortDirections[colIndex] || "asc";
+      const newDir = currentDir === "asc" ? "desc" : "asc";
+      sortDirections[colIndex] = newDir;
+
       rows.sort((a,b) => {
         const av = a.children[colIndex].innerText.trim();
         const bv = b.children[colIndex].innerText.trim();
         const ap = parseCellValue(av);
         const bp = parseCellValue(bv);
-        if(ap < bp) return -1;
-        if(ap > bp) return 1;
+
+        if(ap < bp) return newDir === "asc" ? -1 : 1;
+        if(ap > bp) return newDir === "asc" ? 1 : -1;
         return 0;
       });
-      // semplice toggle: se già ordinata asc, inverti
-      const first = rows[0] ? rows[0].children[colIndex].innerText.trim() : "";
-      const second = rows[1] ? rows[1].children[colIndex].innerText.trim() : null;
-      if(first !== "" && second !== null) {
-        const f = parseCellValue(first), s = parseCellValue(second);
-        if(f < s) rows.reverse();
-      }
+
       tbody.innerHTML = "";
       rows.forEach(r => tbody.appendChild(r));
     }
 
-    // FIX: quando clicchi sui link dentro le celle non far propagare il click fino all'header (evita sort)
+    // Evita che i click sui link triggerino sort
     document.addEventListener("DOMContentLoaded", function() {
       document.querySelectorAll(".player-link, .song-link").forEach(function(el) {
         el.addEventListener("click", function(e) {
