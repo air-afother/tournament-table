@@ -19,13 +19,17 @@
     .sort-btn:hover {color:#ffd700;}
     .th-flex {display:flex;justify-content:space-between;align-items:center;white-space:nowrap;}
 
-    .table-container {width:100%;overflow-x:auto;}
+    .table-container {width:100%;overflow-x:auto;scrollbar-width: thin;scrollbar-color: #af8d19 #1d1d2e;}
+    .table-container::-webkit-scrollbar {height: 10px;}
+    .table-container::-webkit-scrollbar-track {background: #1d1d2e; border-radius: 10px;}
+    .table-container::-webkit-scrollbar-thumb {background: #af8d19; border-radius: 10px;}
+    .table-container::-webkit-scrollbar-thumb:hover {background: #ffd700;}
+
     table {border-collapse:collapse;margin:2em auto;width:100%;min-width:600px;background:#1d1d2e;border-radius:10px;overflow:hidden;}
     th,td {border:1px solid #333;padding:10px;text-align:center;white-space:nowrap;}
     th {background:#af8d19;color:white;}
     tr:nth-child(even) {background:#14141f;} tr:hover {background:#2a2a3d;}
 
-    /* responsive tweaks */
     @media (max-width:768px) {
       th, td {padding:6px;font-size:0.8em;}
       .player-link {min-width:80px;font-size:0.8em;}
@@ -92,7 +96,7 @@
         Rating for each score is calculated according to your rank within each song, with this formula:  <br>
         Rating=100×(1-((Rank-1)/Players))<br>
         this means that if you get the highest score on that song, that score gives 100 Rating, and if you get last, you get 0 Rating. <br>
-        The total Rating is the average of the Rating you got across all songs.
+        The total Rating è the average of the Rating you got across all songs.
         </p>
   </div>
 
@@ -119,7 +123,6 @@
     }
     onload = function() { RndText(); }
 
-    // === SORTING FIX ===
     let sortDirections = {};
 
     function parseCellValue(v) {
@@ -153,7 +156,6 @@
       rows.forEach(r => tbody.appendChild(r));
     }
 
-    // Evita che i click sui link triggerino sort
     document.addEventListener("DOMContentLoaded", function() {
       document.querySelectorAll(".player-link, .song-link").forEach(function(el) {
         el.addEventListener("click", function(e) {
