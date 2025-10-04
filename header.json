@@ -1,5 +1,11 @@
 {
     "data_url": "score-S6.json",
     "name": "BMSA! S6 - Spooky Scary Selection ", 
-    "symbol": ""
+    "symbol": "",
+    "level_order": [
+        "Beginner",
+        "Lower",
+        "Intermediate",
+        "Advanced"
+      ]
 }
