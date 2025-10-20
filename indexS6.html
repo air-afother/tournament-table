@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+   <head>
+    <link rel="icon" type="image/x-icon" href="images/smerdy.jpg">
+    <meta name="bmstable" content="header.json" />
+    <title>BMSA! Tournament Table</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	   
+	   
+      <style>
+html {
+  height: 100%;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  color: #fff;
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color:#000000;
+table.center{
+ width: 90%;
+ margin: auto;
+}
+a{
+	color: #fff;
+	visited: #fff;
+	hovered: #fff;
+	active: #fff;
+}
+hr{
+	color: #fff;
+	width: 90%;
+	height: 1px;
+	background-color: #fff;
+}
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #0f0f16; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 10px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+/* Style the sidenav links and the dropdown button */
+.sidenav a, .sidenav img, .dropdown-btn {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 15px;
+  padding: 6px 8px 6px 16px;
+  color: #818181;
+  display: block;
+  border: none;
+  background: none;
+  width:100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+  text-decoration: none;
+}
+
+/* On mouse-over */
+.sidenav a:hover, .dropdown-btn:hover {
+  color: #f1f1f1;
+}
+
+/* Main content */
+#main {
+  transition: margin-left .5s;
+  padding-left: 2%;
+}
+
+/* Add an active class to the active dropdown button */
+.active {
+  background-color: #771315;
+  color: white;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown {
+  display: none;
+  background-color: #1d1d2e;
+  padding-left: 8px;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+footer {
+    position:fixed;
+    bottom: 2em;
+    float: left;
+    height: 35px;
+    font-size:10px;
+    background: none;
+    text-align: left;
+    padding-left: 2%;
+}
+
+</style>
+   </head>
+   <body>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="font-size:20px">&times;</a>
+  <button class="dropdown-btn">BMSA! S6: Spooky Scary Selection Leaderboards</button>
+  <div class="dropdown">
+    <a href="https://air-afother.github.io/tournament-table/leaderboard_sd.html">Beginner Leaderboard</a>
+    <a href="https://air-afother.github.io/tournament-table/leaderboard_sr.html">Lower Leaderboard</a>
+    <a href="https://air-afother.github.io/tournament-table/leaderboard_sl.html">Intermediate Leaderboard</a>
+    <a href="https://air-afother.github.io/tournament-table/leaderboard_st.html">Advanced Leaderboard</a>
+    </div>
+  <button class="dropdown-btn">BMSA! S5: Samba Septemba</button>
+	<div class="dropdown">
+		<a href="https://air-afother.github.io/tournament-table/s5srrank.html">Lower Bracket</a>
+		<a href="https://air-afother.github.io/tournament-table/s5slrank.html">Upper Bracket</a>
+	</div>
+  <button class="dropdown-btn">BMSA! S4: Beach Side BMS</button>
+	<div class="dropdown">
+		<a href="https://air-afother.github.io/tournament-table/s4srrank.html">Lower Bracket</a>
+		<a href="https://air-afother.github.io/tournament-table/s4slrank.html">Upper Bracket</a>
+	</div>
+  <button class="dropdown-btn">BMSA! S3: trance.system ONLINE</button>
+	<div class="dropdown">
+		<a href="https://air-afother.github.io/tournament-table/s3srrank.html">Lower Bracket</a>
+		<a href="https://air-afother.github.io/tournament-table/s3slrank.html">Upper Bracket</a>
+	</div>
+  <button class="dropdown-btn">BMSA! S2: DENPA NEVER DIE</button>
+	<div class="dropdown">
+		<a href="https://air-afother.github.io/tournament-table/s2srrank.html">Lower Bracket</a>
+		<a href="https://air-afother.github.io/tournament-table/s2slrank.html">Upper Bracket</a>
+	</div>
+  <button class="dropdown-btn">Season archive tables</button>
+  <div class="dropdown">
+  <a href="https://air-afother.github.io/tournament-table/sr-archive.html">Lower bracket archive</a>
+  <a href="https://air-afother.github.io/tournament-table/sl-archive.html">Upper bracket archive</a>
+  </div>
+	<button class="dropdown-btn">Other projects</button>
+	<div class="dropdown">
+  <a target="_blank" href="https://air-afother.github.io/osu-table">osumania 7k table</a>
+  <a target="_blank"  href="https://air-afother.github.io/combined-sara/">combined sara table</a>
+  </div>
+</div>
+
+<!-- Use any element to open the sidenav -->
+  
+<div id="main" class="main">
+<div class="goofy-container" style="position:fixed;top:0;height:4.5em;left:0;right:0;background-color:#771315">
+<div class="title" style="padding-left:2%">
+      <img src="images/burger.png" alt="burger" style="width:2em;height:2em;display:inline-block;vertical-align: middle;" onclick="openNav()">
+ 	<h1 style="margin-left:2%;display:inline-block;vertical-align:middle;">Bottoni Monthly Score Attack!</h1>
+	<p id="flavor-text" style="display:inline-block;vertical-align:middle;float:right;padding-right:2%;"></p>
+</div>
+</div>
+<div class="current-season" style="padding-top:5em;">
+    
+    <h1>BMSA! S6: Spooky Scary Selection</h1>
+    <h4>05/10/2025 - 19/05/2025 23:59 UTC+2</h4>
+
+    <h2>How to join the competition:</h2>
+    <ol>
+      <li><h3> Fill out the <a href="https://forms.gle/jBWcXbZLM3W97gZT9" target="_blank">registration form</a> </h3></li>
+      <li><h3>Load this page's URL into LR2oraja or BeMusicSeeker as a table </h3></li>
+        <li><h3>Open the tournament table folder</h3></li>
+      <li><h3>Start Playing the Charts!</h3></li>
+      <li><h3>Check the current rankings from the leaderboard pages (also accessible from the sidebar):</h3> <ul>
+        <li><a href="https://air-afother.github.io/tournament-table/leaderboard_sd.html">Beginner Leaderboard</a></li>
+        <li><a href="https://air-afother.github.io/tournament-table/leaderboard_sr.html">Lower Leaderboard</a></li>
+        <li><a href="https://air-afother.github.io/tournament-table/leaderboard_sl.html">Intermediate Leaderboard</a></li>
+        <li><a href="https://air-afother.github.io/tournament-table/leaderboard_st.html">Advanced Leaderboard</a></li>
+
+      </ul>
+      
+      
+        </li>
+        <li><h3>Join the <a href="https://discord.com/invite/reuR2qUtgk" target="_blank">BMS Europe Discord Server</a> to stay updated, discuss and scorepost </h3></li>
+
+    </ol>
+	
+
+    <div class="allineatitiprego" style="display:inline-block;vertical-align: middle;  display: flex;justify-content: center;"><!-- OG!!! quando 2 eccoo
+    <img src="images/bmsa-s5-samba-lower.jpg" alt="s5 sr poster" style="width:45%;display:block;margin-top:15px;display:inline-block;vertical-align: middle;"">
+    <img src="images/bmsa-s5-samba-upper.jpg" alt="s5 sl poster" style="width:45%;margin-left:2%;display:block;margin-top:15px;display:inline-block;vertical-align: middle;""> -->
+    <img src="images/scoreattackposter@3x.png" alt="s5 sl poster" style="width:70%;margin-left:2%;display:block;margin-top:15px;display:inline-block;vertical-align: middle;"">
+</div>
+
+<div class="regole" style="padding-bottom:5em;">
+<h2>Rules:</h2>
+  <h4> Registration </h4>
+  <p>In order to get registered to compete in the tournament, please fill out the <a href="https://forms.gle/jBWcXbZLM3W97gZT9" target="_blank">registration form</a><br>If registered with a bokutachi account, your scores will submit automatically to the leaderboards, which you can find the link to in the navigation sidebar.</p>
+	<h4> Bracket selection </h4>
+	<p>You will be placed in the difficulty bracket you chose in the registration form<br>
+    The difficulty brackets are made with the following skill ranges in mind:<br></p><ul>
+		<li><b>Beginner:</b> for anyone new to the game, below IIDX 5th dan</li>
+		<li><b>Lower:</b> for players around IIDX 8th to 10th dan, below insane 1st dan</li>
+    <li><b>Intermediate:</b> for players around IIDX kaiden, below insane 8th dan</li>
+    <li><b>Advanced:</b> for anyone above insane 8th dan</li>
+	</ul>
+	<p>If your scores end up way too good for your bracket, you might get moved up to a higher bracket. Please don't smurf!</p>
+
+<h4> Score submission </h4>
+	<p>If you have provided your bokutachi account in the registration form and you are uploading scores correctly to the IR, your scores should automatically show up in the leaderboard pages within a couple of minutes. If you don't have a bokutachi account, please make one <a href="https://boku.tachi.ac/register" target="_blank">here</a><br>
+    If you want to proceed with manual score submission, post your scores and raises on any discord server you have in common with me (dot_light), ping me, and i will add the scores manually to the spreadsheet as soon as possible. 
+  </p>
+
+<h4> Game client and options</h4>
+	<p>Any client supported by bokutachi can be used: that includes Lunatic Rave 2, LR2oraja, and Endless Dream. MIRROR, RANDOM (random trainer included), R-RANDOM and S-RANDOM are allowed. </p>
+
+<h4> Ranking</h4>
+	<p>Ranking is decided based on a rating that comes from a formula which takes in account the amount of players participating and emphasizes the player ranking in the individual charts and the total score. You can find the formula for Rating in the leaderboard pages.</p> 
+
+<h2>FAQ</h2>
+  
+
+	<p>Q. <b>Why these charts??</b><br>
+	A. All the charts chosen follow a theme that changes every month.<br><br>
+
+	Q. <b>Where do I get the charts?</b><br>
+	A. You can find the dl on the ranking page for the current season. (Check to burger menu on the top left!)<br><br>
+
+	Q. <b>Is there a way to find the charts quicker?</b><br>
+	A. The homepage of this website is table! You can put it in your client to find the current tournament charts quickly. If for some reason you're looking for older tournaments charts, check the archive section on the hamburger menu on the top left.
+<br><br>
+	Q. <b>I feel like there is something wrong with the calculation who do I tell?</b><br>
+	A. Spam DM me on discord.<br><br>
+
+	Q. <b>Miss count when?</b><br>
+	A. Soon(?)</p>
+
+  <p>Q. <b>What's a "bottoni" anyway?</b><br>
+    A. Premere Bottoni, usually shortened to just Bottoni, is the main BEMANI community in Italy. Earlier seasons of the BMSA! where hosted on Bottoni, in collaboration with the BMS Europe discord, and thus partecipation was limited to european players.<br>
+    Starting from Season 6, we decided to allow players from all over the world to increase player count, to make the ranking more varied, and in general to allow more people to have fun and compete!<br>
+</div>
+<script>
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+}
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+/* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+} 
+ var textarray = [
+ "enjoy the cool air out on the",
+ "take the world by storm",
+ "a refreshing atmosphere",
+ "FEEL'in SEPIA AIR",
+ "0xE9504DF6 think purple",
+ "waiting contact with",
+ "st9 Clear Detector Technology",
+ "Suggest more texts on discord!",
+ "eeffoc",
+ "I heard you like nanahira?",
+ "Battery Manageement System",
+ "zkldi where is my sieglinde",
+ "Alcohol abuse? I love alcohol I would never",
+	"china evil peeking techniques wallhack scripter",
+	 "Amen brother",
+	 "Super bigass",
+	 "Filled up the nitrous ❤️❤️",
+	 "we ❤️ anb we love they/them all/any",
+	 "@CtrlAltCancer ALL TIME ANB CLASSIC",
+	 "blessed arab upload",
+	 "💅eeffoc",
+	 "@realPoliziaPostale CHECK NOW!",
+	 "gooners x radical feminists alliance",
+	 "edging my fine bottoni.club it focuses who ahahahah",
+	 "Absolutely you play from losing",
+	 "Party hard in HDR you find her",
+	 "DAMN the tournament of disaster",
+	 "Giant Totti",
+	 "we were talking specifically 'free troubles here'",
+	 "Kid traumatised from korean fans of pipes",
+	 "thesedicks of existing",
+	 "sdvx only betatesting for some trolling with clear of theirs, rightfully",
+	 "Scheiß auf mein Leben, ich bin bloß ein nichtznutziger bms-spieler",
+	 "Fok my lewe, ek is net 'n useless bms player",
+	 "Dreq jetën time, unë jam vetëm një lojtar i kotë bms",
+	 "لعنة على حياتي، أنا مجرد لاعب BMS عديم الفائدة",
+	 "Ջի՛մ կյանքս, ես ուղղակի անպետք bms խաղացող եմ",
+	 "ফাক মাই লাইফ, আমি শুধু একজন অকেজো বিএমএস প্লেয়ার",
+	 "A la merda la meva vida, només sóc un jugador de bms inútil",
+	 "Fuck ជីវិតរបស់ខ្ញុំ ខ្ញុំគ្រាន់តែជាអ្នកលេង bms ដែលគ្មានប្រយោជន៍",
+	 "操我的生活，我只是一个没用的 BMS 玩家",
+	 "Jebi mi život, ja sam samo beskoristan bms player",
+	 "Seru na můj život, jsem jen zbytečný hráč bms",
+	 "Fuck mit liv, jeg er bare en ubrugelig bms-spiller",
+	 "Fuck my life, ik ben gewoon een nutteloze bms-speler",
+	 "Persse mu elu, ma olen lihtsalt kasutu bms mängija",
+	 "Vittu elämäni, olen vain turha bms-pelaaja",
+	 "Putain ma vie, je ne suis qu'un joueur de BMS inutile",
+	 "Γάμα μου τη ζωή, είμαι απλά ένας άχρηστος παίκτης bms",
+	 "לעזאזל עם החיים שלי, אני פשוט שחקן bms חסר תועלת",
+	 "मेरी जिंदगी को भाड़ में जाओ, मैं तो बस एक बेकार बीएमएस प्लेयर हूँ",
+	 "Baszd meg az életem, én csak egy haszontalan bms játékos vagyok",
+	 "Fokk líf mitt, ég er bara ónýtur bms spilari",
+	 "Persetan dengan hidupku, aku hanya pemain BMS yang tidak berguna",
+	 "Fanculo la mia vita, sono solo un inutile giocatore di BMS",
+	 "人生なんてクソくらえ、俺はただの役立たずのBMSプレイヤーだ",
+	 "내 인생 엿먹어, 난 그저 쓸모없는 BMS 플레이어일 뿐이야",
+	 "Pedicabo vitam meam, et inutilem sum bms ludio ludius",
+	 "Bāc ar manu dzīvi, es esmu tikai nekam nederīgs bms spēlētājs",
+	 "Ебати ми животот, јас сум само бескорисен бмс плеер",
+	 "എൻ്റെ ജീവിതം ഭോഗിക്കുക, ഞാൻ ഒരു ഉപയോഗശൂന്യമായ ബിഎംഎസ് പ്ലെയർ മാത്രമാണ്",
+	 "Амьдралыг минь новш, би зүгээр л нэг хэрэггүй bms тоглогч",
+	 "Faen livet mitt, jeg er bare en ubrukelig bms-spiller",
+	 "لعنت به زندگی من، من فقط یک پخش کننده bms بی مصرف هستم",
+	 "Kurwa, jestem tylko bezużytecznym graczem bms",
+	 "Foda-se minha vida, sou apenas um tocador de bms inútil",
+	 "ਮੇਰੀ ਜ਼ਿੰਦਗੀ ਨੂੰ ਭੰਡੋ, ਮੈਂ ਸਿਰਫ਼ ਇੱਕ ਬੇਕਾਰ ਬੀਐਮਐਸ ਖਿਡਾਰੀ ਹਾਂ",
+	 "La naiba cu viața mea, sunt doar un jucător inutil de bms",
+	 "К черту мою жизнь, я просто бесполезный игрок BMS.",
+	 "Fuck maisha yangu, mimi ni mchezaji wa bms tu asiye na maana",
+	 "A la mierda mi vida, solo soy un jugador de BMS inútil",
+	 "నా జీవితాన్ని ఫక్ చేయండి, నేను పనికిరాని bms ప్లేయర్‌ని",
+	 "ชีวิตฉันมันห่วยแตก ฉันก็แค่ผู้เล่น BMS ที่ไร้ประโยชน์",
+	 "До біса моє життя, я просто марний гравець BMS",
+	 "Umrimni siking, men shunchaki foydasiz bms o'yinchisiman",
+	 "Đụ mẹ cuộc đời tôi, tôi chỉ là một thằng chơi bms vô dụng",
+	 "Ffyc fy mywyd, dim ond chwaraewr bms diwerth ydw i",
+	 "Fuck my life, I'm just a useless bms player",
+	 "Served and reverred.",
+	 "License and registration.",
+	 "My mom, Salim. Sometimes someone makes a grammatical mistake. I wrote the message last night. I was quite tired, and while I was writing this message in a rush while walking, I didn't notice the tiny mistake. It's not something you should be afraid of.",
+	 "The dice is rolled.",
+	 "Keyboard lion.",
+	 "we are in dance we must dance",
+	 "@Typhoon_36, you received a reply to your vocal message",
+	 "we're at the end of the line",
+	 "Who lives shall see",
+	 "I said what I had to say",
+	 "Leao meravigliao, FORZA DIAVOLI",
+	 "The opportunity makes man a thief.",
+	 "The wheel spins 4 everyone :P",
+	 "what boils in the pan...",
+	 "All smoke and no rent",
+	 "The wolf loses the fur but not the vice",
+	 "Shall we plant it??",
+	 "the itsy bitsy spider",
+	 "You only live once",
+	 "Motivated and determined!",
+	 "WHEN THE CAT IS ABSENT THE MICE DANCE",
+	 "the hazelnut of the matter",
+	 "ok thank you for the information but you don't need to treat me as an doormat and tell me that i always want to put the hands in the ass",
+	 "Point And comma",
+	 "The number of protons is equal to the number of electrons",
+	 "It must be me who doesn't understand",
+	 "who is at fault is suspect",
+	 "front and back photocopy",
+	 "the extremity of the tangle",
+	 "changing the order of ",
+	 "changing the order of the addends does not change the result",
+	 "pork uncle im about to take a big duuuump",
+	 "this world won't turn me evil",
+	 "yes officer",
+	 "massacre of capables, but capable of what",
+	 "we need to talk..",
+	 "5 electronic devices with which take phone calls...",
+	 "finest chocolate (with surprise)",
+	 "the return of flame",
+	 "the planetary collision",
+	 "And God said 'Let there be light'",
+	 "sausage and rapini for me",
+	 "warm up the engines",
+	 "porno trans ita",
+	
+	
+	 
+	 
+	 
+	 
+	 
+ ];
+ 
+ function RndText() {
+ var rannum= Math.floor(Math.random()*textarray.length);
+ document.getElementById('flavor-text').innerHTML=textarray[rannum];
+ }
+ onload = function() { RndText(); }
+</script>
+</html>
+
+
+
+
+
+
+
+
+
