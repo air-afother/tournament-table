@@ -1,0 +1,37 @@
+{
+    "test1": {
+      "players": [
+        "dotLight; it",
+        "DanilDanilov ; ru",
+        "nyannurs; de",
+        "tobycool; us",
+        "OmegAlex; it",
+        "BMS"
+      ],
+      "songs": [
+        "63758; sl3 Twilight Observer",
+        "37763; h◎6 locked girl@Scarlet-Devils Palace [ANOTHER]",
+        "5305; SB6 Anti Function -Scratch Factory-"
+      ],
+      "time_filter": {
+        "start": "2025-10-04T00:00:00Z",
+        "end": "2025-10-30T23:59:59Z"
+      }
+    },
+    "test2": {
+      "players": [
+        "dotLight; it",
+        "juuqi; ru"
+      ],
+      "songs": [
+        "15996; sl4 Cutter",
+        "26728; ★12 G e n g a o z o _ G O D"
+      ],
+      "time_filter": {
+        "start": "2025-10-04T00:00:00Z",
+        "end": "2025-10-19T23:59:59Z"
+      }
+      
+    }
+  }
+  
