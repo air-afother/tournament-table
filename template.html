@@ -33,7 +33,8 @@
       .sort-btn {font-size:0.7em;}
     }
 
-    .sidenav {height:100%;width:0;position:fixed;z-index:4;top:0;left:0;background-color:#0f0f16;overflow-x:hidden;padding-top:10px;transition:0.5s;}
+    .sidenav { position: fixed; top: 0; left: 0; width: 250px;                  /* larghezza fissa */ height: 100%; background-color: #0f0f16; overflow-x: hidden; padding-top: 10px; transform: translateX(-250px); /* nascosta fuori dallo schermo */ transition: transform 0.4s ease; /* animazione fluida */ z-index: 4; }
+    .sidenav.open { transform: translateX(0); }
     .sidenav a, .dropdown-btn {font-weight:500;font-size:15px;padding:6px 8px 6px 16px;color:#818181;display:block;border:none;background:none;width:100%;text-align:left;cursor:pointer;outline:none;text-decoration:none;}
     .sidenav a:hover, .dropdown-btn:hover {color:#f1f1f1;}
     #main {transition:margin-left .5s;padding-left:2%;}
@@ -113,8 +114,8 @@
         dropdownContent.style.display = (dropdownContent.style.display === "block") ? "none" : "block";
       });
     }
-    function openNav() { document.getElementById("mySidenav").style.width = "250px"; }
-    function closeNav() { document.getElementById("mySidenav").style.width = "0"; }
+    function openNav() { document.getElementById("mySidenav").classList.add("open"); }
+    function closeNav() { document.getElementById("mySidenav").classList.remove("open"); }
 
     var textarray = [
       "enjoy the cool air out on the","take the world by storm",
