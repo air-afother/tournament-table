@@ -286,14 +286,9 @@ for (i = 0; i < dropdown.length; i++) {
     }
   });
 }
-function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
-}
+function openNav() { document.getElementById("mySidenav").classList.add("open"); }
 
-/* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-} 
+function closeNav() { document.getElementById("mySidenav").classList.remove("open"); 
  var textarray = [
  "enjoy the cool air out on the",
  "take the world by storm",
@@ -433,6 +428,7 @@ function closeNav() {
  onload = function() { RndText(); }
 </script>
 </html>
+
 
 
 
