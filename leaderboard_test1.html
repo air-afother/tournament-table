@@ -42,70 +42,67 @@
     .dropdown {display:none;background-color:#1d1d2e;padding-left:8px;}
 
     .goofy-container {
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      height: auto;
-      min-height: 4.5em;
-      background-color: #771315;
-      z-index: 3;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 0 1em;
-      flex-wrap: wrap; /* ✅ permette il ritorno a capo del titolo/flavor text su schermi piccoli */
-      box-sizing: border-box;
-    }
+          position: fixed;
+          top: 0;
+          left: 0;
+          right: 0;
+          height: 4.5em;
+          background-color: #771315;
+          z-index: 3;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 0 1.5em;
+          box-sizing: border-box;
+        }
 
-    .goofy-container h1 {
-      margin: 0;
-      font-size: 1.5em;
-      flex: 1;
-      text-align: center;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-    }
+        .nav-left {
+          display: flex;
+          align-items: center;
+          gap: 0.8em;
+        }
 
-    .goofy-container img {
-      width: 2em;
-      height: 2em;
-      cursor: pointer;
-      flex-shrink: 0;
-    }
+        .nav-left img {
+          width: 2em;
+          height: 2em;
+          cursor: pointer;
+        }
 
-    #flavor-text {
-      font-size: 0.9em;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      color: #fff;
-      margin-left: auto;
-    }
+        .nav-left h1 {
+          margin: 0;
+          font-size: 1.4em;
+          white-space: nowrap;
+        }
 
-    /* ✅ Mobile-friendly */
-    @media (max-width: 768px) {
-      .goofy-container {
-        flex-direction: column;
-        align-items: center;
-        padding: 0.5em;
-      }
+        #flavor-text {
+          font-size: 0.9em;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          color: #fff;
+        }
 
-      .goofy-container h1 {
-        font-size: 1.2em;
-        text-align: center;
-        margin-top: 0.3em;
-        white-space: normal;
-      }
+        /* ✅ mobile fix: riduce font e forza il wrapping elegante */
+        @media (max-width: 768px) {
+          .goofy-container {
+            flex-direction: column;
+            align-items: flex-start;
+            height: auto;
+            padding: 0.5em 1em;
+          }
 
-      #flavor-text {
-        font-size: 0.8em;
-        margin-top: 0.2em;
-        text-align: center;
-        width: 100%;
-      }
-    }
+          .nav-left {
+            width: 100%;
+            justify-content: flex-start;
+          }
+
+          #flavor-text {
+            margin-top: 0.3em;
+            font-size: 0.8em;
+            align-self: flex-end;
+          }
+        }
+
 
 
     .log-container {width:90%;max-width:1000px;margin:2em auto;background:#111;border:1px solid #333;border-radius:8px;padding:1em;}
@@ -135,14 +132,16 @@
     </div>
   </div>
 
-  <!-- top bar -->
-  <div class="goofy-container">
-    <div class="title" style="padding-left:2%">
-      <img src="images/burger.png" alt="burger" style="width:2em;height:2em;display:inline-block;vertical-align: middle;cursor:pointer;" onclick="openNav()">
-      <h1>Bottoni Monthly Score Attack!</h1>
-      <p id="flavor-text" style="display:inline-block;vertical-align:middle;float:right;padding-right:2%;"></p>
-    </div>
+<!-- top bar -->
+<div class="goofy-container">
+  <div class="nav-left">
+    <img src="images/burger.png" alt="menu" onclick="openNav()">
+    <h1>Bottoni Monthly Score Attack!</h1>
   </div>
+  <p id="flavor-text"></p>
+</div>
+
+
 
   <!-- main table -->
   <div id="main" style="padding-top:5.2em;">
