@@ -45,41 +45,75 @@ hr{
 	height: 1px;
 	background-color: #fff;
 }
-.sidenav {
-  height: 100%; /* 100% Full-height */
-  width: 0; /* 0 width - change this with JavaScript */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Stay on top */
-  top: 0; /* Stay at the top */
-  left: 0;
-  background-color: #0f0f16; /* Black*/
-  overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 10px; /* Place content 60px from the top */
-  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
-}
-/* Style the sidenav links and the dropdown button */
-.sidenav a, .sidenav img, .dropdown-btn {
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
-  font-size: 15px;
-  padding: 6px 8px 6px 16px;
-  color: #818181;
-  display: block;
-  border: none;
-  background: none;
-  width:100%;
-  text-align: left;
-  cursor: pointer;
-  outline: none;
-  text-decoration: none;
-}
+.sidenav { position: fixed; top: 0; left: 0; width: 250px;                  /* larghezza fissa */ height: 100%; background-color: #0f0f16; overflow-x: hidden; padding-top: 10px; transform: translateX(-250px); /* nascosta fuori dallo schermo */ transition: transform 0.4s ease; /* animazione fluida */ z-index: 4; }
+    .sidenav.open { transform: translateX(0); }
+    .sidenav a, .dropdown-btn {font-weight:500;font-size:15px;padding:6px 8px 6px 16px;color:#818181;display:block;border:none;background:none;width:100%;text-align:left;cursor:pointer;outline:none;text-decoration:none;}
+    .sidenav a:hover, .dropdown-btn:hover {color:#f1f1f1;}
+    #main {transition:margin-left .5s;padding-left:2%;}
+    .active {background-color:#771315;color:white;}
+    .dropdown {display:none;background-color:#1d1d2e;padding-left:8px;}
 
-/* On mouse-over */
-.sidenav a:hover, .dropdown-btn:hover {
-  color: #f1f1f1;
-}
+    .goofy-container {
+          position: fixed;
+          top: 0;
+          left: 0;
+          right: 0;
+          height: 4.5em;
+          background-color: #771315;
+          z-index: 3;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 0 1.5em;
+          box-sizing: border-box;
+        }
+
+        .nav-left {
+          display: flex;
+          align-items: center;
+          gap: 0.8em;
+        }
+
+        .nav-left img {
+          width: 2em;
+          height: 2em;
+          cursor: pointer;
+        }
+
+        .nav-left h1 {
+          margin: 0;
+          font-size: 1.4em;
+          white-space: nowrap;
+        }
+
+        #flavor-text {
+          font-size: 0.9em;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          color: #fff;
+        }
+
+        /* ✅ mobile fix: riduce font e forza il wrapping elegante */
+        @media (max-width: 768px) {
+          .goofy-container {
+            flex-direction: column;
+            align-items: flex-start;
+            height: auto;
+            padding: 0.5em 1em;
+          }
+
+          .nav-left {
+            width: 100%;
+            justify-content: flex-start;
+          }
+
+          #flavor-text {
+            margin-top: 0.3em;
+            font-size: 0.8em;
+            align-self: flex-end;
+          }
+        }
 
 /* Main content */
 #main {
@@ -152,12 +186,13 @@ footer {
   <div class="dropdown">
   <a href="https://air-afother.github.io/tournament-table/sr-archive.html">Lower bracket archive</a>
   <a href="https://air-afother.github.io/tournament-table/sl-archive.html">Upper bracket archive</a>
+<!-- top bar -->
+<div class="goofy-container">
+  <div class="nav-left">
+    <img src="images/burger.png" alt="menu" onclick="openNav()">
+    <h1>Bottoni Monthly Score Attack!</h1>
   </div>
-	<button class="dropdown-btn">Other projects</button>
-	<div class="dropdown">
-  <a target="_blank" href="https://air-afother.github.io/osu-table">osumania 7k table</a>
-  <a target="_blank"  href="https://air-afother.github.io/combined-sara/">combined sara table</a>
-  </div>
+  <p id="flavor-text"></p>
 </div>
 
 <!-- Use any element to open the sidenav -->
@@ -411,6 +446,7 @@ function closeNav() {
  onload = function() { RndText(); }
 </script>
 </html>
+
 
 
 
