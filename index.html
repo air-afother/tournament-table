@@ -45,6 +45,41 @@ hr{
 	height: 1px;
 	background-color: #fff;
 }
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #0f0f16; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 10px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+/* Style the sidenav links and the dropdown button */
+.sidenav a, .sidenav img, .dropdown-btn {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 15px;
+  padding: 6px 8px 6px 16px;
+  color: #818181;
+  display: block;
+  border: none;
+  background: none;
+  width:100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+  text-decoration: none;
+}
+
+/* On mouse-over */
+.sidenav a:hover, .dropdown-btn:hover {
+  color: #f1f1f1;
+}
 
 /* Main content */
 #main {
@@ -117,13 +152,12 @@ footer {
   <div class="dropdown">
   <a href="https://air-afother.github.io/tournament-table/sr-archive.html">Lower bracket archive</a>
   <a href="https://air-afother.github.io/tournament-table/sl-archive.html">Upper bracket archive</a>
-<!-- top bar -->
-<div class="goofy-container">
-  <div class="nav-left">
-    <img src="images/burger.png" alt="menu" onclick="openNav()">
-    <h1>Bottoni Monthly Score Attack!</h1>
   </div>
-  <p id="flavor-text"></p>
+	<button class="dropdown-btn">Other projects</button>
+	<div class="dropdown">
+  <a target="_blank" href="https://air-afother.github.io/osu-table">osumania 7k table</a>
+  <a target="_blank"  href="https://air-afother.github.io/combined-sara/">combined sara table</a>
+  </div>
 </div>
 
 <!-- Use any element to open the sidenav -->
@@ -377,9 +411,6 @@ function closeNav() {
  onload = function() { RndText(); }
 </script>
 </html>
-
-
-
 
 
 
