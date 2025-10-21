@@ -34,9 +34,26 @@
         "end": "2025-10-19T23:59:59Z"
       }
       
-    }
+    },
+    "test3": {
+      "players": [
+        "dotLight; it",
+        "DanilDanilov ; ru"
+      ],
+      "songs": [
+        "63758; sl3 Twilight Observer",
+        "37763; h◎6 locked girl@Scarlet-Devils Palace [ANOTHER]",
+        "5305; SB6 Anti Function -Scratch Factory-",
+        "87719; 未来のコピヌ -Hope-"
+      ],
+      "time_filter": {
+        "start": "2025-10-04T00:00:00Z",
+        "end": "2025-10-30T23:59:59Z"
+      }
+    },
   }
 
   
+
 
 
