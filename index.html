@@ -80,76 +80,6 @@ footer {
     text-align: left;
     padding-left: 2%;
 }
-.sidenav { position: fixed; top: 0; left: 0; width: 250px;                  /* larghezza fissa */ height: 100%; background-color: #0f0f16; overflow-x: hidden; padding-top: 10px; transform: translateX(-250px); /* nascosta fuori dallo schermo */ transition: transform 0.4s ease; /* animazione fluida */ z-index: 4; }
-    .sidenav.open { transform: translateX(0); }
-    .sidenav a, .dropdown-btn {font-weight:500;font-size:15px;padding:6px 8px 6px 16px;color:#818181;display:block;border:none;background:none;width:100%;text-align:left;cursor:pointer;outline:none;text-decoration:none;}
-    .sidenav a:hover, .dropdown-btn:hover {color:#f1f1f1;}
-    #main {transition:margin-left .5s;padding-left:2%;}
-    .active {background-color:#771315;color:white;}
-    .dropdown {display:none;background-color:#1d1d2e;padding-left:8px;}
-
-    .goofy-container {
-          position: fixed;
-          top: 0;
-          left: 0;
-          right: 0;
-          height: 4.5em;
-          background-color: #771315;
-          z-index: 3;
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-          padding: 0 1.5em;
-          box-sizing: border-box;
-        }
-
-        .nav-left {
-          display: flex;
-          align-items: center;
-          gap: 0.8em;
-        }
-
-        .nav-left img {
-          width: 2em;
-          height: 2em;
-          cursor: pointer;
-        }
-
-        .nav-left h1 {
-          margin: 0;
-          font-size: 1.4em;
-          white-space: nowrap;
-        }
-
-        #flavor-text {
-          font-size: 0.9em;
-          white-space: nowrap;
-          overflow: hidden;
-          text-overflow: ellipsis;
-          color: #fff;
-        }
-
-        /* ✅ mobile fix: riduce font e forza il wrapping elegante */
-        @media (max-width: 768px) {
-          .goofy-container {
-            flex-direction: column;
-            align-items: flex-start;
-            height: auto;
-            padding: 0.5em 1em;
-          }
-
-          .nav-left {
-            width: 100%;
-            justify-content: flex-start;
-          }
-
-          #flavor-text {
-            margin-top: 0.3em;
-            font-size: 0.8em;
-            align-self: flex-end;
-          }
-        }
-
 
 </style>
    </head>
@@ -447,6 +377,7 @@ function closeNav() {
  onload = function() { RndText(); }
 </script>
 </html>
+
 
 
 
