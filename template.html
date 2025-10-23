@@ -325,28 +325,48 @@
     onload = function() { RndText(); }
 
     let sortDirections = {};
+
     function parseCellValue(v) {
       if (v === "" || v === null) return -Infinity;
       var n = parseFloat(v);
       if (!isNaN(n)) return n;
       return v.toString().toLowerCase();
     }
-    function sortTable(colIndex) {
+
+    function sortTable(colIndex, mode = "score") {
       const table = document.getElementById("leaderboard");
       const tbody = table.tBodies[0];
       const rows = Array.from(tbody.querySelectorAll("tr"));
-      const currentDir = sortDirections[colIndex] || "asc";
+      const currentDir = sortDirections[colIndex + "_" + mode] || "asc";
       const newDir = currentDir === "asc" ? "desc" : "asc";
-      sortDirections[colIndex] = newDir;
-      rows.sort((a,b) => {
-        const av = a.children[colIndex].getAttribute("data-value") || a.children[colIndex].innerText.trim();
-        const bv = b.children[colIndex].getAttribute("data-value") || b.children[colIndex].innerText.trim();
+      sortDirections[colIndex + "_" + mode] = newDir;
+
+      rows.sort((a, b) => {
+        const aCell = a.children[colIndex];
+        const bCell = b.children[colIndex];
+
+        let av = "";
+        let bv = "";
+
+        if (mode === "bp") {
+          // cerca nel contenuto <small>BP: xxx
+          const aSmall = aCell.querySelector("small");
+          const bSmall = bCell.querySelector("small");
+          av = aSmall ? (aSmall.innerText.match(/BP:\s*(\d+)/)?.[1] || "999999") : "999999";
+          bv = bSmall ? (bSmall.innerText.match(/BP:\s*(\d+)/)?.[1] || "999999") : "999999";
+        } else {
+          // default: data-value (score)
+          av = aCell.getAttribute("data-value") || aCell.innerText.trim();
+          bv = bCell.getAttribute("data-value") || bCell.innerText.trim();
+        }
+
         const ap = parseCellValue(av);
         const bp = parseCellValue(bv);
         if (ap < bp) return newDir === "asc" ? -1 : 1;
         if (ap > bp) return newDir === "asc" ? 1 : -1;
         return 0;
       });
+
       tbody.innerHTML = "";
       rows.forEach(r => tbody.appendChild(r));
     }
