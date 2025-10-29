@@ -196,10 +196,16 @@
             <div class='log-container'>
             <h3>Raise History</h3>
             <div class='log-filters'>
-                <input type='text' id='filter-player' placeholder='Filter by player...' oninput='filterLogs()'>
-                <input type='text' id='filter-song' placeholder='Filter by song...' oninput='filterLogs()'>
+                <select id='filter-player' onchange='filterLogs()'>
+                <option value=''>All players</option>
+                <option value='dotLight'>dotLight</option><option value='juuqi'>juuqi</option>
+                </select>
+                <select id='filter-song' onchange='filterLogs()'>
+                <option value=''>All songs</option>
+                <option value='sl4 Cutter'>sl4 Cutter</option><option value='★12 G e n g a o z o _ G O D'>★12 G e n g a o z o _ G O D</option>
+                </select>
                 <select id='filter-type' onchange='filterLogs()'>
-                <option value=''>All types</option>
+                <option value=''>All raises</option>
                 <option value='score'>Score raises</option>
                 <option value='bp'>BP raises</option>
                 <option value='lamp'>Lamp raises</option>
@@ -217,13 +223,16 @@
             for (let i = 0; i < lines.length; i++) {
                 const txt = lines[i].textContent.toLowerCase();
                 let show = true;
+
                 if (playerFilter && !txt.includes(playerFilter)) show = false;
                 if (songFilter && !txt.includes(songFilter)) show = false;
+
                 if (typeFilter) {
                 if (typeFilter === 'bp' && !txt.includes('bp')) show = false;
                 else if (typeFilter === 'score' && !txt.match(/: \d+ ->/)) show = false;
                 else if (typeFilter === 'lamp' && !txt.includes('lamp')) show = false;
                 }
+
                 lines[i].style.display = show ? '' : 'none';
             }
             }

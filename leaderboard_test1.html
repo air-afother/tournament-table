@@ -203,10 +203,16 @@
             <div class='log-container'>
             <h3>Raise History</h3>
             <div class='log-filters'>
-                <input type='text' id='filter-player' placeholder='Filter by player...' oninput='filterLogs()'>
-                <input type='text' id='filter-song' placeholder='Filter by song...' oninput='filterLogs()'>
+                <select id='filter-player' onchange='filterLogs()'>
+                <option value=''>All players</option>
+                <option value='BMS'>BMS</option><option value='DanilDanilov'>DanilDanilov</option><option value='Matte_IIDX'>Matte_IIDX</option><option value='OmegAlex'>OmegAlex</option><option value='dotLight'>dotLight</option><option value='ergo'>ergo</option><option value='fen'>fen</option><option value='nyannurs'>nyannurs</option><option value='tobycool'>tobycool</option>
+                </select>
+                <select id='filter-song' onchange='filterLogs()'>
+                <option value=''>All songs</option>
+                <option value='SB6 Anti Function -Scratch Factory-'>SB6 Anti Function -Scratch Factory-</option><option value='h◎6 locked girl@Scarlet-Devils Palace [ANOTHER]'>h◎6 locked girl@Scarlet-Devils Palace [ANOTHER]</option><option value='sl3 Twilight Observer'>sl3 Twilight Observer</option>
+                </select>
                 <select id='filter-type' onchange='filterLogs()'>
-                <option value=''>All types</option>
+                <option value=''>All raises</option>
                 <option value='score'>Score raises</option>
                 <option value='bp'>BP raises</option>
                 <option value='lamp'>Lamp raises</option>
@@ -224,13 +230,16 @@
             for (let i = 0; i < lines.length; i++) {
                 const txt = lines[i].textContent.toLowerCase();
                 let show = true;
+
                 if (playerFilter && !txt.includes(playerFilter)) show = false;
                 if (songFilter && !txt.includes(songFilter)) show = false;
+
                 if (typeFilter) {
                 if (typeFilter === 'bp' && !txt.includes('bp')) show = false;
                 else if (typeFilter === 'score' && !txt.match(/: \d+ ->/)) show = false;
                 else if (typeFilter === 'lamp' && !txt.includes('lamp')) show = false;
                 }
+
                 lines[i].style.display = show ? '' : 'none';
             }
             }
