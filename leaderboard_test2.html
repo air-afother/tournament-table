@@ -117,20 +117,30 @@
   color:#66f;
   font-size:0.8em;
 }
-	  .log-filters {
+.log-filters {
   display: flex;
-  gap: 8px;
+  gap: 10px;
   margin-bottom: 10px;
+  flex-wrap: wrap;
 }
 
-.log-filters input, .log-filters select {
+.log-filters select {
   background-color: #111;
   color: #fff;
   border: 1px solid #333;
   border-radius: 4px;
-  padding: 4px 8px;
+  padding: 6px 10px;
   font-size: 0.9em;
+  min-width: 160px;
 }
+
+.log-filters select:focus {
+  outline: none;
+  border-color: #771315;
+}
+
+
+
 
 .log-filters input:focus, .log-filters select:focus {
   outline: none;
@@ -449,6 +459,7 @@
   </script>
 </body>
 </html>
+
 
 
 
