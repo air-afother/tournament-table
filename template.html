@@ -12,11 +12,11 @@
     .flag {width:20px;height:auto;margin-right:8px;flex-shrink:0;}
     .player-cell {text-align:center;}
     .player-link {display:inline-flex;align-items:center;color:#fff;text-decoration:none;font-weight:500;min-width:120px;}
-    .player-link:hover {text-decoration:underline;color:#ffd700;}
+    .player-link:hover {text-decoration:underline;color:#ed2024;}
     .song-link {color:#fff;text-decoration:none;}
-    .song-link:hover {color:#ffd700;text-decoration:underline;}
+    .song-link:hover {color:#ed2024;text-decoration:underline;}
     .sort-btn {background:none;border:none;color:#fff;cursor:pointer;font-size:0.9em;margin-left:6px;white-space:nowrap;}
-    .sort-btn:hover {color:#ffd700;}
+    .sort-btn:hover {color:#ed2024;}
     .th-flex {display:flex;justify-content:space-between;align-items:center;white-space:nowrap;}
 
     .table-container {width:100%;overflow-x:auto;scrollbar-width: thin;scrollbar-color:#a3a3a3 #1d1d2e;}
@@ -206,10 +206,10 @@
   <!-- rating formula -->
   <div style="width:90%;max-width:1200px;margin:1em auto;text-align:left;">
     <p>
-      Rating for each score is calculated according to your rank within each song, with this formula:<br>
+      Rating for each song is calculated according to your rank within each song for both score and BP, with this formula:<br>
       <b>Rating = 100 × (1 - ((Rank - 1) / Players))</b><br>
-      Highest score → 100 Rating, halfway through the leaderboard → 50 Rating, last → 100/Players Rating.<br>
-      Total Rating = average across all songs.
+      Highest score gives 100 Rating, halfway through the leaderboard gives 50 Rating, last gives 100/Players Rating.<br>
+      Total Rating = average Rating across all score Ratings and BP Ratings.
     </p>
   </div>
 
@@ -412,6 +412,7 @@
   </script>
 </body>
 </html>
+
 
 
 
