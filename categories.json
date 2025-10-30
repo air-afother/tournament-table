@@ -14,11 +14,12 @@
       "songs": [
         "63758; sl3 Twilight Observer",
         "37763; h◎6 locked girl@Scarlet-Devils Palace [ANOTHER]",
-        "5305; SB6 Anti Function -Scratch Factory-"
+        "5305; SB6 Anti Function -Scratch Factory-",
+          "90376; dy0 黄昏のメロディア [久遠]"
       ],
       "time_filter": {
         "start": "2025-10-04T00:00:00Z",
-        "end": "2025-10-30T23:59:59Z"
+        "end": "2025-10-25T23:59:59Z"
       }
     },
     "test2": {
@@ -55,6 +56,7 @@
   }
 
   
+
 
 
 
