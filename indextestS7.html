@@ -285,6 +285,22 @@ footer a:hover {
   }
 }
 
+.poster-credit {
+  font-size: 0.8em;
+  color: rgba(255,255,255,0.6);
+  margin-top: 4px;
+  text-align: center;
+}
+
+.poster-credit a {
+  color: rgba(255,255,255,0.7);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.poster-credit a:hover {
+  color: #ed2024;
+}
 
 
 </style>
@@ -397,11 +413,15 @@ footer a:hover {
     </ol>
 	
 
-    <div class="allineatitiprego" style="display:inline-block;vertical-align: middle;  display: flex;justify-content: center;"><!-- OG!!! quando 2 eccoo
-    <img src="images/bmsa-s5-samba-lower.jpg" alt="s5 sr poster" style="width:45%;display:block;margin-top:15px;display:inline-block;vertical-align: middle;"">
-    <img src="images/bmsa-s5-samba-upper.jpg" alt="s5 sl poster" style="width:45%;margin-left:2%;display:block;margin-top:15px;display:inline-block;vertical-align: middle;""> -->
-    <img src="images/s7placeholder.png" alt="s5 sl poster" style="max-height: 1000px; max-width:70%;margin-left:2%;display:block;margin-top:15px;display:inline-block;vertical-align: middle;"">
+<div class="allineatitiprego" style="display: flex; justify-content: center; flex-direction: column; align-items: center; margin-top: 15px;">
+  <img 
+    src="images/bmsa-S7-poster.png" 
+    alt="S7 poster" 
+    style="max-height: 1000px; max-width:70%; border-radius: 6px;"
+  >
+  <p class="poster-credit">shoutouts <a href="https://twitch.tv/beachsidebunny" target="_blank">nyannurs</a> for the poster!</p>
 </div>
+
 
 <div id="rules" class="regole" style="padding-bottom:5em;">
 <h2>Rules:</h2>
@@ -681,6 +701,7 @@ function closeNav() { document.getElementById("mySidenav").classList.remove("ope
  onload = function() { RndText(); }
 </script>
 </html>
+
 
 
 
