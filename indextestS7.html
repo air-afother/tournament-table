@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html>
+   <head>
+    <link rel="icon" type="image/x-icon" href="images/smerdy.jpg">
+    <meta name="bmstable" content="header-S7.json" />
+    <title>BMSA! Tournament Table</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	   
+	   
+      <style>
+a:hover {
+  color: #ed2024;
+}
+
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  color: #fff;
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color:hwb(257 5% 83%);
+table.center{
+ width: 90%;
+
+
+}
+a{
+	color: #fff;
+	visited: #fff;
+	hovered: #fff;
+	active: #fff;
+}
+hr{
+	color: #fff;
+	width: 90%;
+	height: 1px;
+	background-color: #fff;
+}
+
+
+/* Main content */
+
+
+
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+footer {
+  position: relative;
+  width: 100%;
+  height: 4.5em;
+  background-color: #221349;
+  color: #ed2024;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 2em;
+  box-sizing: border-box;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  margin-top: 3em;
+  box-shadow: 0 -2px 10px rgba(0,0,0,0.3);
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 1.5em;
+  font-weight: 500;
+  transition: opacity 0.2s ease, color 0.2s ease;
+}
+
+footer a:hover {
+  color: #ed2024;
+  opacity: 0.9;
+}
+
+
+
+	.sidenav { position: fixed; top: 0; left: 0; width: 250px;                  /* larghezza fissa */ height: 100%; background-color: #0f0f16; overflow-x: hidden; padding-top: 10px; transform: translateX(-250px); /* nascosta fuori dallo schermo */ transition: transform 0.4s ease; /* animazione fluida */ z-index: 4; }
+    .sidenav.open { transform: translateX(0); }
+    .sidenav a, .dropdown-btn {font-weight:500;font-size:15px;padding:6px 8px 6px 16px;color:#818181;display:block;border:none;background:none;width:100%;text-align:left;cursor:pointer;outline:none;text-decoration:none;}
+    .sidenav a:hover, .dropdown-btn:hover {color:#f1f1f1;}
+    #main {transition:margin-left .5s;padding-left:2%;}
+    .active {background-color:#221349;color:white;}
+    .dropdown {display:none;background-color:#1d1d2e;padding-left:8px;}
+
+    .goofy-container {
+          position: fixed;
+          top: 0;
+          left: 0;
+          right: 0;
+          height: 4.5em;
+          background-color: #221349;
+          color: #ed2024;
+          z-index: 3;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 0 1.5em;
+          box-sizing: border-box;
+        }
+
+        .nav-left {
+          display: flex;
+          align-items: center;
+          gap: 0.8em;
+        }
+
+        .nav-left img {
+          width: 2em;
+          height: 2em;
+          cursor: pointer;
+        }
+
+        .nav-left h1 {
+          margin: 0;
+          font-size: 1.4em;
+          white-space: nowrap;
+        }
+
+        #flavor-text {
+          font-size: 0.9em;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          color: #fff;
+        }
+
+        /* ✅ mobile fix: riduce font e forza il wrapping elegante */
+        @media (max-width: 768px) {
+          .goofy-container {
+            flex-direction: column;
+            align-items: flex-start;
+            height: auto;
+            padding: 0.5em 1em;
+          }
+
+          .nav-left {
+            width: 100%;
+            justify-content: flex-start;
+          }
+
+          #flavor-text {
+            color: #ed2024;
+            margin-top: 0.3em;
+            font-size: 0.8em;
+            align-self: flex-end;
+          }
+        }
+/* form container: start chiuso con max-height 0, poi apri con .open */
+#form-container {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0; /* 👈 toglie spazio quando è chiuso */
+  margin-top: 0;
+  margin: 0;
+  transition: max-height 0.5s ease, opacity 0.3s ease, padding 0.3s ease;
+}
+
+#form-container.open {
+  max-height: 420px; /* 👈 altezza visibile */
+  opacity: 1;
+  padding: 6px; /* 👈 riappare con l’apertura */
+  margin-top: 10px;
+  border-radius: 8px;
+  border: 1px solid rgba(255,255,255,0.06);
+  background-color: rgba(255,255,255,0.02);
+  box-sizing: border-box;
+}
+
+
+/* iframe dimensioni e stile */
+#form-container iframe {
+  width: 60%;
+  height: 400px /* regola se vuoi +/- */
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.18);
+  background-color: transparent;
+  border: none;
+}
+@media (max-width: 80%) {
+  #form-container iframe { height: 400px; }
+}
+
+#form-arrow {
+  display: inline-block;
+  margin-left: 6px;
+  transition: transform 0.3s ease;
+}
+
+#form-arrow.open {
+  transform: rotate(180deg); /* ↑ ruota */
+}
+
+.external-link {
+  font-size: 0.9em;
+  margin-left: 6px;
+  text-decoration: none;
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
+}
+
+.external-link:hover {
+  opacity: 1;
+}
+
+.listaelement {
+  margin-bottom: 10px;
+}
+.progress-nav {
+  position: fixed;
+  top: 4.8em; /* sotto la navbar */
+  right: 1.5em;
+  width: 6px;
+  height: 200px;
+  background: rgba(255,255,255,0.08);
+  border-radius: 4px;
+  z-index: 5;
+}
+
+/* Distribuisce i link lungo la barra */
+.progress-nav a {
+  position: absolute;
+  right: 110%;
+  width: max-content;
+  color: rgba(255,255,255,0.7);
+  font-size: 0.9em;
+  text-decoration: none;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+/* Posizionamento proporzionale (3 sezioni) */
+.progress-nav a:nth-child(1) { top: 0%; transform: translateY(0); }
+.progress-nav a:nth-child(2) { top: 50%; transform: translateY(-50%); }
+.progress-nav a:nth-child(3) { bottom: 0%; transform: translateY(50%); }
+
+.progress-nav a:hover {
+  color: #ed2024;
+  transform: scale(1.05);
+}
+
+.progress-nav .progress-bar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 6px;
+  height: 0%;
+  background-color: #ed2024;
+  border-radius: 4px;
+  transition: height 0.25s ease;
+}
+
+.progress-nav a.active {
+  color: #ed2024;
+  font-weight: 600;
+}
+
+
+
+@media (max-width: 768px) {
+  .chapter-nav {
+    display: none;
+  }
+}
+
+
+
+</style>
+   </head>
+   <body>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="font-size:20px">&times;</a>
+  <button class="dropdown-btn">BMSA! S7: Hakurei Shrine Showdown Leaderboards</button>
+  <div class="dropdown">
+    <a href="https://air-afother.github.io/tournament-table/leaderboard_S7_sd.html">Beginner Leaderboard</a>
+    <a href="https://air-afother.github.io/tournament-table/leaderboard_S7_sr.html">Lower Leaderboard</a>
+    <a href="https://air-afother.github.io/tournament-table/leaderboard_S7_sl.html">Intermediate Leaderboard</a>
+    <a href="https://air-afother.github.io/tournament-table/leaderboard_S7_st.html">Advanced Leaderboard</a>
+    <a href="https://air-afother.github.io/tournament-table/leaderboard_S7_st.html">Bonus Leaderboard</a>
+    </div>
+  <button class="dropdown-btn">BMSA! S6: Spooky Scary Selection Leaderboards</button>
+  <div class="dropdown">
+    <a href="https://air-afother.github.io/tournament-table/leaderboard_sd_S6.html">Beginner Leaderboard</a>
+    <a href="https://air-afother.github.io/tournament-table/leaderboard_sr_S6.html">Lower Leaderboard</a>
+    <a href="https://air-afother.github.io/tournament-table/leaderboard_sl_S6.html">Intermediate Leaderboard</a>
+    <a href="https://air-afother.github.io/tournament-table/leaderboard_st_S6.html">Advanced Leaderboard</a>
+    </div>
+  <button class="dropdown-btn">BMSA! S5: Samba Septemba</button>
+	<div class="dropdown">
+		<a href="https://air-afother.github.io/tournament-table/s5srrank.html">Lower Bracket</a>
+		<a href="https://air-afother.github.io/tournament-table/s5slrank.html">Upper Bracket</a>
+	</div>
+  <button class="dropdown-btn">BMSA! S4: Beach Side BMS</button>
+	<div class="dropdown">
+		<a href="https://air-afother.github.io/tournament-table/s4srrank.html">Lower Bracket</a>
+		<a href="https://air-afother.github.io/tournament-table/s4slrank.html">Upper Bracket</a>
+	</div>
+  <button class="dropdown-btn">BMSA! S3: trance.system ONLINE</button>
+	<div class="dropdown">
+		<a href="https://air-afother.github.io/tournament-table/s3srrank.html">Lower Bracket</a>
+		<a href="https://air-afother.github.io/tournament-table/s3slrank.html">Upper Bracket</a>
+	</div>
+  <button class="dropdown-btn">BMSA! S2: DENPA NEVER DIE</button>
+	<div class="dropdown">
+		<a href="https://air-afother.github.io/tournament-table/s2srrank.html">Lower Bracket</a>
+		<a href="https://air-afother.github.io/tournament-table/s2slrank.html">Upper Bracket</a>
+	</div>
+  <button class="dropdown-btn">Season archive tables</button>
+  <div class="dropdown">
+  <a href="https://air-afother.github.io/tournament-table/sr-archive.html">Lower bracket archive</a>
+  <a href="https://air-afother.github.io/tournament-table/sl-archive.html">Upper bracket archive</a>
+  </div>
+	<button class="dropdown-btn">Other projects</button>
+	<div class="dropdown">
+		<a target="_blank"  href="https://monthly.bottoni.club/">SDVX monthly</a>
+  <a target="_blank" href="https://air-afother.github.io/osu-table">osumania 7k table</a>
+  <a target="_blank"  href="https://air-afother.github.io/combined-sara/">combined sara table</a>
+  </div>
+</div>
+
+<!-- Use any element to open the sidenav -->
+  
+<div id="main" class="main">
+<!-- top bar -->
+<div class="goofy-container">
+  <div class="nav-left">
+    <img src="images/burger rosso.png" alt="menu" onclick="openNav()">
+    <h1>Bottoni Monthly Score Attack!</h1>
+  </div>
+  <p id="flavor-text" style="color: #ed2024;"></p>
+</div>
+
+<!-- molto brutto
+<div class="progress-nav">
+  <a href="#intro" data-section="intro">Intro</a>
+  <a href="#rules" data-section="rules">Rules</a>
+  <a href="#faq" data-section="faq">FAQ</a>
+  <div class="progress-bar"></div>
+</div>
+-->
+
+
+<div id="intro" class="current-season" style="padding-top:5em;">
+    
+    <h1>BMSA! S7: Hakurei Shrine Showdown</h1>
+    <h4>02/11/2025 - 16/11/2025 23:59 UTC+2</h4>
+
+    <h2>How to join the competition:</h2>
+    <ol>
+      <li ><h3 style="margin-bottom: 0;"> Fill out the <a href="javascript:void(0)" onclick="toggleForm()">registration form<span id="form-arrow">&#9660;</span></a>  <a target="_blank" href="https://forms.gle/7NoWen4UfMhHkMwg7">&#x2197;</a> </h3>
+        <div id="form-container">
+
+          <iframe 
+            src="https://docs.google.com/forms/d/e/1FAIpQLScRlEnR77WIYWHfQjDGIH80inPPRIvkuqio_Q8725wXuUEoLg/viewform?embedded=true" 
+            height="400px" frameborder="0" marginheight="0" marginwidth="0">
+            Loading…
+          </iframe>
+        </div></li>
+      <li><h3>Load this page's URL into LR2oraja or BeMusicSeeker as a table </h3></li>
+        <li><h3>Open the tournament table folder</h3></li>
+      <li><h3>Start Playing the Charts!</h3></li>
+      <li><h3>Check the current rankings from the leaderboard pages (also accessible from the sidebar):</h3> <ul>
+        <li class="listaelement"><a href="https://air-afother.github.io/tournament-table/leaderboard_s7_sd.html">Beginner Leaderboard</a></li>
+        <li class="listaelement"><a href="https://air-afother.github.io/tournament-table/leaderboard_s7_sr.html">Lower Leaderboard</a></li>
+        <li class="listaelement"><a href="https://air-afother.github.io/tournament-table/leaderboard_s7_sl.html">Intermediate Leaderboard</a></li>
+        <li class="listaelement"><a href="https://air-afother.github.io/tournament-table/leaderboard_s7_st.html">Advanced Leaderboard</a></li>
+        <li class="listaelement"><a href="https://air-afother.github.io/tournament-table/leaderboard_s7_bonus.html">Bonus Leaderboard</a></li>
+
+      </ul>
+      
+      
+        </li>
+        <li><h3>Join the <a href="https://discord.com/invite/reuR2qUtgk" target="_blank">BMS Europe Discord Server</a> to stay updated, discuss and scorepost </h3></li>
+
+    </ol>
+	
+
+    <div class="allineatitiprego" style="display:inline-block;vertical-align: middle;  display: flex;justify-content: center;"><!-- OG!!! quando 2 eccoo
+    <img src="images/bmsa-s5-samba-lower.jpg" alt="s5 sr poster" style="width:45%;display:block;margin-top:15px;display:inline-block;vertical-align: middle;"">
+    <img src="images/bmsa-s5-samba-upper.jpg" alt="s5 sl poster" style="width:45%;margin-left:2%;display:block;margin-top:15px;display:inline-block;vertical-align: middle;""> -->
+    <img src="images/s7placeholder.png" alt="s5 sl poster" style="max-height: 1000px; max-width:70%;margin-left:2%;display:block;margin-top:15px;display:inline-block;vertical-align: middle;"">
+</div>
+
+<div id="rules" class="regole" style="padding-bottom:5em;">
+<h2>Rules:</h2>
+  <h4> Registration </h4>
+  <p>In order to get registered to compete in the tournament, please fill out the <a href="https://forms.gle/jBWcXbZLM3W97gZT9" target="_blank">registration form</a><br>If registered with a bokutachi account, your scores will submit automatically to the leaderboards, which you can find the link to in the navigation sidebar.</p>
+	<h4> Bracket selection </h4>
+	<p>You will be placed in the difficulty bracket(s) you chose in the registration form<br>
+    The difficulty brackets are made with the following skill ranges in mind (but you aren't strictly bound to them):<br></p><ul>
+		<li class="listaelement"><b>Beginner:</b> for anyone new to the game, below IIDX 7th dan</li>
+		<li class="listaelement"><b>Lower:</b> for players around IIDX 8th to 10th dan, below insane 1st dan</li>
+    <li class="listaelement"><b>Intermediate:</b> for players around IIDX chuuden and kaiden, below insane 10th dan</li>
+    <li class="listaelement"><b>Advanced:</b> for anyone above insane 8th/9th dan</li>
+    <li class="listaelement"><b>Bonus:</b> open to everyone; mostly intended for Intermediate and Advanced level players</li>
+	</ul>
+	<p>If your scores end up way too good for your bracket, you might get moved up to a higher bracket. Please don't smurf!</p>
+
+<h4> Score submission </h4>
+	<p>If you have provided your bokutachi account in the registration form and you are uploading scores correctly to the IR, your scores should automatically show up in the leaderboard pages within a couple of minutes. If you don't have a bokutachi account, please make one <a href="https://boku.tachi.ac/register" target="_blank">here</a><br>
+    If you want to proceed with manual score submission, post your scores and raises on any discord server you have in common with me (dot_light), ping me, and i will add the scores manually to the spreadsheet as soon as possible. 
+  </p>
+
+<h4> Game client and options</h4>
+	<p>Any client supported by bokutachi can be used: that includes Lunatic Rave 2, LR2oraja, and Endless Dream.<br>
+     MIRROR, RANDOM (random trainer included), R-RANDOM and S-RANDOM are allowed. <br>
+    NOTE: LR2 scores don't have a timestamp, which means that LR2 scores manually uploaded to tachi will not get picked up because of the date filter.</p>
+
+<h4> Ranking</h4>
+	<p>Ranking is decided based on a rating that comes from a formula which takes in account the amount of players participating and emphasizes the player ranking in the individual charts and the total score. You can find the formula for Rating in the leaderboard pages.<br>
+  Starting from S7, your BP on every chart will also be assigned a Rating according to how well you did relative to the other players.</p> 
+
+<h2 id="faq">FAQ</h2>
+  
+
+	<p>Q. <b>Why these charts??</b><br>
+	A. All the charts chosen follow a theme that changes every month.<br><br>
+
+	Q. <b>Where do I get the charts?</b><br>
+	A. You can find the dl on the ranking page for the current season. (Check to burger menu on the top left!)<br><br>
+
+	Q. <b>Is there a way to find the charts quicker?</b><br>
+	A. This page's url is a table! You can put it in your client to find the current tournament charts quickly. If for some reason you're looking for older tournaments charts, check the archive section on the hamburger menu on the top left.
+<br><br>
+	Q. <b>I feel like there is something wrong with the calculation who do I tell?</b><br>
+	A. Spam DM me on discord.<br><br>
+
+	Q. <b>Miss count when?</b><br>
+	A. NOW!</p>
+
+  <p>Q. <b>What's a "bottoni" anyway?</b><br>
+    A. Premere Bottoni, usually shortened to just Bottoni, is the main BEMANI community in Italy. Earlier seasons of the BMSA! where hosted on Bottoni, in collaboration with the BMS Europe discord, and thus partecipation was limited to european players.<br>
+    Starting from Season 6, we decided to allow players from all over the world to increase player count, to make the ranking more varied, and in general to allow more people to have fun and compete!<br>
+</div>
+
+<!-- è orribile LOL!
+
+<footer>
+  <a target="_blank" href="https://bottoni.club">Premere Bottoni</a>
+  <a target="_blank" href="https://discord.com/invite/reuR2qUtgk">BMS Europe</a>
+</footer>
+
+ -->
+
+
+</body>
+
+
+
+<script>
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+}
+
+function toggleForm() {
+  const form = document.getElementById("form-container");
+  const arrow = document.getElementById("form-arrow");
+  
+  form.classList.toggle("open");
+  arrow.classList.toggle("open");
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  const links = document.querySelectorAll(".progress-nav a");
+  const sections = Array.from(links).map(link =>
+    document.querySelector(`#${link.dataset.section}`)
+  );
+  const progressBar = document.querySelector(".progress-bar");
+
+  function updateProgress() {
+    let scrollTop = window.scrollY;
+    let docHeight = document.body.scrollHeight - window.innerHeight;
+    let scrollPercent = (scrollTop / docHeight) * 100;
+
+    // Aggiorna la barra
+    progressBar.style.height = `${scrollPercent}%`;
+
+    // Trova sezione corrente
+    let currentSection = sections.findLast(
+      section => scrollTop + 150 >= section.offsetTop
+    );
+
+    if (currentSection) {
+      links.forEach(link =>
+        link.classList.toggle(
+          "active",
+          link.dataset.section === currentSection.id
+        )
+      );
+    }
+  }
+
+  window.addEventListener("scroll", updateProgress);
+  updateProgress(); // inizializza
+
+  // Smooth scroll (già attivo nel CSS, ma per compatibilità)
+  links.forEach(link => {
+    link.addEventListener("click", e => {
+      e.preventDefault();
+      document
+        .querySelector(`#${link.dataset.section}`)
+        .scrollIntoView({ behavior: "smooth" });
+    });
+  });
+});
+
+
+
+function openNav() { document.getElementById("mySidenav").classList.add("open"); }
+
+function closeNav() { document.getElementById("mySidenav").classList.remove("open"); }
+ var textarray = [
+ "enjoy the cool air out on the",
+ "take the world by storm",
+ "a refreshing atmosphere",
+ "FEEL'in SEPIA AIR",
+ "0xE9504DF6 think purple",
+ "waiting contact with",
+ "st9 Clear Detector Technology",
+ "Suggest more texts on discord!",
+ "eeffoc",
+ "I heard you like nanahira?",
+ "Battery Manageement System",
+ "zkldi where is my sieglinde",
+ "Alcohol abuse? I love alcohol I would never",
+	"china evil peeking techniques wallhack scripter",
+	 "Amen brother",
+	 "Super bigass",
+	 "Filled up the nitrous ❤️❤️",
+	 "we ❤️ anb we love they/them all/any",
+	 "@CtrlAltCancer ALL TIME ANB CLASSIC",
+	 "blessed arab upload",
+	 "💅eeffoc",
+	 "@realPoliziaPostale CHECK NOW!",
+	 "gooners x radical feminists alliance",
+	 "edging my fine bottoni.club it focuses who ahahahah",
+	 "Absolutely you play from losing",
+	 "Party hard in HDR you find her",
+	 "DAMN the tournament of disaster",
+	 "Giant Totti",
+	 "we were talking specifically 'free troubles here'",
+	 "Kid traumatised from korean fans of pipes",
+	 "thesedicks of existing",
+	 "sdvx only betatesting for some trolling with clear of theirs, rightfully",
+	 "Scheiß auf mein Leben, ich bin bloß ein nichtznutziger bms-spieler",
+	 "Fok my lewe, ek is net 'n useless bms player",
+	 "Dreq jetën time, unë jam vetëm një lojtar i kotë bms",
+	 "لعنة على حياتي، أنا مجرد لاعب BMS عديم الفائدة",
+	 "Ջի՛մ կյանքս, ես ուղղակի անպետք bms խաղացող եմ",
+	 "ফাক মাই লাইফ, আমি শুধু একজন অকেজো বিএমএস প্লেয়ার",
+	 "A la merda la meva vida, només sóc un jugador de bms inútil",
+	 "Fuck ជីវិតរបស់ខ្ញុំ ខ្ញុំគ្រាន់តែជាអ្នកលេង bms ដែលគ្មានប្រយោជន៍",
+	 "操我的生活，我只是一个没用的 BMS 玩家",
+	 "Jebi mi život, ja sam samo beskoristan bms player",
+	 "Seru na můj život, jsem jen zbytečný hráč bms",
+	 "Fuck mit liv, jeg er bare en ubrugelig bms-spiller",
+	 "Fuck my life, ik ben gewoon een nutteloze bms-speler",
+	 "Persse mu elu, ma olen lihtsalt kasutu bms mängija",
+	 "Vittu elämäni, olen vain turha bms-pelaaja",
+	 "Putain ma vie, je ne suis qu'un joueur de BMS inutile",
+	 "Γάμα μου τη ζωή, είμαι απλά ένας άχρηστος παίκτης bms",
+	 "לעזאזל עם החיים שלי, אני פשוט שחקן bms חסר תועלת",
+	 "मेरी जिंदगी को भाड़ में जाओ, मैं तो बस एक बेकार बीएमएस प्लेयर हूँ",
+	 "Baszd meg az életem, én csak egy haszontalan bms játékos vagyok",
+	 "Fokk líf mitt, ég er bara ónýtur bms spilari",
+	 "Persetan dengan hidupku, aku hanya pemain BMS yang tidak berguna",
+	 "Fanculo la mia vita, sono solo un inutile giocatore di BMS",
+	 "人生なんてクソくらえ、俺はただの役立たずのBMSプレイヤーだ",
+	 "내 인생 엿먹어, 난 그저 쓸모없는 BMS 플레이어일 뿐이야",
+	 "Pedicabo vitam meam, et inutilem sum bms ludio ludius",
+	 "Bāc ar manu dzīvi, es esmu tikai nekam nederīgs bms spēlētājs",
+	 "Ебати ми животот, јас сум само бескорисен бмс плеер",
+	 "എൻ്റെ ജീവിതം ഭോഗിക്കുക, ഞാൻ ഒരു ഉപയോഗശൂന്യമായ ബിഎംഎസ് പ്ലെയർ മാത്രമാണ്",
+	 "Амьдралыг минь новш, би зүгээр л нэг хэрэггүй bms тоглогч",
+	 "Faen livet mitt, jeg er bare en ubrukelig bms-spiller",
+	 "لعنت به زندگی من، من فقط یک پخش کننده bms بی مصرف هستم",
+	 "Kurwa, jestem tylko bezużytecznym graczem bms",
+	 "Foda-se minha vida, sou apenas um tocador de bms inútil",
+	 "ਮੇਰੀ ਜ਼ਿੰਦਗੀ ਨੂੰ ਭੰਡੋ, ਮੈਂ ਸਿਰਫ਼ ਇੱਕ ਬੇਕਾਰ ਬੀਐਮਐਸ ਖਿਡਾਰੀ ਹਾਂ",
+	 "La naiba cu viața mea, sunt doar un jucător inutil de bms",
+	 "К черту мою жизнь, я просто бесполезный игрок BMS.",
+	 "Fuck maisha yangu, mimi ni mchezaji wa bms tu asiye na maana",
+	 "A la mierda mi vida, solo soy un jugador de BMS inútil",
+	 "నా జీవితాన్ని ఫక్ చేయండి, నేను పనికిరాని bms ప్లేయర్‌ని",
+	 "ชีวิตฉันมันห่วยแตก ฉันก็แค่ผู้เล่น BMS ที่ไร้ประโยชน์",
+	 "До біса моє життя, я просто марний гравець BMS",
+	 "Umrimni siking, men shunchaki foydasiz bms o'yinchisiman",
+	 "Đụ mẹ cuộc đời tôi, tôi chỉ là một thằng chơi bms vô dụng",
+	 "Ffyc fy mywyd, dim ond chwaraewr bms diwerth ydw i",
+	 "Fuck my life, I'm just a useless bms player",
+	 "Served and reverred.",
+	 "License and registration.",
+	 "My mom, Salim. Sometimes someone makes a grammatical mistake. I wrote the message last night. I was quite tired, and while I was writing this message in a rush while walking, I didn't notice the tiny mistake. It's not something you should be afraid of.",
+	 "The dice is rolled.",
+	 "Keyboard lion.",
+	 "we are in dance we must dance",
+	 "@Typhoon_36, you received a reply to your vocal message",
+	 "we're at the end of the line",
+	 "Who lives shall see",
+	 "I said what I had to say",
+	 "Leao meravigliao, FORZA DIAVOLI",
+	 "The opportunity makes man a thief.",
+	 "The wheel spins 4 everyone :P",
+	 "what boils in the pan...",
+	 "All smoke and no rent",
+	 "The wolf loses the fur but not the vice",
+	 "Shall we plant it??",
+	 "the itsy bitsy spider",
+	 "You only live once",
+	 "Motivated and determined!",
+	 "WHEN THE CAT IS ABSENT THE MICE DANCE",
+	 "the hazelnut of the matter",
+	 "ok thank you for the information but you don't need to treat me as an doormat and tell me that i always want to put the hands in the ass",
+	 "Point And comma",
+	 "The number of protons is equal to the number of electrons",
+	 "It must be me who doesn't understand",
+	 "who is at fault is suspect",
+	 "front and back photocopy",
+	 "the extremity of the tangle",
+	 "changing the order of ",
+	 "changing the order of the addends does not change the result",
+	 "pork uncle im about to take a big duuuump",
+	 "this world won't turn me evil",
+	 "yes officer",
+	 "massacre of capables, but capable of what",
+	 "we need to talk..",
+	 "5 electronic devices with which take phone calls...",
+	 "finest chocolate (with surprise)",
+	 "the return of flame",
+	 "the planetary collision",
+	 "And God said 'Let there be light'",
+	 "sausage and rapini for me",
+	 "warm up the engines",
+	 "porno trans ita",
+	
+	
+	 
+	 
+	 
+	 
+	 
+ ];
+ 
+ function RndText() {
+ var rannum= Math.floor(Math.random()*textarray.length);
+ document.getElementById('flavor-text').innerHTML=textarray[rannum];
+ }
+ onload = function() { RndText(); }
+</script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
