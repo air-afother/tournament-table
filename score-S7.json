@@ -178,7 +178,7 @@
 {
   "artist": "t+pazolite",
   "comment": "原曲：U.N.オーエンは彼女なのか？(東方紅魔郷)（差分同梱）",
-  "level": " ",
+  "level": "Advanced ",
   "lr2_bmsid": "1805",
   "md5": "30a5cc8b0bfdc784f19fa42155917b6c",
   "name_diff": "http://nekokan.dyndns.info/~lobsak/hokan/",
@@ -194,7 +194,7 @@
   "artist": "er/仙人掌の人",
   "url": "http://yaruki0.sakura.ne.jp/event/ondanyugi5/impression.cgi?no=5",
   "url_diff": "https://web.archive.org/web/20190917071620/http://sabosabun.tank.jp/",
-  "level": " "
+  "level": "Advanced "
 },
 {
   "id": 4887,
@@ -204,7 +204,7 @@
   "artist": "kunzite pattern for some reason",
   "url": "http://manbow.nothing.sh/event/event.cgi?action=More_def&num=51&event=129",
   "url_diff": "https://darksabun.github.io/bceg/event/ondan9/",
-  "level": " "
+  "level": "Advanced "
 },
 
 {
@@ -257,6 +257,5 @@
   "state": "",
   "memo": ""
 }
-
 
 ]
