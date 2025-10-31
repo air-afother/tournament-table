@@ -287,39 +287,33 @@ footer a:hover {
 
 .poster-container {
   position: relative;
-  display: inline-block;
-  max-width: 70%;
-  max-height: 1000px;
-  margin: 20px auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 20px auto;
+  max-width: 70%; /* 🔹 non fa allargare l’immagine oltre il 70% della pagina */
+  overflow: hidden; /* 🔹 impedisce all’immagine di uscire dal contenitore */
 }
 
 .poster-img {
-  width: 100%;
+  width: 100%;     /* 🔹 si adatta alla larghezza massima del contenitore */
   height: auto;
+  max-height: 1000px;
   display: block;
   border-radius: 6px;
+  object-fit: contain; /* 🔹 garantisce proporzioni corrette */
 }
 
-/* questo è il contenitore che centra tutto */
-.poster-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-/* il credit segue la larghezza effettiva dell'immagine */
 .poster-credit {
   font-size: 0.8em;
   color: rgba(255, 255, 255, 0.7);
   margin-top: 4px;
-  align-self: flex-end; /* 💡 si allinea al bordo destro dell’immagine */
+  width: 100%;
+  text-align: right;
   font-style: italic;
-  width: 100%; /* stessa larghezza dell’immagine */
-  text-align: right; /* testo a destra */
+  padding-right: 4px; /* un po’ di respiro dal bordo destro */
 }
+
 
 .poster-credit a {
   color: rgba(255, 255, 255, 0.8);
@@ -733,6 +727,7 @@ function closeNav() { document.getElementById("mySidenav").classList.remove("ope
  onload = function() { RndText(); }
 </script>
 </html>
+
 
 
 
