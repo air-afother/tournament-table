@@ -285,31 +285,40 @@ footer a:hover {
   }
 }
 
-.poster-wrapper {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-  margin-bottom: 30px;
-}
-
-.poster-inner {
+.poster-container {
+  position: relative;
   display: inline-block;
-  text-align: right; /* 👉 credit allineato al bordo dell'immagine */
-}
-
-.poster-inner img {
-  max-height: 1000px;
   max-width: 70%;
-  height: auto;
-  width: auto;
-  display: block;
+  max-height: 1000px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
+.poster-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 6px;
+}
+
+/* questo è il contenitore che centra tutto */
+.poster-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* il credit segue la larghezza effettiva dell'immagine */
 .poster-credit {
   font-size: 0.8em;
   color: rgba(255, 255, 255, 0.7);
   margin-top: 4px;
+  align-self: flex-end; /* 💡 si allinea al bordo destro dell’immagine */
   font-style: italic;
+  width: 100%; /* stessa larghezza dell’immagine */
+  text-align: right; /* testo a destra */
 }
 
 .poster-credit a {
@@ -321,6 +330,7 @@ footer a:hover {
 .poster-credit a:hover {
   color: #ed2024;
 }
+
 
 
 
@@ -435,14 +445,13 @@ footer a:hover {
     </ol>
 	
 
-<div class="poster-wrapper">
-  <div class="poster-inner">
-    <img src="images/bmsa-S7-poster.png" alt="S7 poster">
-    <p class="poster-credit">
-      shoutouts <a href="https://twitch.tv/beachsidebunny" target="_blank">nyannurs</a> for the poster!
-    </p>
-  </div>
+<div class="poster-container">
+  <img src="images/bmsa-S7-poster.png" alt="S7 poster" class="poster-img">
+  <p class="poster-credit">
+    shoutouts <a href="https://twitch.tv/beachsidebunny" target="_blank">nyannurs</a> for the poster!
+  </p>
 </div>
+
 
 
 
@@ -724,6 +733,7 @@ function closeNav() { document.getElementById("mySidenav").classList.remove("ope
  onload = function() { RndText(); }
 </script>
 </html>
+
 
 
 
