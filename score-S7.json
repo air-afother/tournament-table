@@ -211,7 +211,7 @@
   "id": "188",
   "title": "In a dream (LN-Express)",
   "artist": "Team Shanghai Alice (Remixed by Est) / obj:Rian",
-  "level": "Bonus",
+  "level": "Bonus ",
   "md5": "cc626fa799b0e9711ab67feda81d2413",
   "sha256": "252ddff6c3c5a6bd83192ffbffc7650c429edcc90733f7053f1207dca37555f7",
   "status": "accepted",
@@ -227,13 +227,13 @@
   "name_diff": "",
   "title": "reikon girl@Genso-kyo (ANOTHER7)",
   "comment": "",
-  "level": "Bonus",
+  "level": "Bonus ",
   "artist": "sun3"
 },
 {
   "artist" : "MONO / SioN",
   "comment" : "　",
-  "level" : "Bonus",
+  "level" : "Bonus ",
   "lr2_bmsid" : "114660",
   "md5" : "ac85e39c8d689b80eb769cd6a6848b7e",
   "name_diff" : "　",
@@ -242,7 +242,7 @@
   "url_diff" : "http://www1.axfc.net/uploader/File/so/70251&key=ondo"
 },
 {
-  "level": "Bonus",
+  "level": "Bonus ",
   "sub_level": "",
   "title": "Everlasting Faith [Vertical Faith]",
   "artist": "rider feat. A Dokuga",
@@ -257,5 +257,6 @@
   "state": "",
   "memo": ""
 }
+
 
 ]
