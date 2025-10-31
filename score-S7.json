@@ -3,7 +3,7 @@
     "url_pack": null,
     "name_pack": null,
     "artist": "ZUN",
-    "level": "Beginner",
+    "level": "Beginner ",
     "proposer": "123475",
     "title": "U.N.オーエンは彼女なのか?",
     "url": "https://mega.nz/folder/8zR2lYhY#6FoTlMbPF_jXWjCxdDa1sw",
@@ -19,7 +19,7 @@
   },
   {
     "lr2_bmsid": "153297",
-    "level": "Beginner",
+    "level": "Beginner ",
     "artist": "ZUN remixed by LeaF Movie:Optie",
     "title": "Calamity Fortune [NORMAL]",
     "url": "http://yaruki0.sakura.ne.jp/event/ondanyugi5/impression.cgi?no=45",
@@ -38,7 +38,7 @@
   {
     "artist" : "Lycoris vs. Pied d'Alouette",
     "comment" : "",
-    "level" : "Beginner",
+    "level" : "Beginner ",
     "lr2_bmsid" : "288013",
     "md5" : "e954646d5c65810d51c31144d9b3ad71",
     "name_diff" : "",
@@ -49,7 +49,7 @@
  {
   "artist" : "Ark-Z Illustration by 春雨",
   "comment" : "",
-  "level" : "Beginner",
+  "level" : "Beginner ",
   "md5" : "9e696fe9e5ce47966243b021edfd8748",
   "name_diff" : "",
   "title" : "Singing of Night birds [Normal]",
@@ -57,28 +57,26 @@
   "url_diff" : ""
 },
 {
-  "url_pack": null,
-  "name_pack": null,
-  "artist": "∀S∀ Original:ZUN",
-  "level": "Lower",
-  "proposer": "2979m",
-  "title": "Crystal Shuffler",
-  "url": "https://venue.bmssearch.net/tohobmsr/14",
-  "url_diff": "",
-  "total": 0,
-  "eval": 0,
-  "comment": "",
-  "state": 240905,
-  "tag": "ソフラン、連打",
-  "judge": 3,
-  "name_diff": "",
-  "md5": "21e88d7906c0feae089d80682198af5b"
-},
+  "url_pack":null,
+  "name_pack":null,
+  "artist":"∀S∀ Original:ZUN",
+  "level":"Lower ",
+  "proposer":"2979m",
+  "title":"Crystal Shuffler",
+  "url":"https://venue.bmssearch.net/tohobmsr/14"
+  ,"url_diff":"",
+  "total":0.0,
+  "eval":0,
+  "comment":"",
+  "state":240905,"tag":"ソフラン、乱打、トリル",
+  "judge":3,
+  "name_diff":"",
+  "md5":"86ded49e23c6e530871f0b6a0b2beb86"},
 {
   "url_pack": null,
   "name_pack": null,
   "artist": "ZUN remixed by LeaF Movie:Optie/Illust:セシル◇タイト",
-  "level": "Lower",
+  "level": "Lower ",
   "proposer": "7402m",
   "title": "Armageddon [HYPER]",
   "url": "https://manbow.nothing.sh/event/event.cgi?action=More_def&num=57&event=129",
@@ -95,7 +93,7 @@
 {
   "artist": "ZUN Remix by rider",
   "comment": "",
-  "level": "Lower",
+  "level": "Lower ",
   "lr2_bmsid": "211785",
   "md5": "99ab84c3619c967c7686b73865ea1023",
   "name_diff": "ZUN Remix by rider",
@@ -104,7 +102,7 @@
   "url_diff": "http://manbow.nothing.sh/event/event.cgi?action=More_def&num=75&event=102"
 },
 {
-  "level": "Lower",
+  "level": "Lower ",
   "comment": "原曲:永夜の報い～Imperishable Night(東方永夜抄)",
   "title": "Imperishable Night 2006",
   "genre": "Euro Rave",
@@ -125,7 +123,7 @@
   "artist": "o.s.gate obj:七海",
   "url": "http://sagena.harisen.jp/osg.html",
   "url_diff": "https://dl.dropboxusercontent.com/s/qxdgiw3nxulfl86/rizix_nanami.zip",
-  "level": "Intermediate"
+  "level": "Intermediate "
 },
 {
   "id": 2783,
@@ -135,13 +133,13 @@
   "artist": "ZUN remixed by LeaF Movie:Optie obj:Restia",
   "url": "http://manbow.nothing.sh/event/event.cgi?action=More_def&num=76&event=102",
   "url_diff": "https://t.co/vKPI2krWEy?amp=1",
-  "level": "Intermediate"
+  "level": "Intermediate "
 },
 {
   "url_pack": null,
   "name_pack": null,
   "artist": "Remixed by SANY-ON illust by Ruby.G",
-  "level": "Intermediate",
+  "level": "Intermediate ",
   "proposer": "72502",
   "title": "MINIMAL SATORIN (bms edit) [7key EXTRA]",
   "url": "http://tohotodan3.iza-yoi.net/start/hall/toho3hall5.html",
@@ -158,7 +156,7 @@
 {
   "artist": "sak",
   "comment": "同梱譜面一度プレイするとLR2のノーツ数表示が2555から2510に変化する",
-  "level": "Intermediate",
+  "level": "Intermediate ",
   "lr2_bmsid": "211293",
   "md5": "b46b23fa8e2ad96e02763f687bb5a494",
   "name_diff": "",
@@ -169,7 +167,7 @@
 {
   "artist": "くっちーvsあっきー /obj あっりー",
   "comment": "所属チーム「おとなのらくがきちょう」",
-  "level": "Advanced",
+  "level": "Advanced ",
   "lr2_bmsid": "39329",
   "md5": "c4ca195acf56e5086bf1f2608af5ac35",
   "name_diff": "",
@@ -180,7 +178,7 @@
 {
   "artist": "t+pazolite",
   "comment": "原曲：U.N.オーエンは彼女なのか？(東方紅魔郷)（差分同梱）",
-  "level": "Advanced",
+  "level": " ",
   "lr2_bmsid": "1805",
   "md5": "30a5cc8b0bfdc784f19fa42155917b6c",
   "name_diff": "http://nekokan.dyndns.info/~lobsak/hokan/",
@@ -196,7 +194,7 @@
   "artist": "er/仙人掌の人",
   "url": "http://yaruki0.sakura.ne.jp/event/ondanyugi5/impression.cgi?no=5",
   "url_diff": "https://web.archive.org/web/20190917071620/http://sabosabun.tank.jp/",
-  "level": "Advanced"
+  "level": " "
 },
 {
   "id": 4887,
@@ -206,7 +204,7 @@
   "artist": "kunzite pattern for some reason",
   "url": "http://manbow.nothing.sh/event/event.cgi?action=More_def&num=51&event=129",
   "url_diff": "https://darksabun.github.io/bceg/event/ondan9/",
-  "level": "Advanced"
+  "level": " "
 },
 
 {
