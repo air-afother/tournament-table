@@ -1,0 +1,88 @@
+{
+    "S7_sd": {
+      "players": [
+        "ErtyDesu; it"
+      ],
+      "songs": [
+        "34029; ξ9 Kaleidoscope [SP NORMAL]",
+        "12313; Calamity Fortune[NORMAL]",
+        "91567; ▽6 U.N.オーエンは彼女なのか?",
+        "56702; ξ13 Singing of Night birds [Normal]"
+
+
+      ],
+      "time_filter": {
+        "start": "2025-11-02T00:00:00Z",
+        "end": "2025-11-16T23:59:59Z"
+      }
+    },
+    "S7_sr": {
+      "players": [
+        "mattyteo; it"
+      ],
+      "songs": [
+       "31997; sr5 Imperishable Night 2006",
+       "79562; ☆9 建御名方神[HYPER]",
+       "92943; ▽10 Crystal Shuffler",
+       "5727; ▽11 Armageddon[HYPER]"
+      ],
+      "time_filter": {
+        "start": "2025-11-02T00:00:00Z",
+        "end": "2025-11-16T23:59:59Z"
+      }
+      
+    },
+    "S7_sl": {
+      "players": [
+        "dotLight; it"
+      ],
+      "songs": [
+        "87597; sl2 リジットXXパラダイス -Hope-",
+        "41339; ▼6 MINIMAL SATORIN (bms edit) [7key EXTRA]",
+        "64480; ★8 UnFaked phantOm [EXTRA]",
+        "66771; sl5 Wizdomiot[ABNORMAL]"
+      ],
+      "time_filter": {
+        "start": "2025-11-02T00:00:00Z",
+        "end": "2025-11-16T23:59:59Z"
+      }
+    },
+    "S7_st": {
+      "players": [
+        "nyannurs; de"
+      ],
+      "songs": [
+        "67568; ★20 Yakumo >>JOINT STRUGGLE -EXTRA-",
+        "77320; st1 午後のこいしちゃん [EX]",
+        "67941; st2 You are a liar. [for some reason]",
+        "37597; ★22 Little Sister Bitch"
+      ],
+      "time_filter": {
+        "start": "2025-11-02T00:00:00Z",
+        "end": "2025-11-16T23:59:59Z"
+      }
+    },
+    "S7_bonus": {
+      "players": [
+        "dotLight; it"
+      ],
+      "songs": [
+        "32112; ln16 In a dream (LN-Express)",
+        "52480; h◎5 reikon girl@Genso-kyo (ANOTHER7)",
+        "23533; ℃5 Fantasmagondoria",
+        "95833; 縦5 Everlasting Faith [Vertical Faith]"
+      ],
+      "time_filter": {
+        "start": "2025-11-02T00:00:00Z",
+        "end": "2025-11-16T23:59:59Z"
+      }
+    }
+
+  }
+
+  
+
+
+
+
+
