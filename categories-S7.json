@@ -18,7 +18,9 @@
     },
     "S7_sr": {
       "players": [
-        "mattyteo; it"
+        "mattyteo; it",
+          "Monad; cn",
+          "ilovetea; ru"
       ],
       "songs": [
        "31997; sr5 Imperishable Night 2006",
@@ -34,7 +36,8 @@
     },
     "S7_sl": {
       "players": [
-        "dotLight; it"
+        "dotLight; it",
+          "Nea; fi"
       ],
       "songs": [
         "87597; sl2 リジットXXパラダイス -Hope-",
@@ -64,7 +67,10 @@
     },
     "S7_bonus": {
       "players": [
-        "dotLight; it"
+        "dotLight; it",
+          "mattyteo; it",
+          "Nea; fi"
+          
       ],
       "songs": [
         "32112; ln16 In a dream (LN-Express)",
@@ -81,6 +87,7 @@
   }
 
   
+
 
 
 
