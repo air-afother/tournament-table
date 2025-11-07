@@ -267,12 +267,12 @@
             
 
   <!-- rating formula -->
-  <div style="width:90%;max-width:1200px;margin:1em auto;text-align:left;">
+  <div style="width:90%;max-width:1200px;margin:1em auto;text-align:left; padding-bottom:10px;">
     <p>
       Rating for each song is calculated according to your rank within each song for both score and BP, with this formula:<br>
       <b>Rating = 100 × (1 - ((Rank - 1) / Players))</b><br>
       Highest score gives 100 Rating, halfway through the leaderboard gives 50 Rating, last gives 100/Players Rating.<br>
-      Total Rating = average Rating across all score Ratings and BP Ratings.
+      Total Rating = weighted average of the BP Ratings and score Ratings across all charts, with the weight being number of players with a valid play on that chart.
     </p>
   </div>
 
@@ -475,6 +475,7 @@
   </script>
 </body>
 </html>
+
 
 
 
