@@ -9,12 +9,13 @@
         "34029; ξ9 Kaleidoscope [SP NORMAL]",
         "12313; Calamity Fortune[NORMAL]",
         "91567; ▽6 U.N.オーエンは彼女なのか?",
-        "56702; ξ13 Singing of Night birds [Normal]"
+        "56702; ξ13 Singing of Night birds [Normal]",
+          "79289; ▽6 年中夢中な好奇心[NORMAL7]"
 
 
       ],
       "time_filter": {
-        "start": "2025-11-02T00:00:00Z",
+        "start": "2025-11-08T00:00:00Z",
         "end": "2025-11-16T23:59:59Z"
       }
     },
@@ -44,10 +45,11 @@
        "31997; sr5 Imperishable Night 2006",
        "79562; ☆9 建御名方神[HYPER]",
        "92943; ▽10 Crystal Shuffler",
-       "5727; ▽11 Armageddon[HYPER]"
+       "5727; ▽11 Armageddon[HYPER]",
+          "55042; ☆11 SCARLET ZONE[7ANOTHER]"
       ],
       "time_filter": {
-        "start": "2025-11-02T00:00:00Z",
+        "start": "2025-11-08T00:00:00Z",
         "end": "2025-11-16T23:59:59Z"
       }
       
@@ -72,10 +74,11 @@
         "87597; sl2 リジットXXパラダイス -Hope-",
         "41339; ▼6 MINIMAL SATORIN (bms edit) [7key EXTRA]",
         "64480; ★8 UnFaked phantOm [EXTRA]",
-        "66771; sl5 Wizdomiot[ABNORMAL]"
+        "66771; sl5 Wizdomiot[ABNORMAL]",
+          "60379; sl6 take me to the moon [yumether]"
       ],
       "time_filter": {
-        "start": "2025-11-02T00:00:00Z",
+        "start": "2025-11-08T00:00:00Z",
         "end": "2025-11-16T23:59:59Z"
       }
     },
@@ -92,10 +95,11 @@
         "67568; ★20 Yakumo >>JOINT STRUGGLE -EXTRA-",
         "77320; st1 午後のこいしちゃん [EX]",
         "67941; st2 You are a liar. [for some reason]",
-        "37597; ★22 Little Sister Bitch"
+        "37597; ★22 Little Sister Bitch",
+          "38573; st1 Love☆Spellcard -Last Word-"
       ],
       "time_filter": {
-        "start": "2025-11-02T00:00:00Z",
+        "start": "2025-11-08T00:00:00Z",
         "end": "2025-11-16T23:59:59Z"
       }
     },
@@ -129,10 +133,11 @@
         "32112; ln16 In a dream (LN-Express)",
         "52480; h◎5 reikon girl@Genso-kyo (ANOTHER7)",
         "23533; ℃5 Fantasmagondoria",
-        "95833; 縦5 Everlasting Faith [Vertical Faith]"
+        "95833; 縦5 Everlasting Faith [Vertical Faith]",
+          "37778; ◆◆皿 locked girl@Scarlet-Devils Palace [SCR PARADICE]"
       ],
       "time_filter": {
-        "start": "2025-11-02T00:00:00Z",
+        "start": "2025-11-08T00:00:00Z",
         "end": "2025-11-16T23:59:59Z"
       }
     }
@@ -140,6 +145,7 @@
   }
 
   
+
 
 
 
