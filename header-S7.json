@@ -1,5 +1,5 @@
 {
-    "data_url": "score-S7.json",
+    "data_url": "score-S7-EXTRA.json",
     "name": "BMSA! S7 - Hakurei Shrine Showdown ", 
     "symbol": "",
     "level_order": [
@@ -10,3 +10,4 @@
         "Bonus "
       ]
 }
+
