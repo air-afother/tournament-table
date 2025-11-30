@@ -3,7 +3,8 @@
     "songs": [
       "57204; ξ5 Snow Crystal[NORMAL]",
       "84546; ξ8 綺雪朧月 (NORMAL)",
-      "77584; ▽6 四十五年ノ雪桜[Hyper]"
+      "77584; ▽6 四十五年ノ雪桜[Hyper]",
+      "96284; ▽5 ラストクリスマスプレゼント"
     ],
     "max_sieglinde": 11.0,
     "time_filter": {
@@ -73,4 +74,5 @@
     "blacklist": []
   }
 }
+
 
