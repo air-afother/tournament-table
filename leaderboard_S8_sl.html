@@ -201,13 +201,59 @@
     <div class="table-container">
       <table id="leaderboard">
         <thead><tr><th><div class='th-flex'><span>#</span><button class='sort-btn' onclick='sortTable(0)'>⇅</button></div></th><th><div class='th-flex'><span>Player</span><button class='sort-btn' onclick='sortTable(1)'>⇅</button></div></th><th><div class='th-flex'><span>Rating</span><button class='sort-btn' onclick='sortTable(2)'>⇅</button></div></th><th><div class='th-flex'><a href='https://boku.tachi.ac/games/bms/7K/songs/57296/CHART' target='_blank' class='song-link'>sl2 Snowfairy -naughty-</a><div style='display:flex;flex-direction:column;align-items:flex-end;margin-left:4px;'><button class='sort-btn' onclick='sortTable(3, "score")' title='Sort by Score'>Score⇅</button><button class='sort-btn' onclick='sortTable(3, "bp")' title='Sort by BP'>BP⇅</button></div></div></th><th><div class='th-flex'><a href='https://boku.tachi.ac/games/bms/7K/songs/86598/CHART' target='_blank' class='song-link'>★4 雪月夜鐘 -Monsther-</a><div style='display:flex;flex-direction:column;align-items:flex-end;margin-left:4px;'><button class='sort-btn' onclick='sortTable(4, "score")' title='Sort by Score'>Score⇅</button><button class='sort-btn' onclick='sortTable(4, "bp")' title='Sort by BP'>BP⇅</button></div></div></th><th><div class='th-flex'><a href='https://boku.tachi.ac/games/bms/7K/songs/94272/CHART' target='_blank' class='song-link'>sl3 冬霞 [ANOTHER]</a><div style='display:flex;flex-direction:column;align-items:flex-end;margin-left:4px;'><button class='sort-btn' onclick='sortTable(5, "score")' title='Sort by Score'>Score⇅</button><button class='sort-btn' onclick='sortTable(5, "bp")' title='Sort by BP'>BP⇅</button></div></div></th><th><div class='th-flex'><a href='https://boku.tachi.ac/games/bms/7K/songs/39951/CHART' target='_blank' class='song-link'>★7 marine snow</a><div style='display:flex;flex-direction:column;align-items:flex-end;margin-left:4px;'><button class='sort-btn' onclick='sortTable(6, "score")' title='Sort by Score'>Score⇅</button><button class='sort-btn' onclick='sortTable(6, "bp")' title='Sort by BP'>BP⇅</button></div></div></th><th><div class='th-flex'><span>total</span><button class='sort-btn' onclick='sortTable(7)'>⇅</button></div></th></tr></thead>
-        <tbody></tbody>
+        <tbody><tr><td data-value='1' style='background-color:#b39700;font-weight:bold; text-align:center;'>1</td><td data-value="dotlight" class="player-cell"><a href="https://boku.tachi.ac/u/dotLight/games/bms/7K" target="_blank" class="player-link"><img src="pfp_cache\dotLight-pfp.png" class="pfp" alt="pfp"><span class="player-name">dotLight</span></a></td><td data-value="100.0"><span style="color:#00ff00;font-weight:bold;" title="Weights: sl3 冬霞 [ANOTHER]: 1 players">100</span></td><td data-value="0.0">0</td><td data-value="0.0">0</td><td data-value="34.0">34 <span style='color:#00ff00;font-weight:bold;'>(100)</span> <span style='color:#aaa;'>[0.83%]</span><br><small>BP: 2037 <span style='color:#00ff00;font-weight:bold;'>(100)</span> <span style='color:#660000;font-weight:bold;'>[FAILED]</span></small></td><td data-value="0.0">0</td><td data-value="34.0">34</td><td data-value="1.0">1</td></tr></tbody>
       </table>
     </div>
   </div>
 
   <!-- log box -->
   
+            <div class='log-container'>
+            <h3>Raise History</h3>
+            <div class='log-filters'>
+            Filters:
+                <select id='filter-player' onchange='filterLogs()'>
+                <option value=''>All players</option>
+                <option value='dotLight'>dotLight</option>
+                </select>
+                <select id='filter-song' onchange='filterLogs()'>
+                <option value=''>All songs</option>
+                <option value='sl2 Snowfairy -naughty-'>sl2 Snowfairy -naughty-</option><option value='sl3 冬霞 [ANOTHER]'>sl3 冬霞 [ANOTHER]</option><option value='★4 雪月夜鐘 -Monsther-'>★4 雪月夜鐘 -Monsther-</option><option value='★7 marine snow'>★7 marine snow</option>
+                </select>
+                <select id='filter-type' onchange='filterLogs()'>
+                <option value=''>All raises</option>
+                <option value='score'>Score raises</option>
+                <option value='bp'>BP raises</option>
+                <option value='lamp'>Lamp raises</option>
+                </select>
+            </div>
+            <div class='log-box'>
+            <div class='log-line'>[2025-11-30 18:42:04]  - dotLight | sl3 冬霞 [ANOTHER]: LAMP nan -&gt; FAILED</div><div class='log-line'>[2025-11-30 18:42:04]  - dotLight | sl3 冬霞 [ANOTHER] BP: BP nan -&gt; 2037.0</div><div class='log-line'>[2025-11-30 18:42:04]  - dotLight | sl3 冬霞 [ANOTHER]: Score nan -&gt; 34.0</div></div></div>
+            <script>
+            function filterLogs() {
+            const playerFilter = document.getElementById('filter-player').value.toLowerCase();
+            const songFilter = document.getElementById('filter-song').value.toLowerCase();
+            const typeFilter = document.getElementById('filter-type').value.toLowerCase();
+
+            const lines = document.getElementsByClassName('log-line');
+            for (let i = 0; i < lines.length; i++) {
+                const txt = lines[i].textContent.toLowerCase();
+                let show = true;
+
+                if (playerFilter && !txt.includes(playerFilter)) show = false;
+                if (songFilter && !txt.includes(songFilter)) show = false;
+
+                if (typeFilter) {
+                if (typeFilter === 'bp' && !txt.includes('bp')) show = false;
+                else if (typeFilter === 'score' && !txt.match(/: \d+ ->/)) show = false;
+                else if (typeFilter === 'lamp' && !txt.includes('lamp')) show = false;
+                }
+
+                lines[i].style.display = show ? '' : 'none';
+            }
+            }
+            </script>
+            
 
   <!-- rating formula -->
   <div style="width:90%;max-width:1200px;margin:1em auto;text-align:left; padding-bottom:10px;">
