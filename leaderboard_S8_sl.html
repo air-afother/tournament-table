@@ -208,52 +208,6 @@
 
   <!-- log box -->
   
-            <div class='log-container'>
-            <h3>Raise History</h3>
-            <div class='log-filters'>
-            Filters:
-                <select id='filter-player' onchange='filterLogs()'>
-                <option value=''>All players</option>
-                
-                </select>
-                <select id='filter-song' onchange='filterLogs()'>
-                <option value=''>All songs</option>
-                <option value='sl2 Snowfairy -naughty-'>sl2 Snowfairy -naughty-</option><option value='sl3 冬霞 [ANOTHER]'>sl3 冬霞 [ANOTHER]</option><option value='★4 雪月夜鐘 -Monsther-'>★4 雪月夜鐘 -Monsther-</option><option value='★7 marine snow'>★7 marine snow</option>
-                </select>
-                <select id='filter-type' onchange='filterLogs()'>
-                <option value=''>All raises</option>
-                <option value='score'>Score raises</option>
-                <option value='bp'>BP raises</option>
-                <option value='lamp'>Lamp raises</option>
-                </select>
-            </div>
-            <div class='log-box'>
-            <div class='log-line'>[2025-11-30 18:30:20]  - kelvin102924 | sl3 冬霞 [ANOTHER]: LAMP nan -&gt; EX HARD CLEAR</div><div class='log-line'>[2025-11-30 18:30:20]  - kelvin102924 | sl3 冬霞 [ANOTHER] BP: BP nan -&gt; 13.0</div><div class='log-line'>[2025-11-30 18:30:20]  - kelvin102924 | sl3 冬霞 [ANOTHER]: Score nan -&gt; 3737.0</div><div class='log-line'>[2025-11-30 18:30:20]  - DrayneO | sl3 冬霞 [ANOTHER]: LAMP nan -&gt; EASY CLEAR</div><div class='log-line'>[2025-11-30 18:30:20]  - DrayneO | sl3 冬霞 [ANOTHER] BP: BP nan -&gt; 102.0</div><div class='log-line'>[2025-11-30 18:30:20]  - DrayneO | sl3 冬霞 [ANOTHER]: Score nan -&gt; 3290.0</div></div></div>
-            <script>
-            function filterLogs() {
-            const playerFilter = document.getElementById('filter-player').value.toLowerCase();
-            const songFilter = document.getElementById('filter-song').value.toLowerCase();
-            const typeFilter = document.getElementById('filter-type').value.toLowerCase();
-
-            const lines = document.getElementsByClassName('log-line');
-            for (let i = 0; i < lines.length; i++) {
-                const txt = lines[i].textContent.toLowerCase();
-                let show = true;
-
-                if (playerFilter && !txt.includes(playerFilter)) show = false;
-                if (songFilter && !txt.includes(songFilter)) show = false;
-
-                if (typeFilter) {
-                if (typeFilter === 'bp' && !txt.includes('bp')) show = false;
-                else if (typeFilter === 'score' && !txt.match(/: \d+ ->/)) show = false;
-                else if (typeFilter === 'lamp' && !txt.includes('lamp')) show = false;
-                }
-
-                lines[i].style.display = show ? '' : 'none';
-            }
-            }
-            </script>
-            
 
   <!-- rating formula -->
   <div style="width:90%;max-width:1200px;margin:1em auto;text-align:left; padding-bottom:10px;">
