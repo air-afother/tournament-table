@@ -1,5 +1,5 @@
 {
-    "name": "BMSA! S8",
+    "name": "BMSA! S8 - Cozy Cold Ranking",
     "symbol": "",
     "data_url": "score-S8.json",
     "level_order": [
@@ -9,4 +9,5 @@
         "Advanced ",
         "Bonus "
       ]
+
 }
