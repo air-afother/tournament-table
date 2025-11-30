@@ -1,0 +1,12 @@
+{
+    "name": "BMSA! S8",
+    "symbol": "",
+    "data_url": "score-S8.json",
+    "level_order": [
+        "Beginner ",
+        "Lower ",
+        "Intermediate ",
+        "Advanced ",
+        "Bonus "
+      ]
+}
