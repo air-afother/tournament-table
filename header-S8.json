@@ -1,7 +1,7 @@
 {
     "name": "BMSA! S8 - Cozy Cold Ranking",
     "symbol": "",
-    "data_url": "score-S8.json",
+    "data_url": "score-S8-EXTRA.json",
     "level_order": [
         "Beginner ",
         "Lower ",
@@ -11,3 +11,4 @@
       ]
 
 }
+
