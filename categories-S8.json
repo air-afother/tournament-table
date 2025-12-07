@@ -4,7 +4,8 @@
       "57204; ξ5 Snow Crystal[NORMAL]",
       "84546; ξ8 綺雪朧月 (NORMAL)",
       "77584; ▽6 四十五年ノ雪桜[Hyper]",
-      "96284; ▽5 ラストクリスマスプレゼント"
+      "96284; ▽5 ラストクリスマスプレゼント",
+      "10321; ▽5 Blazing Blizzard[Normal]"
     ],
     "max_sieglinde": 11.0,
     "time_filter": {
@@ -20,7 +21,8 @@
       "38562; ▽9 Love☆Love☆Christmas",
       "4963; ▽9 Angelic Snow (ANOTHER)",
       "92584; ▽10 Snowy pegasus (HD-RMX) [SP HYPER]",
-      "88722; sr8 Twin☆kle Snowglobe"
+      "88722; sr8 Twin☆kle Snowglobe",
+      "30666; ☆11 holy night celebration [7key Another]"
     ],
     "max_sieglinde": 22.0,
     "time_filter": {
@@ -35,7 +37,8 @@
       "57296; sl2 Snowfairy -naughty-",
       "86598; ★4 雪月夜鐘 -Monsther-",
       "94272; sl3 冬霞 [ANOTHER]",
-      "39951; ★7 marine snow"
+      "39951; ★7 marine snow",
+      "70868; sl5 ふゆいろ ドリーマー [冬]"
     ],
     "max_sieglinde": 34.0,
     "time_filter": {
@@ -50,7 +53,8 @@
       "86532; sl12 7SP:雪の少女-MorningDash!Mix-[EXTREME]",
       "94236; st0 Frost Land [MASTER]",
       "13605; ★20 CHRISTMAS EVE [Another+]",
-      "14245; ★20 Cold Breath (Another++)"
+      "14245; ★20 Cold Breath (Another++)",
+      "37955; st2 Lonely One Christmas [Hexagon]"
     ],
     "time_filter": {
       "start": "2025-11-30T00:00:00Z",
@@ -64,7 +68,8 @@
       "40776; ◆17 Merry Christmas Mr.Ginkgo",
       "40753; ★??? Merry Christmas Mr.DO",
       "40756; 縦4 Merry Christmas Mr.T-renda",
-      "40802; Merry Christmas Mr.Aires"
+      "40802; Merry Christmas Mr.Aires",
+      "40759; Merry Christmas Mr.yumeru"
     ],
     "time_filter": {
       "start": "2025-11-30T00:00:00Z",
@@ -74,6 +79,7 @@
     "blacklist": []
   }
 }
+
 
 
 
