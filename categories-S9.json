@@ -1,0 +1,78 @@
+{
+  "S9_sd": {
+    "songs": [
+      "77767; ▽5 地球塔デヴォーション",
+      "12534; ▽6 Canon (blazing summer mix)",
+      "71965; ξ9 エピトゥリカの祀[LIGHT7]",
+      "53283; ▽7 Re Shinin' Queen"
+
+    ],
+    "max_sieglinde": 11.0,
+    "time_filter": {
+      "start": "2025-12-23T00:00:00Z",
+      "end": "2026-01-11T23:59:59Z"
+    },
+    
+    "whitelist": [],
+    "blacklist": []
+  },
+  "S9_sr": {
+    "songs": [
+      "25754; ▽9 fragments J-CoreRemix[HeavyRain]",
+      "33699; ☆9 JULIAN for B.O.F. 2009",
+      "48309; ☆10 Parousia[HYPER]",
+      "61815; ☆10 The Ray of Sunlight"
+
+    ],
+    "max_sieglinde": 22.0,
+    "time_filter": {
+      "start": "2025-12-23T00:00:00Z",
+      "end": "2026-01-11T23:59:59Z"
+    },
+    "whitelist": ["dotLight"],
+    "blacklist": []
+  },
+  "S9_sl": {
+    "songs": [
+      "38648; sl2 Lucid Dreaming [U]",
+      "23979; ★6 FELYS EX",
+      "82846; ▼7 点、線、面、立体 [SP CLOCKWORK]",
+      "84255; ★8 約束 -HappyHyperStarmiX- (AFOTHER)"
+    ],
+    "max_sieglinde": 34.0,
+    "time_filter": {
+      "start": "2025-12-23T00:00:00Z",
+      "end": "2026-01-11T23:59:59Z"
+    },
+    "whitelist": ["dotLight"],
+    "blacklist": []
+  },
+  "S9_st": {
+    "songs": [
+      "3174; sl12 Akasagarbha [yumether]",
+      "19956; st0 duty [act out of duty]",
+      "59511; ★21 SunnyShinyRing -For Expert-",
+      "61517; ★21 The Lady Is A Trump[ANOTHER+]"
+    ],
+    "time_filter": {
+      "start": "2025-12-23T00:00:00Z",
+      "end": "2026-01-11T23:59:59Z"
+    },
+    "whitelist": ["dotLight"],
+    "blacklist": []
+  },
+  "S9_bonus": {
+    "songs": [
+      "3940; ★1 AltMirrorBell Another",
+      "22126; ★1 Espresso Shots [convert]",
+      "29415; ★1 happy century 虎のANOTHER",
+      "41466; ★1 Mirage Garden[ANOTHER]"
+    ],
+    "time_filter": {
+      "start": "2025-12-23T00:00:00Z",
+      "end": "2026-01-11T23:59:59Z"
+    },
+    "whitelist": [],
+    "blacklist": []
+  }
+}
