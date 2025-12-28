@@ -8,15 +8,15 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
 
   <style>
-    html,body {height:100%;margin:0;background-color:hwb(197 0% 70%);color: rgb(177, 255, 251);font-family:'Montserrat',sans-serif;}
+    html,body {height:100%;margin:0;background-color:#c78d3d;color: black;font-family:'Montserrat',sans-serif;}
     .flag {width:20px;height:auto;margin-right:8px;flex-shrink:0;}
     .player-cell {text-align:center;}
     .player-link {display:inline-flex;align-items:center;color:#fff;text-decoration:none;font-weight:500;min-width:120px;}
-    .player-link:hover {text-decoration:underline;color: rgb(177, 255, 251);}
+    .player-link:hover {text-decoration:underline;color: #2e3192;}
     .song-link {color:#fff;text-decoration:none;}
-    .song-link:hover {color: rgb(177, 255, 251);text-decoration:underline;}
+    .song-link:hover {color: #2e3192;text-decoration:underline;}
     .sort-btn {background:none;border:none;color:#fff;cursor:pointer;font-size:0.9em;margin-left:6px;white-space:nowrap;}
-    .sort-btn:hover {color: rgb(177, 255, 251);}
+    .sort-btn:hover {color: #2e3192;}
     .th-flex {display:flex;justify-content:space-between;align-items:center;white-space:nowrap;}
 
     .table-container {width:100%;overflow-x:auto;scrollbar-width: thin;scrollbar-color:#a3a3a3 #1d1d2e;}
@@ -25,7 +25,7 @@
     .table-container::-webkit-scrollbar-thumb {background:#221349;border-radius:10px;}
     table {border-collapse:collapse;margin:2em auto;width:100%;min-width:600px;background:#1d1d2e;border-radius:10px;overflow:hidden;}
     th,td {border:1px solid #333;padding:10px;text-align:center;white-space:nowrap;}
-    th {background-color: #2e92b1;color: rgb(255, 255, 255);}
+    th {background-color: #fbb34c;color: rgb(255, 255, 255);}
     tr:nth-child(even) {background:#14141f;} tr:hover {background:#2a2a3d;}
     @media (max-width:768px) {
       th,td {padding:6px;font-size:0.8em;}
@@ -38,7 +38,7 @@
     .sidenav a, .dropdown-btn {font-weight:500;font-size:15px;padding:6px 8px 6px 16px;color:#818181;display:block;border:none;background:none;width:100%;text-align:left;cursor:pointer;outline:none;text-decoration:none;}
     .sidenav a:hover, .dropdown-btn:hover {color:#f1f1f1;}
     #main {transition:margin-left .5s;padding-left:2%;}
-    .active {background-color: #2e92b1;color:white;}
+    .active {background-color: #fbb34c;color:white;}
     .dropdown {display:none;background-color:#1d1d2e;padding-left:8px;}
 
     .goofy-container {
@@ -47,8 +47,8 @@
           left: 0;
           right: 0;
           height: 4.5em;
-          background-color: #2e92b1;
-          color: rgb(177, 255, 251);
+          background-color: #fbb34c;
+          color: #2e3192;
           z-index: 3;
           display: flex;
           align-items: center;
@@ -80,7 +80,7 @@
           white-space: nowrap;
           overflow: hidden;
           text-overflow: ellipsis;
-          color: rgb(177, 255, 251);
+          color: black;
         }
 
         /* ✅ mobile fix: riduce font e forza il wrapping elegante */
@@ -114,7 +114,7 @@
 	  td small {
   display:block;
   margin-top:2px;
-  color: rgb(177, 255, 251);
+  color: #2e3192;
   font-size:0.8em;
 }
 .log-filters {
