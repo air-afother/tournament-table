@@ -9,11 +9,11 @@
     ],
     "max_sieglinde": 11.0,
     "time_filter": {
-      "start": "2025-12-23T00:00:00Z",
+      "start": "2025-12-28T00:00:00Z",
       "end": "2026-01-11T23:59:59Z"
     },
     
-    "whitelist": [],
+    "whitelist": ["dotLight"],
     "blacklist": []
   },
   "S9_sr": {
@@ -26,7 +26,7 @@
     ],
     "max_sieglinde": 22.0,
     "time_filter": {
-      "start": "2025-12-23T00:00:00Z",
+      "start": "2025-12-28T00:00:00Z",
       "end": "2026-01-11T23:59:59Z"
     },
     "whitelist": ["dotLight"],
@@ -41,7 +41,7 @@
     ],
     "max_sieglinde": 34.0,
     "time_filter": {
-      "start": "2025-12-23T00:00:00Z",
+      "start": "2025-12-28T00:00:00Z",
       "end": "2026-01-11T23:59:59Z"
     },
     "whitelist": ["dotLight"],
@@ -55,7 +55,7 @@
       "61517; ★21 The Lady Is A Trump[ANOTHER+]"
     ],
     "time_filter": {
-      "start": "2025-12-23T00:00:00Z",
+      "start": "2025-12-28T00:00:00Z",
       "end": "2026-01-11T23:59:59Z"
     },
     "whitelist": ["dotLight"],
@@ -69,11 +69,12 @@
       "41466; ★1 Mirage Garden[ANOTHER]"
     ],
     "time_filter": {
-      "start": "2025-12-23T00:00:00Z",
+      "start": "2025-12-28T00:00:00Z",
       "end": "2026-01-11T23:59:59Z"
     },
-    "whitelist": ["fresco69w"],
+    "whitelist": ["fresco69w", "dotLight"],
     "blacklist": []
   }
 }
+
 
