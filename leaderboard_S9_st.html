@@ -8,15 +8,15 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
 
   <style>
-    html,body {height:100%;margin:0;background-color:hwb(197 0% 70%);color: rgb(177, 255, 251);font-family:'Montserrat',sans-serif;}
+    html,body {height:100%;margin:0;background-color:#c78d3d;color: black;font-family:'Montserrat',sans-serif;}
     .flag {width:20px;height:auto;margin-right:8px;flex-shrink:0;}
     .player-cell {text-align:center;}
     .player-link {display:inline-flex;align-items:center;color:#fff;text-decoration:none;font-weight:500;min-width:120px;}
-    .player-link:hover {text-decoration:underline;color: rgb(177, 255, 251);}
-    .song-link {color:#fff;text-decoration:none;}
-    .song-link:hover {color: rgb(177, 255, 251);text-decoration:underline;}
-    .sort-btn {background:none;border:none;color:#fff;cursor:pointer;font-size:0.9em;margin-left:6px;white-space:nowrap;}
-    .sort-btn:hover {color: rgb(177, 255, 251);}
+    .player-link:hover {text-decoration:underline;color: #2e3192;}
+    .song-link {color:black;text-decoration:none;}
+    .song-link:hover {color: #2e3192;text-decoration:underline;}
+    .sort-btn {background:none;border:none;color:black;cursor:pointer;font-size:0.9em;margin-left:6px;white-space:nowrap;}
+    .sort-btn:hover {color: #2e3192;}
     .th-flex {display:flex;justify-content:space-between;align-items:center;white-space:nowrap;}
 
     .table-container {width:100%;overflow-x:auto;scrollbar-width: thin;scrollbar-color:#a3a3a3 #1d1d2e;}
@@ -25,7 +25,8 @@
     .table-container::-webkit-scrollbar-thumb {background:#221349;border-radius:10px;}
     table {border-collapse:collapse;margin:2em auto;width:100%;min-width:600px;background:#1d1d2e;border-radius:10px;overflow:hidden;}
     th,td {border:1px solid #333;padding:10px;text-align:center;white-space:nowrap;}
-    th {background-color: #2e92b1;color: rgb(255, 255, 255);}
+    td {color: white;}
+    th {background-color: #fbb34c;color: black;}
     tr:nth-child(even) {background:#14141f;} tr:hover {background:#2a2a3d;}
     @media (max-width:768px) {
       th,td {padding:6px;font-size:0.8em;}
@@ -38,7 +39,7 @@
     .sidenav a, .dropdown-btn {font-weight:500;font-size:15px;padding:6px 8px 6px 16px;color:#818181;display:block;border:none;background:none;width:100%;text-align:left;cursor:pointer;outline:none;text-decoration:none;}
     .sidenav a:hover, .dropdown-btn:hover {color:#f1f1f1;}
     #main {transition:margin-left .5s;padding-left:2%;}
-    .active {background-color: #2e92b1;color:white;}
+    .active {background-color: #fbb34c;color:white;}
     .dropdown {display:none;background-color:#1d1d2e;padding-left:8px;}
 
     .goofy-container {
@@ -47,8 +48,8 @@
           left: 0;
           right: 0;
           height: 4.5em;
-          background-color: #2e92b1;
-          color: rgb(177, 255, 251);
+          background-color: #fbb34c;
+          color: #2e3192;
           z-index: 3;
           display: flex;
           align-items: center;
@@ -80,7 +81,7 @@
           white-space: nowrap;
           overflow: hidden;
           text-overflow: ellipsis;
-          color: rgb(177, 255, 251);
+          color: black;
         }
 
         /* ✅ mobile fix: riduce font e forza il wrapping elegante */
@@ -106,15 +107,15 @@
 
 
 
-    .log-container {width:90%; min-height: 300px ;max-width:1000px;margin:2em auto;background:#111;border:1px solid #333;border-radius:8px;padding:1em;}
+    .log-container {width:90%; min-height: 300px ;max-width:1000px;margin:2em auto;background:#111;border:1px solid #333;border-radius:8px;padding:1em; color: white;}
     .log-container h3 {margin-top:0;color: white;text-align:center;}
-    .log-box {max-height:300px;overflow-y:auto;padding:0.5em 1em;background:#1a1a1a;border-radius:6px;font-size:0.9em;line-height:1.4em;}
-    .log-line {border-bottom:1px solid #333;padding:2px 0;}
+    .log-box {max-height:300px;overflow-y:auto;padding:0.5em 1em;background:#1a1a1a;border-radius:6px;font-size:0.9em;line-height:1.4em; color: white;}
+    .log-line {border-bottom:1px solid #333;padding:2px 0; color: white;}
     .log-line:last-child {border-bottom:none;}
 	  td small {
   display:block;
   margin-top:2px;
-  color: rgb(177, 255, 251);
+  color: white;
   font-size:0.8em;
 }
 .log-filters {
@@ -203,7 +204,7 @@
 <!-- top bar -->
 <div class="goofy-container">
   <div class="nav-left">
-    <img src="images/burger.png" alt="menu" onclick="openNav()">
+    <img src="images/burger-viola.png" alt="menu" onclick="openNav()">
     <h1>Bottoni Monthly Score Attack!</h1>
   </div>
   <p id="flavor-text"></p>
@@ -244,7 +245,7 @@
                 </select>
             </div>
             <div class='log-box'>
-            <div class='log-line'>[2025-12-26 21:01:46]  - boleks | ★21 SunnyShinyRing -For Expert-: LAMP nan -&gt; FAILED</div><div class='log-line'>[2025-12-26 21:01:46]  - boleks | ★21 SunnyShinyRing -For Expert- BP: BP nan -&gt; 146.0</div><div class='log-line'>[2025-12-26 21:01:46]  - boleks | ★21 SunnyShinyRing -For Expert-: Score nan -&gt; 3382.0</div><div class='log-line'>[2025-12-24 11:58:37]  - Kiiview | ★21 SunnyShinyRing -For Expert-: LAMP nan -&gt; FAILED</div><div class='log-line'>[2025-12-24 11:58:37]  - Kiiview | ★21 SunnyShinyRing -For Expert- BP: BP nan -&gt; 90.0</div><div class='log-line'>[2025-12-24 11:58:37]  - Kiiview | ★21 SunnyShinyRing -For Expert-: Score nan -&gt; 3970.0</div></div></div>
+            <div class='log-line'>[2025-12-29 10:53:57]  - mrking | st0 duty [act out of duty]: LAMP nan -&gt; CLEAR</div><div class='log-line'>[2025-12-29 10:53:57]  - mrking | st0 duty [act out of duty] BP: BP nan -&gt; 89.0</div><div class='log-line'>[2025-12-29 10:53:57]  - mrking | st0 duty [act out of duty]: Score nan -&gt; 3893.0</div></div></div>
             <script>
             function filterLogs() {
             const playerFilter = document.getElementById('filter-player').value.toLowerCase();
@@ -480,6 +481,8 @@
   </script>
 </body>
 </html>
+
+
 
 
 
