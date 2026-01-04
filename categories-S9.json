@@ -4,7 +4,8 @@
       "77767; ▽5 地球塔デヴォーション",
       "12534; ▽6 Canon (blazing summer mix)",
       "71965; ξ9 エピトゥリカの祀[LIGHT7]",
-      "53283; ▽7 Re Shinin' Queen"
+      "53283; ▽7 Re Shinin' Queen",
+      "67098; ▽7 X"
 
     ],
     "max_sieglinde": 11.0,
@@ -21,7 +22,8 @@
       "25754; ▽9 fragments J-CoreRemix[HeavyRain]",
       "33699; ☆9 JULIAN for B.O.F. 2009",
       "48309; ☆10 Parousia[HYPER]",
-      "61815; ☆10 The Ray of Sunlight"
+      "61815; ☆10 The Ray of Sunlight",
+      "2054; sr10 AcceptAdvent-Border of Life-(HYPER)"
 
     ],
     "max_sieglinde": 22.0,
@@ -37,7 +39,8 @@
       "38648; sl2 Lucid Dreaming [U]",
       "23979; ★6 FELYS EX",
       "82846; ▼7 点、線、面、立体 [SP CLOCKWORK]",
-      "84255; ★8 約束 -HappyHyperStarmiX- (AFOTHER)"
+      "84255; ★8 約束 -HappyHyperStarmiX- (AFOTHER)",
+      "12194; ▼10 Caelumize"
     ],
     "max_sieglinde": 34.0,
     "time_filter": {
@@ -52,7 +55,8 @@
       "3174; sl12 Akasagarbha [yumether]",
       "19956; st0 duty [act out of duty]",
       "59511; ★21 SunnyShinyRing -For Expert-",
-      "61517; ★21 The Lady Is A Trump[ANOTHER+]"
+      "61517; ★21 The Lady Is A Trump[ANOTHER+]",
+      "92085; st2 Wasabi [忍殺語]"
     ],
     "time_filter": {
       "start": "2025-12-28T00:00:00Z",
@@ -66,7 +70,8 @@
       "3940; ★1 AltMirrorBell Another",
       "22126; ★1 Espresso Shots [convert]",
       "29415; ★1 happy century 虎のANOTHER",
-      "41466; ★1 Mirage Garden[ANOTHER]"
+      "41466; ★1 Mirage Garden[ANOTHER]",
+      "68961; ★1 ☆ twinklesky ☆ _12 虎のANOTHER"
     ],
     "time_filter": {
       "start": "2025-12-28T00:00:00Z",
@@ -76,5 +81,6 @@
     "blacklist": []
   }
 }
+
 
 
