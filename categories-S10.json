@@ -1,5 +1,5 @@
 {
-  "S9_sd": {
+  "S10_sd": {
     "songs": [
       "55800; ξ8 SERIOUS ERROR[NORMAL]",
       "46069; ▽6 Nyan-Nyan Naughty Night [NORMAL]",
@@ -16,7 +16,7 @@
     "whitelist": [],
     "blacklist": []
   },
-  "S9_sr": {
+  "S10_sr": {
     "songs": [
       "25955; sr4 FREEDOM DiVE [NORMAL 7]",
       "53084; sr6 Revenant [Hyper]",
@@ -32,7 +32,7 @@
     "whitelist": ["dotLight"],
     "blacklist": []
   },
-  "S9_sl": {
+  "S10_sl": {
     "songs": [
       "22664; sl2 EVERLASTING HAPPiNESS↑ [ANOTHER]",
       "90705; ▼5 The Mighty A[SP HARD]",
@@ -47,7 +47,7 @@
     "whitelist": ["dotLight"],
     "blacklist": []
   },
-  "S9_st": {
+  "S10_st": {
     "songs": [
       "72528; sl12 クォークの海を泳いで [SP NEUTRINO]",
       "95092; st0 カニ TRIO [Insane]",
@@ -61,7 +61,7 @@
     "whitelist": ["dotLight"],
     "blacklist": []
   },
-  "S9_bonus": {
+  "S10_bonus": {
     "songs": [
       "40860; SB6 Meshimase!! Nyan-Nyan Nightmare [HAMUL]",
       "53925; ◆15 Rotterdam Racer[NANATHER LN]",
