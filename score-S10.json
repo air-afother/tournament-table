@@ -6,6 +6,12 @@
         "artist": "Juggernaut."
     },
     {
+        "level": "INTERMEDIATE ",
+        "md5": "04188c2d542f4c46f35c2c08a5104243",
+        "title": "超度 -Go Beyond-",
+        "artist": "Daily天利"
+    },
+    {
         "level": "BEGINNER ",
         "md5": "128d2ad51f9e2b38f38b6219d5bbcc6b",
         "title": "DOTA-BATA Cooking Show! ",
@@ -36,6 +42,12 @@
         "artist": "69 de 74"
     },
     {
+        "level": "LOWER ",
+        "md5": "522ce11990d09b94e515b653705be4fd",
+        "title": "プナイプナイたいそう [SP ANOTHER]",
+        "artist": "立秋 feat.ちょこ"
+    },
+    {
         "level": "BONUS ",
         "md5": "5a54f3e19a8e5fcf967d3532d4dc7041",
         "title": "DISCHARGE RUSH 音頭  [ANOTHER+]",
@@ -54,6 +66,12 @@
         "artist": "Nuekawa / BGA:tayuru / Illust:神宮要"
     },
     {
+        "level": "ADVANCED ",
+        "md5": "69aa4c9ecfa4480f18be61ee8f054fce",
+        "title": "Apocalypse Nemesis -Meteor Noise- [Disaster]",
+        "artist": "kanone(BGI:TAKA.S)"
+    },
+    {
         "level": "BONUS ",
         "md5": "88091047e21814a63fa74f07364daa60",
         "title": "Meshimase!! Nyan-Nyan Nightmare [HAMUL]",
@@ -64,6 +82,12 @@
         "md5": "9daa287bbf89977039777beff34d9a81",
         "title": "Nyan-Nyan Naughty Night [NORMAL]",
         "artist": "かたぎり"
+    },
+    {
+        "level": "BEGINNER ",
+        "md5": "a29697469c6064d63087858c3548a187",
+        "title": "HARDCORE MACHINEGUN [NORMAL]",
+        "artist": "ETIA."
     },
     {
         "level": "INTERMEDIATE ",
@@ -88,6 +112,12 @@
         "md5": "dfcfdc70a61290f57b768ef1a2ad6aac",
         "title": "クォークの海を泳いで [SP NEUTRINO]",
         "artist": "hugepulse obj.qfeileadh"
+    },
+    {
+        "level": "BONUS ",
+        "md5": "e3a35b101b663e0c966a0c3200caa6ce",
+        "title": "Absolute Future -Beyond-",
+        "artist": "otoshi.b"
     },
     {
         "level": "ADVANCED ",
