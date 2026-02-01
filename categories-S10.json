@@ -4,7 +4,8 @@
       "55800; ξ8 SERIOUS ERROR[NORMAL]",
       "46069; ▽6 Nyan-Nyan Naughty Night [NORMAL]",
       "90610; ▽6 DOTA-BATA Cooking Show!",
-      "94333; ▽7 命日 [HYPER]"
+      "94333; ▽7 命日 [HYPER]",
+      "29768; ξ12 HARDCORE MACHINEGUN [NORMAL]"
 
     ],
     "max_sieglinde": 11.0,
@@ -21,7 +22,8 @@
       "25955; sr4 FREEDOM DiVE [NORMAL 7]",
       "53084; sr6 Revenant [Hyper]",
       "17143; sr9 Death Opera",
-      "93758; ▽10 Breakcore WTF! [ANOTHER]"
+      "93758; ▽10 Breakcore WTF! [ANOTHER]",
+      "75203; sl0 プナイプナイたいそう [SP ANOTHER]"
 
     ],
     "max_sieglinde": 22.0,
@@ -37,7 +39,8 @@
       "22664; sl2 EVERLASTING HAPPiNESS↑ [ANOTHER]",
       "90705; ▼5 The Mighty A[SP HARD]",
       "94911; sl4 CAT ROTATION [ANOTHER]",
-      "28300; sl5 Grace Glaciaire [ANOTHER]"
+      "28300; sl5 Grace Glaciaire [ANOTHER]",
+      "92001; sl6 超度 -Go Beyond-"
     ],
     "max_sieglinde": 34.0,
     "time_filter": {
@@ -52,7 +55,8 @@
       "72528; sl12 クォークの海を泳いで [SP NEUTRINO]",
       "95092; st0 カニ TRIO [Insane]",
       "87889; st1 Schwerkraft [colo]",
-      "92106; st1 neo tinnitus [ANOTHER2]"
+      "92106; st1 neo tinnitus [ANOTHER2]",
+      "88075; st2 Apocalypse Nemesis -Meteor Noise- [Disaster]"
     ],
     "time_filter": {
       "start": "2026-01-21T00:00:00Z",
@@ -66,7 +70,8 @@
       "40860; SB6 Meshimase!! Nyan-Nyan Nightmare [HAMUL]",
       "53925; ◆15 Rotterdam Racer[NANATHER LN]",
       "18387; DISCHARGE RUSH 音頭 [ANOTHER+]",
-      "96825; DUARRIER [ρενδα_α]"
+      "96825; DUARRIER [ρενδα_α]",
+      "88506; ln16 Absolute Future -Beyond-"
     ],
     "time_filter": {
       "start": "2026-01-21T00:00:00Z",
@@ -76,3 +81,4 @@
     "blacklist": []
   }
 }
+
