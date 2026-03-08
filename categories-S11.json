@@ -13,7 +13,7 @@
       "end": "2026-03-22T23:59:59Z"
     },
     
-    "whitelist": [],
+    "whitelist": ["dotLight"],
     "blacklist": []
   },
   "S11_sr": {
@@ -75,3 +75,4 @@
     "blacklist": []
   }
 }
+
