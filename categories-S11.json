@@ -1,0 +1,77 @@
+{
+  "S11_sd": {
+    "songs": [
+      "97365; Hifumi Daisuki -ArtRemix- [HYPER]",
+      "97371; celeste -SUGAR STORY Remix-",
+      "97377; PRST Connected [SP NORMAL]",
+      "97362; Hinagesi+Luminous Memory -萌 Arrange-"
+
+    ],
+    "max_sieglinde": 11.0,
+    "time_filter": {
+      "start": "2026-03-07T00:00:00Z",
+      "end": "2026-03-22T23:59:59Z"
+    },
+    
+    "whitelist": [],
+    "blacklist": []
+  },
+  "S11_sr": {
+    "songs": [
+      "97366; Unwelcome School (∀S∀-Hi-tech Remix) [HYPER]",
+      "97363; Let me go Seaside (Sao-Sao Brilliance Mix)",
+      "94945; After School Dessert -Uzawa Mix- [HYPER]",
+      "95138; Our New Story(Cider. Remix) [SP Hyper]"
+
+    ],
+    "max_sieglinde": 22.0,
+    "time_filter": {
+      "start": "2026-03-07T00:00:00Z",
+      "end": "2026-03-22T23:59:59Z"
+    },
+    "whitelist": ["dotLight"],
+    "blacklist": []
+  },
+  "S11_sl": {
+    "songs": [
+      "97367; Unwelcome School (tettere- nekomix) [ZOI]",
+      "91382; sl3 dotabata〆trickster [SP ANOTHER]",
+      "97364; 優しさの記憶(TearDrop Remix)feat.Mai [INSANE]",
+      "91439; sl5 Demon's Roar [SP ANOTHER]"
+    ],
+    "max_sieglinde": 34.0,
+    "time_filter": {
+      "start": "2026-03-07T00:00:00Z",
+      "end": "2026-03-22T23:59:59Z"
+    },
+    "whitelist": ["dotLight"],
+    "blacklist": []
+  },
+  "S11_st": {
+    "songs": [
+      "97368; Unwelcome School (MSHC-MIX)[一日一神]",
+      "91438; st0 Demon's Roar [HK45]",
+      "90038; st0 Hifumi Daisuki - ahaha remix [Torment]",
+      "95021; st1 After School Dessert(Uzawa&Kazusa HardCore Remix) [SP ShootingStar]"
+    ],
+    "time_filter": {
+      "start": "2026-03-07T00:00:00Z",
+      "end": "2026-03-22T23:59:59Z"
+    },
+    "whitelist": ["dotLight"],
+    "blacklist": []
+  },
+  "S11_bonus": {
+    "songs": [
+      "97369; PRST Connected [rather]",
+      "92112; ln16 Hifumi Daisuki - ahaha remix[ダイスキ]",
+      "97370; Utaha no uta 機能拡張版 [ANOTHER]"
+    ],
+    "time_filter": {
+      "start": "2026-03-07T00:00:00Z",
+      "end": "2026-03-22T23:59:59Z"
+    },
+    "whitelist": [],
+    "blacklist": []
+  }
+}
