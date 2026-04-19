@@ -9,8 +9,8 @@
     ],
     "max_sieglinde": 11.0,
     "time_filter": {
-      "start": "2026-04-12T00:00:00Z",
-      "end": "2026-04-26T23:59:59Z"
+      "start": "2026-04-19T00:00:00Z",
+      "end": "2026-05-03T23:59:59Z"
     },
     
     "whitelist": [],
@@ -26,8 +26,8 @@
     ],
     "max_sieglinde": 22.0,
     "time_filter": {
-      "start": "2026-04-12T00:00:00Z",
-      "end": "2026-04-26T23:59:59Z"
+      "start": "2026-04-19T00:00:00Z",
+      "end": "2026-05-03T23:59:59Z"
     },
     "whitelist": ["dotLight"],
     "blacklist": []
@@ -41,8 +41,8 @@
     ],
     "max_sieglinde": 34.0,
     "time_filter": {
-      "start": "2026-04-12T00:00:00Z",
-      "end": "2026-04-26T23:59:59Z"
+      "start": "2026-04-19T00:00:00Z",
+      "end": "2026-05-03T23:59:59Z"
     },
     "whitelist": ["dotLight"],
     "blacklist": []
@@ -55,8 +55,8 @@
       "93120; st1 Yorixiro [Onbaxira]"
     ],
     "time_filter": {
-      "start": "2026-04-12T00:00:00Z",
-      "end": "2026-04-26T23:59:59Z"
+      "start": "2026-04-19T00:00:00Z",
+      "end": "2026-05-03T23:59:59Z"
     },
     "whitelist": ["dotLight"],
     "blacklist": []
@@ -69,8 +69,8 @@
       "87095; 縦3 魂姫～たまひめ～[脳]"
     ],
     "time_filter": {
-      "start": "2026-04-12T00:00:00Z",
-      "end": "2026-04-26T23:59:59Z"
+      "start": "2026-04-19T00:00:00Z",
+      "end": "2026-05-03T23:59:59Z"
     },
     "whitelist": [],
     "blacklist": []
