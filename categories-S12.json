@@ -1,0 +1,78 @@
+{
+  "S12_sd": {
+    "songs": [
+      "89418; ξ8 緋音月 [SP NORMAL]",
+      "90079; ▽5 獅子舞",
+      "77584; ▽6 四十五年ノ雪桜[Hyper]",
+      "78150; ☆7 夜桜"
+
+    ],
+    "max_sieglinde": 11.0,
+    "time_filter": {
+      "start": "2026-04-12T00:00:00Z",
+      "end": "2026-04-26T23:59:59Z"
+    },
+    
+    "whitelist": [],
+    "blacklist": []
+  },
+  "S12_sr": {
+    "songs": [
+      "34778; sr7 Kung-fu Fantasia [難]",
+      "74078; ▽9 ニニ [SP HYPER]",
+      "40068; ▽10 MASAMUNE[Hyper]",
+      "47192; sr11 Oriens"
+
+    ],
+    "max_sieglinde": 22.0,
+    "time_filter": {
+      "start": "2026-04-12T00:00:00Z",
+      "end": "2026-04-26T23:59:59Z"
+    },
+    "whitelist": ["dotLight"],
+    "blacklist": []
+  },
+  "S12_sl": {
+    "songs": [
+      "92488; sl2 Kakuriyo Dancehall [SP INSANE]",
+      "78921; sl3 宵桜回廊 [ANOTHER]",
+      "67707; ★6 YASAKANI [神璽鏡剣 陰ノ勾玉]",
+      "94154; sl4 妖鬼山脈 [ANOTHER]"
+    ],
+    "max_sieglinde": 34.0,
+    "time_filter": {
+      "start": "2026-04-12T00:00:00Z",
+      "end": "2026-04-26T23:59:59Z"
+    },
+    "whitelist": ["dotLight"],
+    "blacklist": []
+  },
+  "S12_st": {
+    "songs": [
+      "95519; sl12 影縫 [Polar-Lunar]",
+      "87946; st0 俗物フェスティバル -Despair-",
+      "84963; st0 自強號 [EMU100]",
+      "93120; st1 Yorixiro [Onbaxira]"
+    ],
+    "time_filter": {
+      "start": "2026-04-12T00:00:00Z",
+      "end": "2026-04-26T23:59:59Z"
+    },
+    "whitelist": ["dotLight"],
+    "blacklist": []
+  },
+  "S12_bonus": {
+    "songs": [
+      "85025; h◎3 舞姫 ～buki～[◎]",
+      "77192; ◆14 十六夜桜 [舞い戻る言霊]",
+      "81980; 音頭華月 [7key]",
+      "87095; 縦3 魂姫～たまひめ～[脳]"
+    ],
+    "time_filter": {
+      "start": "2026-04-12T00:00:00Z",
+      "end": "2026-04-26T23:59:59Z"
+    },
+    "whitelist": [],
+    "blacklist": []
+  }
+}
