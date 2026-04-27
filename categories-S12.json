@@ -21,7 +21,8 @@
       "34778; sr7 Kung-fu Fantasia [難]",
       "74078; ▽9 ニニ [SP HYPER]",
       "40068; ▽10 MASAMUNE[Hyper]",
-      "47192; sr11 Oriens"
+      "47192; sr11 Oriens",
+      "91785; sl0 菖蒲日和"
 
     ],
     "max_sieglinde": 22.0,
@@ -37,7 +38,8 @@
       "92488; sl2 Kakuriyo Dancehall [SP INSANE]",
       "78921; sl3 宵桜回廊 [ANOTHER]",
       "67707; ★6 YASAKANI [神璽鏡剣 陰ノ勾玉]",
-      "94154; sl4 妖鬼山脈 [ANOTHER]"
+      "94154; sl4 妖鬼山脈 [ANOTHER]",
+      "81769; sl6 桜シロガネ妖狐伝説 [ZOI]"
     ],
     "max_sieglinde": 34.0,
     "time_filter": {
@@ -52,7 +54,8 @@
       "95519; sl12 影縫 [Polar-Lunar]",
       "87946; st0 俗物フェスティバル -Despair-",
       "84963; st0 自強號 [EMU100]",
-      "93120; st1 Yorixiro [Onbaxira]"
+      "93120; st1 Yorixiro [Onbaxira]",
+      "56488; st2 Signager (mania7)"
     ],
     "time_filter": {
       "start": "2026-04-19T00:00:00Z",
@@ -66,7 +69,8 @@
       "85025; h◎3 舞姫 ～buki～[◎]",
       "77192; ◆14 十六夜桜 [舞い戻る言霊]",
       "81980; 音頭華月 [7key]",
-      "87095; 縦3 魂姫～たまひめ～[脳]"
+      "87095; 縦3 魂姫～たまひめ～[脳]",
+      "56500; Signager [rather]"
     ],
     "time_filter": {
       "start": "2026-04-19T00:00:00Z",
